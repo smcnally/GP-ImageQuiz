@@ -154,6 +154,32 @@ var quizQuestions = [
               content: "hit on them until it either works or fails horribly"
           }
       ]
+  },
+  {
+    // Group 1
+      question: "After work you...",
+      answers: [
+          {
+              type: "Stanley",
+              content: "Go home as quickly as you can"
+          },
+          {
+              type: "Kevin",
+              content: "Eat in front of the tv and watch a show"
+          },
+          {
+              type: "Toby",
+              content: "Read a good book"
+          },
+          {
+              type: "Kelly",
+              content: "Go out with friends"
+          },
+          {
+            type: "Oscar",
+            content: "Go to the gym to secretly meet someone"
+          }
+      ]
   }
 ];
 
