@@ -161,7 +161,7 @@ var quizQuestions = [
       answers: [
           {
               type: "Stanley",
-              content: "Go home as quickly as you can"
+              content: "Browse online personal ads"
           },
           {
               type: "Kevin",
@@ -173,11 +173,89 @@ var quizQuestions = [
           },
           {
               type: "Kelly",
-              content: "Go out with friends"
+              content: "Hit the bars and get the party started!"
           },
           {
             type: "Oscar",
             content: "Go to the gym to secretly meet someone"
+          }
+      ]
+  },
+  {
+    // Group 1
+      question: "If you were able to bring a book on a deserted island what would you bring?",
+      answers: [
+          {
+              type: "Dwight",
+              content: "Lord of The Rings"
+          },
+          {
+              type: "Kevin",
+              content: "Green Eggs & Ham"
+          },
+          {
+              type: "Toby",
+              content: "A detective novel"
+          },
+          {
+              type: "Kelly",
+              content: "Gossip magazines"
+          },
+          {
+            type: "Oscar",
+            content: "A romance novel"
+          }
+      ]
+  },
+  {
+    // Group 2
+      question: "What do you usually eat for lunch?",
+      answers: [
+          {
+              type: "Michael",
+              content: "you usually go to Chilli's or Benihana"
+          },
+          {
+              type: "Stanley",
+              content: "fast food drive-through"
+          },
+          {
+              type: "Kevin",
+              content: "something from the vending machine"
+          },
+          {
+              type: "Jim",
+              content: "brown bag"
+          },
+          {
+              type: "Meredith",
+              content: "anything I can find"
+          }
+      ]
+  },
+  {
+    // Group 1
+      question: "Your idea of a perfect Saturday is...",
+      answers: [
+          {
+              type: "Toby",
+              content: "No idea, something..."
+          },
+          {
+              type: "Ryan",
+              content: "Anything that doesn't involve me and work"
+          },
+          {
+              type: "Stanley",
+              content: "Whatever I feel like doing that day"
+          },
+          {
+              type: "Kelly",
+              content: "Going out to a club/bar"
+          },
+          {
+              type: "Oscar",
+              content: "Wine tasting in Napa Valley"
           }
       ]
   }
