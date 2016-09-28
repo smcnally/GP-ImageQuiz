@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import update from 'react-addons-update';
 import quizQuestions from './api/quizQuestions';
+// import personalityResults from './api/personalityResults';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
@@ -31,7 +32,8 @@ class App extends Component {
         Stanley: 0,
         Oscar: 0,
       },
-      result: ''
+      result: '',
+      personality: ''
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
@@ -109,10 +111,20 @@ class App extends Component {
 
   setResults(result) {
     if (result.length === 1) {
-      this.setState({ result: result[0] });
+      this.setState({
+        result: result[0]
+      });
     } else {
-      this.setState({ result: result[0] });
+      this.setState({
+        result: result[0]
+      });
     }
+  }
+
+  setPersonality() {
+      this.setState({
+        personality: 'Michael'
+      });
   }
 
   renderQuiz() {
@@ -129,8 +141,15 @@ class App extends Component {
   }
 
   renderResult() {
+      // const person = personalityResults;
+      // const winner = this.state.result
+      // console.log('person', person);
+      // console.log('personM', person[0].winner);
     return (
+      <div>
       <Result quizResult={this.state.result} />
+        {/* <p>{person}</p> */}
+      </div>
     );
   }
 
