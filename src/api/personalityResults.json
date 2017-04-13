@@ -1,0 +1,31 @@
+{  "Michael": {
+    "bio": "You enjoy being the center of attention, but are sensitive to others' opinions of you. Everyone might not understand your quirks and humor, but your intentions are always in the right place. Ultimately, you want to feel successful and settled in life."
+    } ,
+   "Jim": {
+     "bio": "You enjoy joking around and pushing people's buttons, but that doesn't mean that you're not serious about your goals. Though you tend to want to escape your problems, you always end up pushing through and are happier for it in the end."
+     } ,
+   "Dwight": {
+     "bio": "You have strong, and sometimes offbeat, opinions and are never afraid to express them. You have a hard time when things don't go your way, but your inventive mind always leads you to come up with new solutions and ideas."
+     } ,
+   "Kevin": {
+     "bio": "You've never quite grown up, and are prone to giggling at inappropriate moments. You love indulging your sweet tooth, as well as your betting nature."
+     } ,
+   "Ryan": {
+     "bio": "You enjoy having intellectual discussions and being ahead of the curve when it comes to trends. Though some might consider you pretentious, you know that you're ACTUALLY just more honest than everyone else."
+     } ,
+   "Stanley": {
+     "bio": "You're no-nonsense and have zero tolerance for stupidity. Though you're comfortable interacting with others, you'd prefer to be alone so you can truly kick back and relax."
+     } ,
+   "Kelly": {
+     "bio": "You're bubbly, talkative, and the first to know about new gossip or news. You always have the biggest personality in a room."
+     } ,
+   "Meredith": {
+     "bio": "You tend to be the wild card among your friends and never shy away from being your true self. Sometimes, your partying and rule-breaking ways get out of hand, but you can always count on those around you to eventually reign you back in."
+     } ,
+   "Toby": {
+     "bio": "You have weighty ambitions and passions, but often feel as if you're underestimated. Your reserved nature makes it harder for you to connect with others, but you know the right person will eventually understand you."
+     } ,
+   "Oscar": {
+     "bio": "You're very intelligent and are quick to correct others when they are wrong. You also have sophisticated tastes and enjoy discussing literature and other such fine things."
+   }
+}
