@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 function Result(props) {
-
   return (
     <ReactCSSTransitionGroup
       className="container result"
@@ -13,9 +13,14 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <span>
-        You are <strong>{props.quizResult}</strong>!
-      </span>
+      <div>
+        <span className="result-answer">
+          You are <strong>{props.quizResult}</strong>!
+        </span>
+        <span className="result-bio">
+          {props.resultBio}
+        </span>
+      </div>
     </ReactCSSTransitionGroup>
   );
 

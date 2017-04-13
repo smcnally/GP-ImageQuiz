@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import update from 'react-addons-update';
 import quizQuestions from './api/quizQuestions';
-// import personalityResults from './api/personalityResults';
+import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
@@ -141,14 +141,9 @@ class App extends Component {
   }
 
   renderResult() {
-      // const person = personalityResults;
-      // const winner = this.state.result
-      // console.log('person', person);
-      // console.log('personM', person[0].winner);
     return (
       <div>
-      <Result quizResult={this.state.result} />
-        {/* <p>{person}</p> */}
+        <Result quizResult={this.state.result} resultBio={personalityResults[this.state.result].bio} />
       </div>
     );
   }
