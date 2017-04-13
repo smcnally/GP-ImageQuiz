@@ -1,13 +1,21 @@
+.App {
+  height: 100vh;
+  background-color: #e1e2e1;
+}
+.App h2 {
+  /*color: #34515e;*/
+  /*width: 100vw;*/
+}
 .App-logo {
   /*animation: spin infinite 20s linear;*/
   height: 80px;
 }
-
 .App-header {
-  background-color: #448AFF;
+  background-color: #34515e;
   padding: 20px;
-  color: #fff;
+  color: #fafafa;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 6px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
 }
 
 .App-intro {

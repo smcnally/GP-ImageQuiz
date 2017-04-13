@@ -14,10 +14,12 @@ body {
 .container {
   position: relative;
   max-width: 800px;
+  min-height: 70vh;
   margin: 0 auto;
   background: #fff;
   border-radius: 3px;
   font-family: Roboto, sans-serif;
+  background: #f5f5f6;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   border-radius: 2px;
@@ -31,7 +33,14 @@ body {
 
 /* Result Component */
 .result {
+  display: flex;
+  justify-content: center;
   padding: 1.5rem 2.5rem;
+  text-align: center;
+}
+.result-container {
+  width: 55vw;
+  padding: 2em;
 }
 
 /* Quiz Component */
@@ -43,23 +52,34 @@ body {
 
 /* QuestionCount Component */
 .questionCount {
-  padding: 1.5rem 2.5rem 0;
   font-size: 14px;
+  background: #8eacbb;
+  color: #fafafa;
+  padding: 1.5rem 2.5rem 0;
 }
 
 /* Question Component */
 .question {
   margin: 0;
+  background: #8eacbb;
+  color: #fafafa;
   padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+
 }
 
 /* AnswerOption Component */
 .answerOption {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
 }
-
+.answerOption:first-child {
+  border-top: none;
+}
+.answerOption:last-child {
+  border-bottom: 1px solid #fff;
+}
+/*rgb(96, 125, 139)*/
 .answerOption:hover {
-  background-color: rgba(0, 0, 0, 0.098);
+  background-color: rgba(96, 125, 139, 0.1);
 }
 
 .radioCustomButton {
@@ -101,9 +121,9 @@ body {
 
 .radioCustomButton:checked ~ .radioCustomLabel:before {
     content: '';
-    background: #8BC53F url(./svg/icon-check.svg) no-repeat;
+    background: #a7ffeb url(./svg/icon-check.svg) no-repeat;
     background-size: 27px;
-    border-color: #8BC53F;
+    border-color: #a7ffeb;
 }
 
 /* Animation */

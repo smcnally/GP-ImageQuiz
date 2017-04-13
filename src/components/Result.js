@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 function Result(props) {
@@ -13,13 +13,13 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <div>
-        <span className="result-answer">
+      <div className="result-container">
+        <p className="result-answer">
           You are <strong>{props.quizResult}</strong>!
-        </span>
-        <span className="result-bio">
+        </p>
+        <p className="result-bio">
           {props.resultBio}
-        </span>
+        </p>
       </div>
     </ReactCSSTransitionGroup>
   );
