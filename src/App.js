@@ -20,6 +20,9 @@ class App extends Component {
       answer: '',
       answersCount: {
         //  Group 2
+        Indica: 0,
+        Sativa: 0,
+        Hybrid: 0,
         Michael: 0,
         Dwight: 0,
         Ryan: 0,
@@ -123,7 +126,7 @@ class App extends Component {
 
   setPersonality() {
       this.setState({
-        personality: 'Michael'
+        personality: 'Indica'
       });
   }
 

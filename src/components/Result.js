@@ -15,7 +15,7 @@ function Result(props) {
     >
       <div className="result-container">
         <p className="result-answer">
-          You are <strong>{props.quizResult}</strong>!
+          You are primarily interested in <strong>{props.quizResult}</strong> products.
         </p>
         <p className="result-bio">
           {props.resultBio}

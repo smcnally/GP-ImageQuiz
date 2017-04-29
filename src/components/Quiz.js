@@ -13,6 +13,7 @@ function Quiz(props) {
         key={key.content}
         answerContent={key.content}
         answerType={key.type}
+        answerImageSrc={key.imageSrc}
         answer={props.answer}
         questionId={props.questionId}
         onAnswerSelected={props.onAnswerSelected}
@@ -46,6 +47,7 @@ function Quiz(props) {
 
 Quiz.propTypes = {
   answer: React.PropTypes.string.isRequired,
+  imageSrc: React.PropTypes.string,
   answerOptions: React.PropTypes.array.isRequired,
   question: React.PropTypes.string.isRequired,
   questionId: React.PropTypes.number.isRequired,
