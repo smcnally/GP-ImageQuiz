@@ -17,6 +17,7 @@ function Result(props) {
         <p className="result-answer">
           You are primarily interested in <strong>{props.quizResult}</strong> products.
         </p>
+         <p /><img src="https://meanbusiness.com/shepherd/src/svg/gifs/ColoredSmoke.gif" height="100" width="100%" alt="hmbldt" />
         <p className="result-bio">
           {props.resultBio}
         </p>

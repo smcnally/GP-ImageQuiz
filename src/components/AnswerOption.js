@@ -27,6 +27,7 @@ function AnswerOption(props) {
 AnswerOption.propTypes = {
   answerType: React.PropTypes.string.isRequired,
   answerContent: React.PropTypes.string.isRequired,
+  answerImageSrc: React.PropTypes.string,
   answer: React.PropTypes.string.isRequired,
   onAnswerSelected: React.PropTypes.func.isRequired
 };

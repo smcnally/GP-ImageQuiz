@@ -11,15 +11,15 @@
   height: 80px;
 }
 .App-header {
-  background-color: #34515e;
-  padding: 20px;
+  background-color: #209b07;
+  padding: 5px;
   color: #fafafa;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 6px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
 }
 
 .App-intro {
-  font-size: large;
+  font-size: medium;
 }
 
 /*@keyframes spin {

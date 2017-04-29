@@ -27,7 +27,7 @@ body {
 
 @media (min-width: 769px) {
   .container {
-    margin: 2.5rem auto;
+    margin: .5rem auto;
   }
 }
 
@@ -53,7 +53,7 @@ body {
 /* QuestionCount Component */
 .questionCount {
   font-size: 14px;
-  background: #8eacbb;
+  background: #209b07;
   color: #fafafa;
   padding: 1.5rem 2.5rem 0;
 }
@@ -61,7 +61,7 @@ body {
 /* Question Component */
 .question {
   margin: 0;
-  background: #8eacbb;
+  background: #209b07;
   color: #fafafa;
   padding: 0.5rem 2.5rem 1.5rem 2.5rem;
 
