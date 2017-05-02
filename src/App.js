@@ -146,7 +146,8 @@ class App extends Component {
   renderResult() {
     return (
       <div>
-        <Result quizResult={this.state.result} resultBio={personalityResults[this.state.result].bio} />
+        <Result quizResult={this.state.result} resultBio={personalityResults[this.state.result].bio} 
+        resultBioStrains={personalityResults[this.state.result].strains} />
       </div>
     );
   }

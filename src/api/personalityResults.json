@@ -28,13 +28,16 @@
    "Oscar": {
      "bio": "You're very intelligent and are quick to correct others when they are wrong. You also have sophisticated tastes and enjoy discussing literature and other such fine things."
    } , 
-	"Sativa": {
-    "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress. Sativa strains include Sour Diesel, Maui Waui, Amnesia Haze."
+	"Sativa": {	
+    "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress." ,
+    "strains": "Sour Diesel, Maui Waui, Amnesia Haze" 
     } ,
     "Indica": {
-    "bio": "Indica strains relax muscle and work as general analgesics, also helping with sleep. Indica strains include Northern Lights, Kush, and Critical Mass."
+    "bio": "Indica strains relax muscles and work as general analgesics. They also help with sleep." ,
+    "strains": "Northern Lights, Kush, Critical Mass" 
     } ,
     "Hybrid": {
-    "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities."
+    "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities." ,
+    "strains": "Blue Dream, Pineapple Express, Skywalker OG" 
     }
 }

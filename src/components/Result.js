@@ -20,6 +20,8 @@ function Result(props) {
          <p /><img src="https://meanbusiness.com/shepherd/src/svg/gifs/ColoredSmoke.gif" height="100" width="100%" alt="hmbldt" />
         <p className="result-bio">
           {props.resultBio}
+          </p><p className="result-bio">
+          <strong>{props.quizResult}</strong> strains include: {props.resultBioStrains}
         </p>
       </div>
     </ReactCSSTransitionGroup>
