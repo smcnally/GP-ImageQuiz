@@ -19,14 +19,14 @@
    "Kelly": {
      "bio": "You're bubbly, talkative, and the first to know about new gossip or news. You always have the biggest personality in a room."
      } ,
-   "Meredith": {
-     "bio": "You tend to be the wild card among your friends and never shy away from being your true self. Sometimes, your partying and rule-breaking ways get out of hand, but you can always count on those around you to eventually reign you back in."
+   "Deteriorated": {
+     "bio": "Nope. Patients performed better"
      } ,
-   "Toby": {
-     "bio": "You have weighty ambitions and passions, but often feel as if you're underestimated. Your reserved nature makes it harder for you to connect with others, but you know the right person will eventually understand you."
+   "Improved": {
+     "bio": "Yes - Patients got faster and more accurate. Read what Harvard found out about other improvements to brain function, sleep, and overall health."
      } ,
-   "Oscar": {
-     "bio": "You're very intelligent and are quick to correct others when they are wrong. You also have sophisticated tastes and enjoy discussing literature and other such fine things."
+   "Same": {
+     "bio": "Read what Harvard found out about other improvements to brain function, sleep, and overall health."
    } , 
 	"Sativa": {	
     "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress." ,

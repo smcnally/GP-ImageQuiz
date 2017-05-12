@@ -29,9 +29,9 @@ class App extends Component {
         Jim: 0,
         Meredith: 0,
         //  Group 1
-        Toby: 0,
-        Kevin: 0,
-        Kelly: 0,
+        Deteriorated: 0,
+        Improved: 0,
+        Same: 0,
         Stanley: 0,
         Oscar: 0,
       },
@@ -156,8 +156,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>[Know Your Goals]</h1>
+          <h4>[intro]</h4>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
