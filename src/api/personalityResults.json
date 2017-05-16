@@ -1,23 +1,14 @@
-{  "Michael": {
-    "bio": "You enjoy being the center of attention, but are sensitive to others' opinions of you. Everyone might not understand your quirks and humor, but your intentions are always in the right place. Ultimately, you want to feel successful and settled in life."
+{  "Bluebird": {
+    "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
+     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules"
     } ,
-   "Jim": {
-     "bio": "You enjoy joking around and pushing people's buttons, but that doesn't mean that you're not serious about your goals. Though you tend to want to escape your problems, you always end up pushing through and are happier for it in the end."
+   "GreenMountain": {
+     "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
+     "strains": "Hemp Capsules, Edible Butter" 
      } ,
-   "Dwight": {
-     "bio": "You have strong, and sometimes offbeat, opinions and are never afraid to express them. You have a hard time when things don't go your way, but your inventive mind always leads you to come up with new solutions and ideas."
-     } ,
-   "Kevin": {
-     "bio": "You've never quite grown up, and are prone to giggling at inappropriate moments. You love indulging your sweet tooth, as well as your betting nature."
-     } ,
-   "Ryan": {
-     "bio": "You enjoy having intellectual discussions and being ahead of the curve when it comes to trends. Though some might consider you pretentious, you know that you're ACTUALLY just more honest than everyone else."
-     } ,
-   "Stanley": {
-     "bio": "You're no-nonsense and have zero tolerance for stupidity. Though you're comfortable interacting with others, you'd prefer to be alone so you can truly kick back and relax."
-     } ,
-   "Kelly": {
-     "bio": "You're bubbly, talkative, and the first to know about new gossip or news. You always have the biggest personality in a room."
+   "Palmetto": {
+     "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
+     "strains": "Capsules, Extract, topical Shea Butter Creme" 
      } ,
    "Deteriorated": {
      "bio": "Nope. Patients performed better"
