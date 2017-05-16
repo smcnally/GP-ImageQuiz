@@ -23,7 +23,9 @@ function Result(props) {
           </p><p className="result-bio">
           <strong>{props.quizResult}</strong> strains include: {props.resultBioStrains}
         </p>
-      </div>
+        <p className="result-sponsor">[Sponsor]</p>
+        <img src="https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" />
+        </div>
     </ReactCSSTransitionGroup>
   );
 

@@ -4,7 +4,6 @@ import quizQuestions from './api/quizQuestions';
 import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import logo from './svg/logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -23,9 +22,9 @@ class App extends Component {
         Indica: 0,
         Sativa: 0,
         Hybrid: 0,
-        Michael: 0,
-        Dwight: 0,
-        Ryan: 0,
+        Bluebird: 0,
+        Palmetto: 0,
+        GreenMountain: 0,
         Jim: 0,
         Meredith: 0,
         //  Group 1

@@ -46,6 +46,11 @@ body {
   width: 95vw;
   padding: .25em;
 }
+.result-sponsor {
+  font-size: 10px;
+  color: #2f222f;
+  padding: .25em;
+}
 
 /* Quiz Component */
 .answerOptions {
