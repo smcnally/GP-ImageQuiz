@@ -2,7 +2,7 @@
   "name": "react-quiz",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://http://meanbusiness.com/shepherd/",
+  "homepage": ".",
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
