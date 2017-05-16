@@ -146,7 +146,11 @@ class App extends Component {
     return (
       <div>
         <Result quizResult={this.state.result} resultBio={personalityResults[this.state.result].bio} 
-        resultBioStrains={personalityResults[this.state.result].strains} />
+        resultBioStrains={personalityResults[this.state.result].strains}
+        resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
+        resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
+        resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
+         />
       </div>
     );
   }

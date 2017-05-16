@@ -1,14 +1,23 @@
 {  "Bluebird": {
     "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
-     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules"
+     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules" , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Bluebird Drugs r Good"
     } ,
    "GreenMountain": {
      "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
-     "strains": "Hemp Capsules, Edible Butter" 
+     "strains": "Hemp Capsules, Edible Butter" , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Green Mtn Drugs r Good"
      } ,
    "Palmetto": {
      "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
-     "strains": "Capsules, Extract, topical Shea Butter Creme" 
+     "strains": "Capsules, Extract, topical Shea Butter Creme" , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Palemetto Drugs r Good"
      } ,
    "Deteriorated": {
      "bio": "Nope. Patients performed better"
@@ -21,14 +30,24 @@
    } , 
 	"Sativa": {	
     "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress." ,
-    "strains": "Sour Diesel, Maui Waui, Amnesia Haze" 
+    "strains": "Sour Diesel, Maui Waui, Amnesia Haze" , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Sativa Drugs r Good"
     } ,
     "Indica": {
     "bio": "Indica strains relax muscles and work as general analgesics. They also help with sleep." ,
-    "strains": "Northern Lights, Kush, Critical Mass" 
+    "strains": "Northern Lights, Kush, Critical Mass" , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Indica Drugs r Good"
     } ,
     "Hybrid": {
     "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities." ,
     "strains": "Blue Dream, Pineapple Express, Skywalker OG" 
+     , 
+     "sponsorImg": "https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Hybrid Drugs r Good"
     }
 }

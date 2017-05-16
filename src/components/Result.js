@@ -24,7 +24,12 @@ function Result(props) {
           <strong>{props.quizResult}</strong> strains include: {props.resultBioStrains}
         </p>
         <p className="result-sponsor">[Sponsor]</p>
-        <img src="https://meanbusiness.com/files/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" />
+        <a href={props.resultBioSponsorURL}>
+       <img src={props.resultBioSponsorImg} alt="sponsor" />
+       </a>
+       <p className="result-sponsor">
+       {props.resultBioSponsorTagline}
+       </p>
         </div>
     </ReactCSSTransitionGroup>
   );
