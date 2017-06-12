@@ -25,14 +25,12 @@ class App extends Component {
         Bluebird: 0,
         Palmetto: 0,
         GreenMountain: 0,
-        Jim: 0,
-        Meredith: 0,
         //  Group 1
         Deteriorated: 0,
         Improved: 0,
         Same: 0,
-        Stanley: 0,
-        Oscar: 0,
+        Improving: 0,
+        High: 0,
       },
       result: '',
       personality: ''
@@ -145,11 +143,13 @@ class App extends Component {
   renderResult() {
     return (
       <div>
-        <Result quizResult={this.state.result} resultBio={personalityResults[this.state.result].bio} 
+        <Result quizResult={this.state.result}
+        resultBio={personalityResults[this.state.result].bio} 
         resultBioStrains={personalityResults[this.state.result].strains}
+        resultBioSuccessImg={personalityResults[this.state.result].successImg}
         resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
         resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
-        resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
+       resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
          />
       </div>
     );
@@ -159,7 +159,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h4>[intro]</h4>
+          <h4>{quizQuestions[0].intro}</h4>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>

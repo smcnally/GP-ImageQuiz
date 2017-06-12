@@ -15,16 +15,25 @@ function Result(props) {
     >
       <div className="result-container">
         <p className="result-answer">
-          You are primarily interested in <strong>{props.quizResult}</strong> products.
+          Your Cannabis Industry IQ is <strong>{props.quizResult}</strong>!
         </p>
-         <p /><img src="https://meanbusiness.com/shepherd/src/svg/gifs/ColoredSmoke.gif" height="100" width="100%" alt="hmbldt" />
+         <p />
+         <img src={props.resultBioSuccessImg} alt="ExtrovertingSuccess" />
         <p className="result-bio">
           {props.resultBio}
           </p><p className="result-bio">
-          <strong>{props.quizResult}</strong> strains include: {props.resultBioStrains}
+         <p />          
+          <ul>
+          <li>
+          <a href="https://extroverting.com/2017/06/04/marketing-business-and-retail-opportunities/" target="_blank">Marketing, Retail, & Business</a>
+          </li>
+          <li>
+          <a href="https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" target="_blank">Computer & Data Science</a>
+          </li>
+          </ul>
         </p>
         <p className="result-sponsor">[Sponsor]</p>
-        <a href={props.resultBioSponsorURL}>
+        <a href={props.resultBioSponsorURL} target="_blank">
        <img src={props.resultBioSponsorImg} alt="sponsor" />
        </a>
        <p className="result-sponsor">

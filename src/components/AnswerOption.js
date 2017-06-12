@@ -17,7 +17,9 @@ function AnswerOption(props) {
       />
       <label className="radioCustomLabel" htmlFor={props.answerType}>
         {props.answerContent}
-        <p /><img src={props.answerImageSrc} alt={props.answer} height="60%" width="60%" />
+        <div>
+        <p /><img src={props.answerImageSrc} alt={props.answer} height="100%" width="100%" />
+        </div>
       </label>
     </li>
   );
