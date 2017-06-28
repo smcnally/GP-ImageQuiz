@@ -1,6 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import quizQuestions from '../api/quizQuestions';
 
 function Result(props) {
   return (
@@ -15,20 +16,21 @@ function Result(props) {
     >
       <div className="result-container">
         <p className="result-answer">
-          Your Cannabis Industry IQ is <strong>{props.quizResult}</strong>!
+          Your <strong>{quizQuestions[0].scoreLabel}</strong> is <strong>{props.quizResult}</strong>!
         </p>
          <p />
-         <img src={props.resultBioSuccessImg} alt="ExtrovertingSuccess" />
+         <img src={props.resultBioSuccessImg} alt="Extroverting Success" />
         <p className="result-bio">
           {props.resultBio}
-          </p><p className="result-bio">
-         <p />          
+         <p /><p className="result-bio">
+          <strong>{props.quizResult}</strong> products include: {props.resultBioStrains}
+        </p>
           <ul>
           <li>
-          <a href="https://extroverting.com/2017/06/04/marketing-business-and-retail-opportunities/" target="_blank">Marketing, Retail, & Business</a>
+          <a href={quizQuestions[0].relatedURL0} target="_blank">{quizQuestions[0].relatedURLLabel0}</a>
           </li>
           <li>
-          <a href="https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" target="_blank">Computer & Data Science</a>
+          <a href={quizQuestions[0].relatedURL1} target="_blank">{quizQuestions[0].relatedURLLabel1}</a>
           </li>
           </ul>
         </p>
@@ -42,7 +44,6 @@ function Result(props) {
         </div>
     </ReactCSSTransitionGroup>
   );
-
 }
 
 Result.propTypes = {

@@ -13,6 +13,20 @@ body {
   font-family: sans-serif;
 }
 
+h4 {
+  font-size: 14px;
+  color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-right: 0;
+    padding-left: 2px;
+}
+
 .container {
   position: relative;
   min-height: 70vh;
@@ -36,11 +50,13 @@ body {
 .result {
   display: flex;
   justify-content: center;
-  padding: .25rem .25rem;
+  font-size: 14px;
+  padding: .1rem .1rem;
   text-align: center;
 }
 .result-bio {
   justify-content: left;
+  font-size: 13px;
   padding: .25rem .25rem;
   text-align: left;
 }
@@ -63,7 +79,7 @@ body {
 
 /* QuestionCount Component */
 .questionCount {
-  font-size: 14px;
+  font-size: 13px;
   background: #e0e2e5;
   color: #000000;
   padding: .5rem .5rem 0;
@@ -110,17 +126,18 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 1.5rem .25rem .5rem 5rem;
-    font-size: 16px;
-    line-height: 1.25;
+    /* where the li margins and padding are */
+    padding: .95rem .05rem .25rem 3rem;
+    font-size: 14px;
+    line-height: 1.02;
 }
 
 .radioCustomButton ~ .radioCustomLabel:before {
     position: absolute;
-    top: 20px;
-    left: 38px;
-    width: 28px;
-    height: 28px;
+    top: 6px;
+    left: 12px;
+    width: 22px;
+    height: 22px;
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -133,7 +150,7 @@ body {
 .radioCustomButton:checked ~ .radioCustomLabel:before {
     content: '';
     background: #a7ffeb url(./svg/icon-check.svg) no-repeat;
-    background-size: 27px;
+    background-size: 22px;
     border-color: #a7ffeb;
 }
 

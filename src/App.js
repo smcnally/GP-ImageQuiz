@@ -149,7 +149,7 @@ class App extends Component {
         resultBioSuccessImg={personalityResults[this.state.result].successImg}
         resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
         resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
-       resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
+resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
          />
       </div>
     );

@@ -8,14 +8,14 @@
 }
 .App-logo {
   /*animation: spin infinite 20s linear;*/
-  height: 10px;
+  height: 0;
 }
 .App-header {
   background-color: #e0e2e5;
-  padding: .25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   color: #000000;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 6px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 2px;
 }
 
 .App-intro {
