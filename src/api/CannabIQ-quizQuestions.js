@@ -33,7 +33,7 @@ var quizQuestions = [
           {
               type: "Improving",
               content: "Cannabis can be consumed in any public place",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/Woman-Mouth-Smoke-300.gif?resize=300,200"
+              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-BlowsSmoke-BandW.gif?resize=300,200"
           },
       ]
   },
