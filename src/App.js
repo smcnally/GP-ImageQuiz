@@ -31,6 +31,10 @@ class App extends Component {
         Same: 0,
         Improving: 0,
         High: 0,
+        Magical: 0,
+        Charming: 0,
+        Quotastic: 0,
+        Quotifying: 0
       },
       result: '',
       personality: ''
