@@ -23,7 +23,7 @@ function Result(props) {
         <p className="result-bio">
           {props.resultBio}
          <p /><p className="result-bio">
-          <strong>{props.quizResult}</strong> products include: {props.resultBioStrains}
+          {props.resultBioStrains}
         </p>
           <ul>
           <li>
@@ -31,6 +31,9 @@ function Result(props) {
           </li>
           <li>
           <a href={quizQuestions[0].relatedURL1} target="_blank">{quizQuestions[0].relatedURLLabel1}</a>
+          </li>
+          <li>
+          <a href={quizQuestions[0].relatedURL2} target="_blank">{quizQuestions[0].relatedURLLabel2}</a>
           </li>
           </ul>
         </p>

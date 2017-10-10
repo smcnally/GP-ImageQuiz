@@ -34,6 +34,8 @@ class App extends Component {
         Magical: 0,
         Charming: 0,
         Quotastic: 0,
+        Low: 0,
+        Average: 0,
         Quotifying: 0
       },
       result: '',
