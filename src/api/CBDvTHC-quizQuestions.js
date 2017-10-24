@@ -17,12 +17,12 @@ var quizQuestions = [
           {
               type: "Bluebird",
               content: "Insomnia",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/Insomnia-Woman.jpg?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
           },
           {
               type: "Palmetto",
               content: "Anxiousness",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/woman-anxiety-300.gif?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
           },
 		  {
               type: "Sativa",
@@ -32,7 +32,7 @@ var quizQuestions = [
           {
               type: "GreenMountain",
               content: "Neck, Back, or Joint pain",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
       ]
   },
@@ -48,7 +48,7 @@ var quizQuestions = [
           {
               type: "Palmetto",
               content: "Getting through some chores",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/Laundry-Handstand.gif?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Laundry-Handstand.gif?resize=300,200"
           },
           {
               type: "Bluebird",
@@ -69,13 +69,13 @@ var quizQuestions = [
           {
               type: "GreenMountain",
               content: "Pilling it",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/pillbox-weekly.jpg?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/pillbox-weekly.jpg?resize=300,200"
               
           },
           {
               type: "Palmetto",
               content: "Putting it in Food",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/files/2017/05/Blending-Fruit.gif?resize=300,200"
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Blending-Fruit.gif?resize=300,200"
           },
       ]
   },

@@ -1,5 +1,7 @@
-# Office Personality Quiz
-Find out which character of The Office best matches your personality type.
+
+# Weighted Personality quiz 
+Define personality types, create Q&A to weight them accordingly, show results per players' answers<br>
+Create paths through Q&A via success images, related links, sponsor, and summary info.
 
 ## Get Started
 Install dependencies in your project directory with:
@@ -21,4 +23,5 @@ Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
+`build` is self-contained and deployable to "any" web server.<br>
 Your app is ready to be deployed!
