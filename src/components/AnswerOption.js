@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-function AnswerOption(props) {
+class AnswerOption extends Component {
 
-  return (
-    <li className="answerOption">
-      <input
-        type="radio"
-        className="radioCustomButton"
-        name="radioGroup"
-        checked={props.answerType === props.answer}
-        id={props.answerType}
-        value={props.answerType}
-        disabled={props.answer}
-        onChange={props.onAnswerSelected}
-      />
-      <label className="radioCustomLabel" htmlFor={props.answerType}>
-        {props.answerContent}
-        <div>
-        <p /><img src={props.answerImageSrc} alt={props.answer} height="100%" width="100%" />
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+      let el = document.getElementById(this.props.answerType);
+      if ( el ) {
+        console.log(el);
+        el.checked = true;
+      }
+  }
+
+  render() {
+    return (
+      <li className="answerOption">
+        <div className="answerOptionContainer">
+          <input
+            type="radio"
+            className="radioCustomButton"
+            name="radioGroup"
+            checked={this.props.answerType === this.props.answer}
+            id={this.props.answerType}
+            value={this.props.answerType}
+            disabled={this.props.answer}
+            onChange={this.props.onAnswerSelected}
+          />
+          <label className="radioCustomLabel" htmlFor={this.props.answerType}>
+            {this.props.answerContent}
+          </label>
         </div>
-      </label>
-    </li>
-  );
+        <div className="answerOptionImage" onClick={this.handleClick}>
+          <img src={this.props.answerImageSrc} alt={this.props.answer} height="100%" width="100%" />
+        </div>
+      </li>
+    );
+  }
 
 /**
 
