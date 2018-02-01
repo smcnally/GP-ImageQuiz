@@ -99,6 +99,7 @@ ul {
 /* AnswerOption Component */
 .answerOption {
   border-top: 1px solid #fff;
+  position: relative;
 }
 .answerOption:first-child {
   border-top: none;
@@ -109,6 +110,20 @@ ul {
 /*rgb(96, 125, 139)*/
 .answerOption:hover {
   background-color: rgba(96, 125, 139, 0.1);
+}
+
+.answerOptionContainer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 5px 10px 10px 5px;
+  /* customize colors here */
+  background-color: #043d30;
+  color: white;
+  border-radius: 5px;
+}
+.answerOptionImage {
+  cursor: pointer;
 }
 
 .radioCustomButton {
