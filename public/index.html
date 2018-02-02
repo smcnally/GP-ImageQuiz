@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      // any embedding origin can communicate with the iframe resizer
+      window.iFrameResizer = {
+        targetOrigin: '*'
+      }
+    </script>
   
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -46,5 +52,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+    <!-- loading iframeresizer for the iframe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.contentWindow.min.js"></script>
   </body>
 </html>
