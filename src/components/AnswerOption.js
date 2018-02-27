@@ -32,7 +32,7 @@ class AnswerOption extends Component {
   // TODO use a generic input or no input at all
   render() {
     return (
-      <li className="answerOption">
+      <li className="answerOption" onClick={this.handleClick}>
         <div className="answerOptionContainer">
           <input
             type="radio"
@@ -48,7 +48,7 @@ class AnswerOption extends Component {
             {this.props.content}
           </label>
         </div>
-        <div className="answerOptionImage" onClick={this.handleClick}>
+        <div className="answerOptionImage">
           <img src={this.props.imageSrc} alt={this.props.answer} height="100%" width="100%" />
         </div>
       </li>
