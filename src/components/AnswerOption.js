@@ -15,6 +15,9 @@ class AnswerOption extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // TODO this doesn't seem to work correctly now
+  // TODO refactor to support selecting multiple items
+  // and toggling on/off
   handleClick() {
       let el = document.getElementById(this.props.answerType);
       if ( el ) {
@@ -23,6 +26,7 @@ class AnswerOption extends Component {
       }
   }
 
+  // TODO use a generic input or no input at all
   render() {
     return (
       <li className="answerOption">

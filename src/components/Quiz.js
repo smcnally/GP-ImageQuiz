@@ -7,6 +7,7 @@ import AnswerOption from '../components/AnswerOption';
 
 function Quiz(props) {
 
+  // TODO rename from key to item or option or something less misleading
   function renderAnswerOptions(key) {
     return (
       <AnswerOption
