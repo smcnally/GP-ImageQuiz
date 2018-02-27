@@ -15,15 +15,18 @@ class AnswerOption extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  // TODO this doesn't seem to work correctly now
   // TODO refactor to support selecting multiple items
   // and toggling on/off
   handleClick() {
-      let el = document.getElementById(this.props.answerType);
-      if ( el ) {
-        console.log(el);
-        el.checked = true;
-      }
+    let el = document.getElementById(this.props.id);
+    if ( el ) {
+      console.log(el);
+      el.checked = true;
+
+      // TODO only call when we're sure the question is done
+      // theoretically check if done, or handle this elsewhere such as a Next button
+      this.props.onQuestionAnswered(el.value);
+    }
   }
 
   // TODO use a generic input or no input at all
@@ -35,18 +38,18 @@ class AnswerOption extends Component {
             type="radio"
             className="radioCustomButton"
             name="radioGroup"
-            checked={this.props.answerType === this.props.answer}
-            id={this.props.answerType}
-            value={this.props.answerType}
+            checked={this.props.type === this.props.answer}
+            id={this.props.id}
+            value={this.props.type}
             disabled={this.props.answer}
-            onChange={this.props.onAnswerSelected}
+            onChange={this.props.onQuestionAnswered}
           />
-          <label className="radioCustomLabel" htmlFor={this.props.answerType}>
-            {this.props.answerContent}
+          <label className="radioCustomLabel" htmlFor={this.props.type}>
+            {this.props.content}
           </label>
         </div>
         <div className="answerOptionImage" onClick={this.handleClick}>
-          <img src={this.props.answerImageSrc} alt={this.props.answer} height="100%" width="100%" />
+          <img src={this.props.imageSrc} alt={this.props.answer} height="100%" width="100%" />
         </div>
       </li>
     );
@@ -84,11 +87,11 @@ class AnswerOption extends Component {
 }
 
 AnswerOption.propTypes = {
-  answerType: React.PropTypes.string.isRequired,
-  answerContent: React.PropTypes.string.isRequired,
-  answerImageSrc: React.PropTypes.string,
+  type: React.PropTypes.string.isRequired,
+  content: React.PropTypes.string.isRequired,
+  imageSrc: React.PropTypes.string,
   answer: React.PropTypes.string.isRequired,
-  onAnswerSelected: React.PropTypes.func.isRequired
+  onQuestionAnswered: React.PropTypes.func.isRequired
 };
 
 export default AnswerOption;

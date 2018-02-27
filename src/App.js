@@ -45,7 +45,7 @@ class App extends Component {
       personality: ''
     };
 
-    this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+    this.handleQuestionAnswered = this.handleQuestionAnswered.bind(this);
   }
 
   // prior to mounting, shuffle the answer options for each question
@@ -76,17 +76,29 @@ class App extends Component {
     return array;
   };
 
-  // this is currently passed through to AnswerOption
+  /**
+   * handler for a question being answered
+   * 
+   * receives a list of types and a count, e.g. {Hybrid:2,Sativa:1}
+   * backward compatible - takes just a type (string) e.g. "Hybrid"
+   * 
+   * tabulates the answers into the App state.answersCount
+   * this is currently only called in AnswerOption
+   */
 
-  // TODO don't pass an event, pass the actual answer(s)
-  // so that this file needn't know how the AnswerOption is implemented
-  // Also TODO - to handle something being DESELECTED, only call this
-  //    when the user's finished the question
-  // Also TODO - allow multiple, plus value to be passed with the 
-  //    Type (e.g. foo=3,bar=1)
-  handleAnswerSelected(event) {
-    this.setUserAnswer(event.currentTarget.value);
+  handleQuestionAnswered(answers) {
+    // handle the case where a string was supplied
+    if (typeof answers === "string") {
+      let key = answers;
+      answers = {};
+      answers[key] = 1;
+    }
+    console.log(answers);
+    for (var key in answers) {
+      this.setUserAnswer(key, answers[key]);
+    }
 
+    // if no more questions, show result
     if (this.state.questionId < quizQuestions.length) {
         setTimeout(() => this.setNextQuestion(), 300);
     } else {
@@ -100,13 +112,12 @@ class App extends Component {
    * Tally the number of each personality (answerType) selected
    * 
    * @param {String} answer - the "personality type" selected
+   * @param {Integer} count - how many, defaults to 1
    * 
-   * TODO accept a hash or string, 
-   * e.g. "Hybrid" or {Hybrid:2} or {Hybrid:1,Sativa:3}
    */
-  setUserAnswer(answer) {
+  setUserAnswer(answer, count = 1) {
     const updatedAnswersCount = update(this.state.answersCount, {
-      [answer]: {$apply: (currentValue) => currentValue + 1}
+      [answer]: {$apply: (currentValue) => currentValue + count}
     });
 
     this.setState({
@@ -170,7 +181,7 @@ class App extends Component {
         questionId={this.state.questionId}
         question={this.state.question}
         questionTotal={quizQuestions.length}
-        onAnswerSelected={this.handleAnswerSelected}
+        onQuestionAnswered={this.handleQuestionAnswered}
       />
     );
   }

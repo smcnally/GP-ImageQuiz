@@ -7,18 +7,31 @@ import AnswerOption from '../components/AnswerOption';
 
 function Quiz(props) {
 
-  // TODO rename from key to item or option or something less misleading
-  function renderAnswerOptions(key) {
+  /**
+   * outputs a list of AnswerOption components, one for each option
+   * 
+   * this is better than the old map, we can allocate ids to each item
+   * Each option has 3 attributes:
+   * - content (text)
+   * - imageSrc (background image)
+   * - type (personality type to match)
+   * 
+   * To allow duplicate types, the id is generated sequentially
+   */
+  function AnswerOptions(props) {
+    let id = 0;
+    if (!props.answerOptions) {
+      return null;
+    }
+    const list = props.answerOptions.map(option => {
+      id++;
+      let domId = 'answer' + id;
+      return <AnswerOption key={option.content} id={domId} {...option} {...props} />
+    });
     return (
-      <AnswerOption
-        key={key.content}
-        answerContent={key.content}
-        answerType={key.type}
-        answerImageSrc={key.imageSrc}
-        answer={props.answer}
-        questionId={props.questionId}
-        onAnswerSelected={props.onAnswerSelected}
-      />
+      <ul className="answerOptions">
+        {list}
+      </ul>
     );
   }
 
@@ -38,9 +51,7 @@ function Quiz(props) {
           total={props.questionTotal}
         />
         <Question content={props.question} />
-        <ul className="answerOptions">
-          {props.answerOptions.map(renderAnswerOptions)}
-        </ul>
+        <AnswerOptions {...props} />
       </div>
     </ReactCSSTransitionGroup>
   );
@@ -53,7 +64,7 @@ Quiz.propTypes = {
   question: React.PropTypes.string.isRequired,
   questionId: React.PropTypes.number.isRequired,
   questionTotal: React.PropTypes.number.isRequired,
-  onAnswerSelected: React.PropTypes.func.isRequired
+  onQuestionAnswered: React.PropTypes.func.isRequired
 };
 
 export default Quiz;
