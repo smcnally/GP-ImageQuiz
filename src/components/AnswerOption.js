@@ -31,20 +31,19 @@ class AnswerOption extends Component {
 
   // TODO use a generic input or no input at all
   render() {
+    // TODO change classes based on question mode/type (radio, check, etc)
+    let questionOptionClass = "radioCustomButton";
     return (
       <li className="answerOption" onClick={this.handleClick}>
         <div className="answerOptionContainer">
           <input
-            type="radio"
-            className="radioCustomButton"
-            name="radioGroup"
+            type="checkbox"
+            className={questionOptionClass}
             checked={this.props.type === this.props.answer}
             id={this.props.id}
             value={this.props.type}
-            disabled={this.props.answer}
-            onChange={this.props.onQuestionAnswered}
           />
-          <label className="radioCustomLabel" htmlFor={this.props.type}>
+          <label className="radioCustomLabel" htmlFor={this.props.id}>
             {this.props.content}
           </label>
         </div>
