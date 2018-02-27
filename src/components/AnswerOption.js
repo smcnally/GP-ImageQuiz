@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
+// Display one choice within a question
+// Currently expect only one option to be selected
+
+// TODO permit multiple options to be selected
+//      and implement something for user to click to indicate they've selected
+//      what they wanted and can move on
+
 class AnswerOption extends Component {
 
   constructor(props) {
