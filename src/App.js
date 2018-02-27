@@ -39,6 +39,11 @@ class App extends Component {
         Quotastic: 0,
         Low: 0,
         Average: 0,
+        Edibles: 0,
+        Smoking: 0,
+        Vaping: 0,
+        Dabbing: 0,
+        Topicals: 0,
         Quotifying: 0
       },
       result: '',

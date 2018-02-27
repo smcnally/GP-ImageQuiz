@@ -2,15 +2,15 @@ var quizQuestions = [
   {
    // Game-wide values
   intro: "Getting Well more than High" , 
-  scoreLabel: "Well More than High result" , 
+  scoreLabel: "suggested retail partner" , 
   relatedURL0: "" , 
   relatedURLLabel0: "" ,
   relatedURL1: "" , 
   relatedURLLabel1: "" ,  
-  relatedURL2: "https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" , 
-  relatedURLLabel2: "Computer & Data Science" ,
-  relatedURL3: "https://extroverting.com/2017/06/04/marketing-business-and-retail-opportunities/" , 
-  relatedURLLabel3: "Marketing, Retail, & Business" ,  
+  relatedURL2: "" , 
+  relatedURLLabel2: "" ,
+  relatedURL3: "" , 
+  relatedURLLabel3: "" ,  
     // Group 1
       question: "Do you take meds for any of these conditions? (Pick one)",
       answers: [

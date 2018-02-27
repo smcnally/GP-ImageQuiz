@@ -10,7 +10,7 @@ var quizQuestions = [
   relatedURL2: "https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" , 
   relatedURLLabel0: "Join Us & the Community at the next Bake Sale" ,
   relatedURL0: "http://www.cannabisfeminist.com/blog/2017/6/27/the-bake-sale-hosted-by-matt-nordgren" , 
-  relatedURLLabel3: "Marketing, Retail, & Business" , 
+  relatedURLLabel2: "Marketing, Retail, & Business" , 
     // Group 1
       question: "What's the recommended amount of THC for a Microdose?",
       answers: [

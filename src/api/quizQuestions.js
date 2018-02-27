@@ -1,69 +1,108 @@
 var quizQuestions = [
   {
+   // Game-wide values
+  intro: "Products Used Within the Last month" , 
+  scoreLabel: "Preference" , 
+  relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html" , 
+  relatedURLLabel0: "Claim your Gift!" ,
+  relatedURL1: "" , 
+  relatedURLLabel1: "" ,  
+  relatedURL2: "" , 
+  relatedURLLabel2: "" ,
+  relatedURL3: "" , 
+  relatedURLLabel3: "" ,  
     // Group 1
-      question: "Knowing basic goals helps you find the right products. How would you like to feel?",
+      question: "Which type of cannabis product have you used used most recently?",
       answers: [
           {
-              type: "Indica",
-              content: "I'd like to relax & unwind",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/Man-FloatOnBackInPool-slice.png"
+              type: "Edibles",
+              content: "Edibles",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
           },
           {
-              type: "Sativa",
-              content: "I want to be active & sociable",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/People-Jetti-Sunset-slice.png"
+              type: "Smoking",
+              content: "Flower / Smoking",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
+          },
+		  {
+              type: "Vaping",
+              content: "Vaping",
+              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
           },
           {
-              type: "Hybrid",
-              content: "I like to get into the movie I'm watching / book I'm reading / game I'm playing",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/ManReadBook-InTheDark-slice.png"
+              type: "Dabbing",
+              content: "Dabbing",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
+          },
+          {
+              type: "Topicals",
+              content: "Topicals, Lotions, or Ointments",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
       ]
   },
   {
     // Group 1
-      question: "What will you be doing after medicating?",
+      question: "Which type of cannabis product have you used most frequently?",
       answers: [
           {
-              type: "Sativa",
-              content: "Going for a walk / bike ride",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/gifs/Bey-RidingBike.gif"
+              type: "Edibles",
+              content: "Edibles",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
           },
           {
-              type: "Hybrid",
-              content: "Going out to dinner with friends",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/gifs/Dinner-With-Friends.gif"
+              type: "Smoking",
+              content: "Flower / Smoking",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
+          },
+		  {
+              type: "Vaping",
+              content: "Vaping",
+              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
           },
           {
-              type: "Indica",
-              content: "Watching TV at home",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/WatchingTelevision-TV.jpg"
+              type: "Dabbing",
+              content: "Dabbing",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
+          },
+          {
+              type: "Topicals",
+              content: "Topicals, Lotions, or Ointments",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
       ]
   },
   {
 	// Group 1
-      question: "What will your mood be?",
+      question: "Which type of cannabis product do you generally prefer best?",
       answers: [
           {
-              type: "Sativa",
-              content: "Energetic",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/gifs/Energetic-DByrne-Dance.gif"
+              type: "Edibles",
+              content: "Edibles",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
           },
           {
-              type: "Indica",
-              content: "Relaxed",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/RelaxedReading-Woman-BareFeet.jpg"
-              
+              type: "Smoking",
+              content: "Flower / Smoking",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
+          },
+		  {
+              type: "Vaping",
+              content: "Vaping",
+              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
           },
           {
-              type: "Hybrid",
-              content: "Talkative",
-              imageSrc: "https://meanbusiness.com/shepherd/src/svg/gifs/Talkative-Woman-OnPhone.gif"
+              type: "Dabbing",
+              content: "Dabbing",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
+          },
+          {
+              type: "Topicals",
+              content: "Topicals, Lotions, or Ointments",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
       ]
   },
-
 ];
 
 export default quizQuestions;
