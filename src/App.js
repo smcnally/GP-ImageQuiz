@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import update from 'react-addons-update';
+import update from 'immutability-helper';
 import quizQuestions from './api/quizQuestions';
 import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
@@ -48,6 +48,7 @@ class App extends Component {
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
 
+  // prior to mounting, shuffle the answer options for each question
   componentWillMount() {
     const shuffledAnswerOptions = quizQuestions.map((question) => this.shuffleArray(question.answers));
     this.setState({
