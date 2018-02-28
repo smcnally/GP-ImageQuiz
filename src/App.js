@@ -138,7 +138,7 @@ class App extends Component {
         counter: counter,
         questionId: questionId,
         multi: quizQuestions[counter].multi || false,
-        format: quizQuestions[counter].format || "default",
+        format: quizQuestions[counter].format || "answerDefault",
         question: quizQuestions[counter].question,
         answerOptions: quizQuestions[counter].answers,
         answer: ''
