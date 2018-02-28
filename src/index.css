@@ -129,7 +129,7 @@ ul {
   position: absolute;
   left: 10px;
   top: 10px;
-  padding: 5px 10px 10px 5px;
+  padding: 5px 10px 5px 5px;
   /* customize colors here */
   background-color: #043d30;
   color: white;
@@ -154,22 +154,31 @@ ul {
 
 .radioCustomLabel {
     position: relative;
-    width: 100%;
+    width: auto;
     margin: 0;
+    margin-left: 30px;
     /* where the li margins and padding are */
-    padding: .95rem .05rem .25rem 3rem;
+    padding: .15rem;
+    padding-top: 8px;
     font-size: 14px;
+    
     line-height: 1.02;
+    min-height: 30px;
+}
+.radioCustomLabel::first-line {
+  vertical-align: text-bottom;
 }
 
 .radioCustomButton ~ .radioCustomLabel:before {
     position: absolute;
-    top: 6px;
-    left: 12px;
+    margin-right: .6rem;
+    top: 4px;
+    left: -26px;
     width: 22px;
     height: 22px;
     content: '';
-    display: inline-block;
+    display: block;
+    float: left;
     vertical-align: middle;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.098);
