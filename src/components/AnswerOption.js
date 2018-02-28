@@ -15,21 +15,21 @@ class AnswerOption extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  // TODO refactor to support selecting multiple items
-  // and toggling on/off
   handleClick() {
     let el = document.getElementById(this.props.id);
     if ( el ) {
-      console.log(el);
-      el.checked = true;
+      el.checked = !el.checked;
 
-      // TODO only call when we're sure the question is done
-      // theoretically check if done, or handle this elsewhere such as a Next button
-      this.props.onQuestionAnswered(el.value);
+      if (!this.props.multi) {
+        // if user can only pick one item, answered
+        this.props.onQuestionAnswered(this.props.type);
+      } else {
+        // otherwise keep tabs on which items are selected
+        this.props.onItemSelected(this.props.id, this.props.type);
+      }
     }
   }
 
-  // TODO use a generic input or no input at all
   render() {
     // TODO change classes based on question mode/type (radio, check, etc)
     let questionOptionClass = "radioCustomButton";
@@ -39,7 +39,7 @@ class AnswerOption extends Component {
           <input
             type="checkbox"
             className={questionOptionClass}
-            checked={this.props.type === this.props.answer}
+            defaultChecked={this.props.type === this.props.answer}
             id={this.props.id}
             value={this.props.type}
           />

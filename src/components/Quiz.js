@@ -1,60 +1,65 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Question from '../components/Question';
 import QuestionCount from '../components/QuestionCount';
-import AnswerOption from '../components/AnswerOption';
+import AnswerOptions from './AnswerOptions';
 
-function Quiz(props) {
+class Quiz extends Component {
+  constructor(props) {
+    super(props);
 
-  /**
-   * outputs a list of AnswerOption components, one for each option
-   * 
-   * this is better than the old map, we can allocate ids to each item
-   * Each option has 3 attributes:
-   * - content (text)
-   * - imageSrc (background image)
-   * - type (personality type to match)
-   * 
-   * To allow duplicate types, the id is generated sequentially
-   */
-  function AnswerOptions(props) {
-    let id = 0;
-    if (!props.answerOptions) {
-      return null;
-    }
-    const list = props.answerOptions.map(option => {
-      id++;
-      let domId = 'answer' + id;
-      return <AnswerOption key={option.content} id={domId} {...option} {...props} />
-    });
-    return (
-      <ul className="answerOptions">
-        {list}
-      </ul>
-    );
+    this.state = { selectedItems: {} };
   }
 
-  return (
-    <ReactCSSTransitionGroup
-      className="container"
-      component="div"
-      transitionName="fade"
-      transitionEnterTimeout={800}
-      transitionLeaveTimeout={500}
-      transitionAppear
-      transitionAppearTimeout={500}
-    >
-      <div key={props.questionId}>
-        <QuestionCount
-          counter={props.questionId}
-          total={props.questionTotal}
-        />
-        <Question content={props.question} />
-        <AnswerOptions {...props} />
-      </div>
-    </ReactCSSTransitionGroup>
-  );
+  /**
+   * handle a single option being toggled on/off
+   */
+  onItemSelected(id, type) {
+    let selectedItems = this.state.selectedItems || {};
+    if (selectedItems[id]) {
+      delete(selectedItems[id]);
+    } else {
+      selectedItems[id] = type;
+    }
+    this.setState({ selectedItems });
+  }
+
+  handleDoneQuestion() {
+    if (this.props.onQuestionAnswered) {
+      let answers = {};
+      let types = Object.values(this.state.selectedItems);
+      types.map(type => answers[type] ? answers[type]++ : answers[type] = 1);
+      this.setState({ selectedItems: {} });
+      this.props.onQuestionAnswered(answers);
+    }
+  }
+
+  render() {
+    return (
+      <ReactCSSTransitionGroup
+        className="container"
+        component="div"
+        transitionName="fade"
+        transitionEnterTimeout={800}
+        transitionLeaveTimeout={500}
+        transitionAppear
+        transitionAppearTimeout={500}
+      >
+        <div key={this.props.questionId}>
+          <QuestionCount
+            counter={this.props.questionId}
+            total={this.props.questionTotal}
+          />
+          <Question {...this.props} doneWithQuestion={this.handleDoneQuestion.bind(this)}/>
+          <AnswerOptions
+            {...this.props}
+            onItemSelected={this.onItemSelected.bind(this)}
+            doneWithQuestion={this.handleDoneQuestion.bind(this)}/>
+        </div>
+      </ReactCSSTransitionGroup>
+    );
+  }
 }
 
 Quiz.propTypes = {

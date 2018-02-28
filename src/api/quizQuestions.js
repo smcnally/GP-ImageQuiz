@@ -13,6 +13,7 @@ var quizQuestions = [
   relatedURLLabel3: "" ,  
     // Group 1
       question: "Which type of cannabis product have you used used most recently?",
+      multi: "Next »",
       answers: [
           {
               type: "Edibles",

@@ -3,16 +3,29 @@ import React from 'react';
 
 function Question(props) {
 
-  // TODO if props indicates the user can select multiple items we may need
-  // a ">>" (done answering) button and a handler for it
+  // if the user can select multiple items display a next button
+  let nextPrompt = props.multi || null;
+  const NextButton = (
+    nextPrompt ? 
+      <button 
+        className="nextButton"
+        onClick={props.doneWithQuestion}>
+        {nextPrompt}
+      </button>
+    : null
+  )
+
   return (
-    <h4 className="question">{props.content}</h4>
+    <h4 className="question">
+      {props.question}
+      {NextButton}
+    </h4>
   );
 
 }
 
 Question.propTypes = {
-  content: React.PropTypes.string.isRequired
+  question: React.PropTypes.string.isRequired
 };
 
 export default Question;

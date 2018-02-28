@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import update from 'immutability-helper';
 import quizQuestions from './api/quizQuestions';
 import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
@@ -18,6 +17,7 @@ class App extends Component {
       question: '',
       answerOptions: [],
       answer: '',
+      multi: null,
       answersCount: {},
       result: '',
       personality: ''
@@ -34,6 +34,7 @@ class App extends Component {
     let answersCount = this.tabulateAnswers(quizQuestions);
     this.setState({
       question: quizQuestions[0].question,
+      multi: quizQuestions[0].multi,
       answersCount: answersCount,
       answerOptions: shuffledAnswerOptions[0]
     });
@@ -82,7 +83,8 @@ class App extends Component {
    * backward compatible - takes just a type (string) e.g. "Hybrid"
    * 
    * tabulates the answers into the App state.answersCount
-   * this is currently only called in AnswerOption
+   * this is currently called in AnswerOption or Quiz, depending on
+   * whether the multi prop is set
    */
 
   handleQuestionAnswered(answers) {
@@ -92,9 +94,7 @@ class App extends Component {
       answers = {};
       answers[key] = 1;
     }
-    for (var key in answers) {
-      this.setUserAnswer(key, answers[key]);
-    }
+    this.setUserAnswer(answers);
 
     // if no more questions, show result
     if (this.state.questionId < quizQuestions.length) {
@@ -108,20 +108,23 @@ class App extends Component {
    * update the set of answers
    * 
    * Tally the number of each personality (answerType) selected
+   * App.state.answersCount is a map of all the types / counts
+   * This updates the state for one question (possibly multiple options)
    * 
-   * @param {String} answer - the "personality type" selected
-   * @param {Integer} count - how many, defaults to 1
-   * 
+   * @param {Object} answers - a map of Type and frequency for the current Q
    */
-  setUserAnswer(answer, count = 1) {
-    const updatedAnswersCount = update(this.state.answersCount, {
-      [answer]: {$apply: (currentValue) => currentValue + count}
-    });
+  setUserAnswer(answers) {
+    let updatedAnswersCount = this.state.answersCount;
+    for (var answer in answers) {
+      let oldCount = this.state.answersCount[answer] || 0;
+      let count = answers[answer] + oldCount;
+      updatedAnswersCount[answer] = count;
+    }
 
-    this.setState({
-        answersCount: updatedAnswersCount,
-        answer: answer
-    });
+      this.setState({
+          answersCount: updatedAnswersCount,
+          answer: answer
+      });
   }
 
   // transitions to displaying the next question
@@ -132,6 +135,7 @@ class App extends Component {
     this.setState({
         counter: counter,
         questionId: questionId,
+        multi: quizQuestions[counter].multi || false,
         question: quizQuestions[counter].question,
         answerOptions: quizQuestions[counter].answers,
         answer: ''
@@ -174,10 +178,11 @@ class App extends Component {
   renderQuiz() {
     return (
       <Quiz
-        answer={this.state.answer}
+        answer={this.state.answer || ""}
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
         question={this.state.question}
+        multi={this.state.multi}
         questionTotal={quizQuestions.length}
         onQuestionAnswered={this.handleQuestionAnswered}
       />
