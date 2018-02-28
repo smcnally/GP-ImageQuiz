@@ -11,41 +11,14 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+
     this.state = {
       counter: 0,
       questionId: 1,
       question: '',
       answerOptions: [],
       answer: '',
-
-      // tally each personality choice
-      // TODO initialize this at load time from the quizQuestions.js
-      answersCount: {
-        //  Group 2
-        Indica: 0,
-        Sativa: 0,
-        Hybrid: 0,
-        Bluebird: 0,
-        Palmetto: 0,
-        GreenMountain: 0,
-        //  Group 1
-        Deteriorated: 0,
-        Improved: 0,
-        Same: 0,
-        Improving: 0,
-        High: 0,
-        Magical: 0,
-        Charming: 0,
-        Quotastic: 0,
-        Low: 0,
-        Average: 0,
-        Edibles: 0,
-        Smoking: 0,
-        Vaping: 0,
-        Dabbing: 0,
-        Topicals: 0,
-        Quotifying: 0
-      },
+      answersCount: {},
       result: '',
       personality: ''
     };
@@ -53,13 +26,34 @@ class App extends Component {
     this.handleQuestionAnswered = this.handleQuestionAnswered.bind(this);
   }
 
-  // prior to mounting, shuffle the answer options for each question
   componentWillMount() {
+    // shuffle the answer options for each question
     const shuffledAnswerOptions = quizQuestions.map((question) => this.shuffleArray(question.answers));
+
+    // tabulate possible answers
+    let answersCount = this.tabulateAnswers(quizQuestions);
     this.setState({
       question: quizQuestions[0].question,
+      answersCount: answersCount,
       answerOptions: shuffledAnswerOptions[0]
     });
+  }
+
+  /**
+   * tally all the possible answer "type" attributes
+   * 
+   * @param {object} questions 
+   * @returns {object} answers, eg {Indica: 0, Sativa: 0}
+   */
+  tabulateAnswers(questions) {
+    let answers = {};
+    for (var qid in questions) {
+      if (!questions[qid].answers) {
+        continue;
+      }
+      questions[qid].answers.map(answer => answers[answer.type] = 0);
+    }
+    return answers;
   }
 
   shuffleArray(array) {
@@ -98,7 +92,6 @@ class App extends Component {
       answers = {};
       answers[key] = 1;
     }
-    console.log(answers);
     for (var key in answers) {
       this.setUserAnswer(key, answers[key]);
     }
