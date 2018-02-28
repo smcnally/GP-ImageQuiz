@@ -95,6 +95,18 @@ ul {
   padding: 0.5rem .75rem .5rem .75rem;
 
 }
+.nextButton {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #29b765
+}
+.nextButton:hover {
+  color: #2f222f;
+}
 
 /* AnswerOption Component */
 .answerOption {
@@ -194,12 +206,8 @@ ul {
   border-radius: 0.25em;
   background: #efefef;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .button-label h1 {
   font-size: 1em;
