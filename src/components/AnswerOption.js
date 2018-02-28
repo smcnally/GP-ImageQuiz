@@ -13,12 +13,20 @@ class AnswerOption extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      selected: false
+    };
   }
 
   handleClick() {
     let el = document.getElementById(this.props.id);
     if ( el ) {
+      // toggle the input checked state
       el.checked = !el.checked;
+      // toggle the component state
+      this.setState( previousState => {
+        return { selected: !previousState.selected };
+      });
 
       if (!this.props.multi) {
         // if user can only pick one item, answered
@@ -33,13 +41,15 @@ class AnswerOption extends Component {
   render() {
     // TODO change classes based on question mode/type (radio, check, etc)
     let questionOptionClass = "radioCustomButton";
+    let isSelected = this.state.selected;
+    let ulClasses = "answerOption" + (isSelected ? " answerSelected" : "");
     return (
-      <li className="answerOption" onClick={this.handleClick}>
+      <li className={ulClasses} onClick={this.handleClick}>
         <div className="answerOptionContainer">
           <input
             type="checkbox"
             className={questionOptionClass}
-            defaultChecked={this.props.type === this.props.answer}
+            defaultChecked={isSelected}
             id={this.props.id}
             value={this.props.type}
           />
@@ -48,7 +58,7 @@ class AnswerOption extends Component {
           </label>
         </div>
         <div className="answerOptionImage">
-          <img src={this.props.imageSrc} alt={this.props.answer} height="100%" width="100%" />
+          <img src={this.props.imageSrc} alt={this.props.answer} />
         </div>
       </li>
     );

@@ -32,8 +32,13 @@ class AnswerOptions extends Component {
         />
       );
     });
+
+    let classes = "answerOptions";
+    if (this.props.format) {
+      classes += " " + this.props.format
+    }
     return (
-      <ul className="answerOptions">
+      <ul className={classes}>
         {list}
       </ul>
     );
