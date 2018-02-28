@@ -18,6 +18,7 @@ class App extends Component {
       answerOptions: [],
       answer: '',
       multi: null,
+      format: "default",
       answersCount: {},
       result: '',
       personality: ''
@@ -34,7 +35,8 @@ class App extends Component {
     let answersCount = this.tabulateAnswers(quizQuestions);
     this.setState({
       question: quizQuestions[0].question,
-      multi: quizQuestions[0].multi,
+      multi: quizQuestions[0].multi || false,
+      format: quizQuestions[0].format || "answerDefault",
       answersCount: answersCount,
       answerOptions: shuffledAnswerOptions[0]
     });
@@ -136,6 +138,7 @@ class App extends Component {
         counter: counter,
         questionId: questionId,
         multi: quizQuestions[counter].multi || false,
+        format: quizQuestions[counter].format || "default",
         question: quizQuestions[counter].question,
         answerOptions: quizQuestions[counter].answers,
         answer: ''
@@ -183,6 +186,7 @@ class App extends Component {
         questionId={this.state.questionId}
         question={this.state.question}
         multi={this.state.multi}
+        format={this.state.format}
         questionTotal={quizQuestions.length}
         onQuestionAnswered={this.handleQuestionAnswered}
       />
