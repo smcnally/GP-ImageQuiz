@@ -101,6 +101,7 @@ ul {
   padding: 0.5rem .75rem .5rem .75rem;
 }
 .nextButton {
+  outline: none;
   flex: auto 0 0;
   cursor: pointer;
   color: #ffffff;
@@ -150,9 +151,9 @@ ul {
 
 .radioCustomButton,
 .radioCustomLabel {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .radioCustomLabel {
@@ -164,7 +165,6 @@ ul {
     padding: .15rem;
     padding-top: 8px;
     font-size: 14px;
-    
     line-height: 1.02;
     min-height: 30px;
 }
@@ -191,9 +191,22 @@ ul {
 
 .radioCustomButton:checked ~ .radioCustomLabel:before {
     content: '';
-    background: #a7ffeb url(./svg/icon-check.svg) no-repeat;
+    background: #3f6159 url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
-    border-color: #a7ffeb;
+    border-color: #3f6159;
+}
+
+.answerOption:hover .radioCustomButton ~ .radioCustomLabel:before {
+  background-color: #00491e;
+  border-color: #a7ffeb;
+}
+.answerOption:hover .radioCustomButton:checked ~ .radioCustomLabel:before {
+  background-color: #00491e;
+  border-color: #00491e;
+}
+.answerOption:hover .answerOptionContainer {
+  color: rgba(240, 240, 240, 0.95);
+  background-color: #00491e;
 }
 
 /* New checkboxes */
@@ -319,9 +332,15 @@ input:checked + .button-label:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
   transition: 0.3s;
 }
+.coolMatrix .answerOption:hover {
+  background-color: rgba(0, 0, 0, 0.32);
+}
 .coolMatrix .answerSelected {
   background-color: magenta;
   color: white;
+}
+.coolMatrix .answerSelected:hover {
+  background-color: rgba(255, 0, 255, 0.6);
 }
 .coolMatrix .answerOptionContainer {
   color: inherit;
@@ -353,5 +372,7 @@ input:checked + .button-label:hover {
   display: flex;
   padding-bottom: 10px;
 }
-.coolMatrix .answerOptionImage img {
+.coolMatrix .answerOption:hover .answerOptionContainer {
+  color: inherit;
+  background: transparent !important;
 }
