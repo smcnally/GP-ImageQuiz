@@ -53,6 +53,26 @@ var quizQuestions = [
               imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
           },
           {
+              type: "Sativa",
+              content: "Relaxed",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+          },
+          {
+              type: "Sativa",
+              content: "Hungry",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+          },
+          {
+              type: "Sativa",
+              content: "Creative",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+          },
+          {
+              type: "Sativa",
+              content: "Energetic",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+          },
+          {
               type: "Indica",
               content: "Focused",
               imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
