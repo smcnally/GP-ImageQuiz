@@ -12,7 +12,8 @@ var quizQuestions = [
   relatedURL3: "" , 
   relatedURLLabel3: "" ,  
     // Group 1
-      question: "Which type of cannabis product have you used used most recently?",
+      question: "Which type of cannabis product have you used most recently?",
+      multi: "Next »",
       answers: [
           {
               type: "Edibles",
