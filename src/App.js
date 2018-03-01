@@ -143,6 +143,9 @@ class App extends Component {
         answerOptions: quizQuestions[counter].answers,
         answer: ''
     });
+
+    // position new Q at top
+    window.scrollTo(0, 0);
   }
 
   // compose the personality results for the final screen
