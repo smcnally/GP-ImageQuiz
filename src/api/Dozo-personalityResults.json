@@ -1,0 +1,41 @@
+{  "Edibles": {
+    "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
+     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules" , 
+     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Bluebird Delivers"
+    } ,
+   "Vaping": {
+     "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
+     "strains": "Hemp Capsules, Edible Butter" ,
+	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Green Mountain Delivers"
+     } ,
+   "Smoking": {
+     "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
+     "strains": "Capsules, Extract, topical Shea Butter Creme" , 
+      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Palemetto Delivers"
+     } ,
+	"Topicals": {	
+    "bio": "You're on the way to learning more about the benefits of microdosing THC. Learn more about your options from our sponsors, partners, and the community. The Founders of Mondo and MedicineBox will be at our next Bake Sale -- details are below." ,
+    "strains": "Powders, Extracts, Tinctures, Topicals" , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
+     "sponsorImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/07/mondo-meds-valentines-day-ig-2017-84-1_orig.jpg?resize=300,250" , 
+     "sponsorURL": "http://www.mondomeds.com/product.html" , 
+     "sponsorTagline": "Mondo is an all-natural powder made from Blue Dream flowers"
+    } ,
+    "Dabbing": {
+    "bio": "You know plenty about THC microdosing. Learn more about your options from our sponsors, partners, and the community. The Founders of Mondo and MedicineBox will be at our next Bake Sale -- details are below." ,
+    "strains": "Northern Lights, Kush, Critical Mass" , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+     "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+     "sponsorTagline": "Precise dosage guaranteed."
+    }
+}
