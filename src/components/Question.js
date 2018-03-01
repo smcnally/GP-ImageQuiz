@@ -9,11 +9,11 @@ function Question(props) {
 
   if (nextPrompt) {
     nextButton = (
-        <button 
-          className="nextButton"
-          onClick={props.doneWithQuestion}>
-          {nextPrompt}
-        </button>
+      <button 
+        className="nextButton"
+        onClick={props.doneWithQuestion}>
+        {nextPrompt}
+      </button>
     );
   }
 
