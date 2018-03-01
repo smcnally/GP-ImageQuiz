@@ -5,20 +5,22 @@ function Question(props) {
 
   // if the user can select multiple items display a next button
   let nextPrompt = props.multi || null;
-  const NextButton = (
-    nextPrompt ? 
-      <button 
-        className="nextButton"
-        onClick={props.doneWithQuestion}>
-        {nextPrompt}
-      </button>
-    : null
-  )
+  let nextButton = null;
+
+  if (nextPrompt) {
+    nextButton = (
+        <button 
+          className="nextButton"
+          onClick={props.doneWithQuestion}>
+          {nextPrompt}
+        </button>
+    );
+  }
 
   return (
     <h4 className="question">
-      {props.question}
-      {NextButton}
+      <span>{props.question}</span>
+      {nextButton}
     </h4>
   );
 
