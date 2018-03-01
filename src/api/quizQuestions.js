@@ -17,7 +17,7 @@ var quizQuestions = [
       answers: [
           {
               type: "Edibles",
-              content: "Edibles",
+              content: "Edibles This is a bunch of extra text so things wrap like so",
               imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
           },
           {
@@ -40,6 +40,23 @@ var quizQuestions = [
               content: "Topicals, Lotions, or Ointments",
               imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
+      ]
+  },
+  {
+      question: "Pick all the effects you'd like to achieve",
+      multi: "Next »",
+      format: "coolMatrix",
+      answers: [
+          {
+              type: "Sativa",
+              content: "Euphoric",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+          },
+          {
+              type: "Indica",
+              content: "Focused",
+              imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
+          }
       ]
   },
   {
