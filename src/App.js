@@ -10,7 +10,6 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-
     this.state = {
       counter: 0,
       questionId: 1,
@@ -100,9 +99,9 @@ class App extends Component {
 
     // if no more questions, show result
     if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
+      setTimeout(() => this.setNextQuestion(), 300);
     } else {
-        setTimeout(() => this.setResults(this.getResults()), 300);
+      setTimeout(() => this.setResults(this.getResults()), 300);
     }
   }
 
@@ -123,10 +122,10 @@ class App extends Component {
       updatedAnswersCount[answer] = count;
     }
 
-      this.setState({
-          answersCount: updatedAnswersCount,
-          answer: answer
-      });
+    this.setState({
+      answersCount: updatedAnswersCount,
+      answer: answer
+    });
   }
 
   // transitions to displaying the next question
@@ -135,13 +134,13 @@ class App extends Component {
     const questionId = this.state.questionId + 1;
 
     this.setState({
-        counter: counter,
-        questionId: questionId,
-        multi: quizQuestions[counter].multi || false,
-        format: quizQuestions[counter].format || "answerDefault",
-        question: quizQuestions[counter].question,
-        answerOptions: quizQuestions[counter].answers,
-        answer: ''
+      counter: counter,
+      questionId: questionId,
+      multi: quizQuestions[counter].multi || false,
+      format: quizQuestions[counter].format || "answerDefault",
+      question: quizQuestions[counter].question,
+      answerOptions: quizQuestions[counter].answers,
+      answer: ''
     });
 
     // position new Q at top
@@ -175,9 +174,9 @@ class App extends Component {
 
   // TODO this is not used anywhere
   setPersonality() {
-      this.setState({
-        personality: 'Indica'
-      });
+    this.setState({
+      personality: 'Indica'
+    });
   }
 
   // render a question (Quiz)
@@ -204,12 +203,12 @@ class App extends Component {
     return (
       <div>
         <Result quizResult={this.state.result}
-        resultBio={personalityResults[this.state.result].bio} 
-        resultBioStrains={personalityResults[this.state.result].strains}
-        resultBioSuccessImg={personalityResults[this.state.result].successImg}
-        resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
-        resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
-resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
+          resultBio={personalityResults[this.state.result].bio} 
+          resultBioStrains={personalityResults[this.state.result].strains}
+          resultBioSuccessImg={personalityResults[this.state.result].successImg}
+          resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
+          resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
+          resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
          />
       </div>
     );
