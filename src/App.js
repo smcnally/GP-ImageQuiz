@@ -53,7 +53,17 @@ class App extends Component {
       if (!questions[qid].answers) {
         continue;
       }
-      questions[qid].answers.map(answer => answers[answer.type] = 0);
+      questions[qid].answers.forEach(answer => {
+        if (!answer.type) {
+          return;
+        }
+        let type = answer.type;
+        if (typeof type === "string") {
+          answers[type] = 0;
+        } else {
+          Object.entries(type).forEach(([key, value]) => answers[key] = 0);
+        }
+      });
     }
     return answers;
   }

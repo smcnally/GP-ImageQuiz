@@ -3,6 +3,28 @@
 Define personality types, create Q&A to weight them accordingly, show results per players' answers<br>
 Create paths through Q&A via success images, related links, sponsor, and summary info.
 
+### Question Options
+Each question can have optional attributes to modify the display and handling:
+* multi - supplies a Next button prompt, e.g. "multi": "Next >>"
+* format - supplies a CSS class for the question, eg "format": "coolMatrix"
+
+### "Type"
+These attributes are tabulated from the type property of each answer.
+
+An answer can have these types:
+* Indica
+* {Indica: 3}
+* {Indica: 1, Sativa: -2}
+
+The question answers can be formatted as follows:
+```
+{
+    type: {"Sativa": 1, "Indica": -1},
+    content: "Energetic",
+    imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+},
+```
+
 ## Get Started
 Install dependencies in your project directory with:
 ### `npm install`

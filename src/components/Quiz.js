@@ -25,11 +25,24 @@ class Quiz extends Component {
     this.setState({ selectedItems });
   }
 
+  /**
+   * when the question is marked done, tabulate the changes to the answers list
+   */
   handleDoneQuestion() {
     if (this.props.onQuestionAnswered) {
       let answers = {};
       let types = Object.values(this.state.selectedItems);
-      types.map(type => answers[type] ? answers[type]++ : answers[type] = 1);
+      types.forEach(type => {
+        let list = type;
+        // allow "indica" or {indica:3} or {indica:3, sativa:1}
+        if (typeof type === "string") {
+          list = {};
+          list[type] = 1;
+        }
+        Object.entries(list).forEach(([key, value]) => {
+          answers[key] ? answers[key] += value : answers[key] = value;
+        });
+      });
       this.setState({ selectedItems: {} });
       this.props.onQuestionAnswered(answers);
     }

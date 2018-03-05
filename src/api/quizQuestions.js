@@ -14,6 +14,7 @@ var quizQuestions = [
     // Group 1
       question: "Which type of cannabis product have you used most recently?",
       multi: "Next »",
+      format: "coolMatrix",
       answers: [
           {
               type: "Edibles",
@@ -68,7 +69,7 @@ var quizQuestions = [
               imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
           },
           {
-              type: "Sativa",
+              type: {"Sativa": 1, "Indica": -1},
               content: "Energetic",
               imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
           },
