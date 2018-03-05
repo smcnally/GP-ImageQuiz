@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Question from '../components/Question';
 import QuestionCount from '../components/QuestionCount';
@@ -76,13 +76,13 @@ class Quiz extends Component {
 }
 
 Quiz.propTypes = {
-  answer: React.PropTypes.string.isRequired,
-  imageSrc: React.PropTypes.string,
-  answerOptions: React.PropTypes.array.isRequired,
-  question: React.PropTypes.string.isRequired,
-  questionId: React.PropTypes.number.isRequired,
-  questionTotal: React.PropTypes.number.isRequired,
-  onQuestionAnswered: React.PropTypes.func.isRequired
+  answer: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
+  answerOptions: PropTypes.array.isRequired,
+  question: PropTypes.string.isRequired,
+  questionId: PropTypes.number.isRequired,
+  questionTotal: PropTypes.number.isRequired,
+  onQuestionAnswered: PropTypes.func.isRequired
 };
 
 export default Quiz;

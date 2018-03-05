@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 // Display one choice within a question
 // Currently expect only one option to be selected
@@ -62,11 +62,13 @@ class AnswerOption extends Component {
 }
 
 AnswerOption.propTypes = {
-  type: React.PropTypes.string.isRequired,
-  content: React.PropTypes.string.isRequired,
-  imageSrc: React.PropTypes.string,
-  answer: React.PropTypes.string.isRequired,
-  onQuestionAnswered: React.PropTypes.func.isRequired
+  type: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object]).isRequired,
+  content: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
+  answer: PropTypes.string.isRequired,
+  onQuestionAnswered: PropTypes.func.isRequired
 };
 
 export default AnswerOption;
