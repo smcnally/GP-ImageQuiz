@@ -329,7 +329,7 @@ input:checked + .button-label:hover {
   color: black;
   padding: 10px;
   margin: 5px;
-  width: 30%;
+  width: 100%;
   border: none;
   border-radius: 0.25em;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
@@ -382,4 +382,9 @@ input:checked + .button-label:hover {
 .coolMatrix .answerOption:hover .answerOptionContainer {
   color: inherit;
   background: transparent !important;
+}
+@media screen and (min-width: 30em) and (orientation: landscape) {
+  .coolMatrix .answerOption {
+    width: 20em;
+  }
 }
