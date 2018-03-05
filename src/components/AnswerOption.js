@@ -48,7 +48,7 @@ class AnswerOption extends Component {
             id={this.props.id}
             value={this.props.type}
           />
-          <label className="radioCustomLabel" htmlFor={this.props.id}>
+          <label className="radioCustomLabel" htmlFor={this.props.id} onClick={this.handleClick}>
             {this.props.content}
           </label>
         </div>
