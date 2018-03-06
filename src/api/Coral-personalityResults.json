@@ -1,0 +1,71 @@
+{  "revenue": {
+    "bio": "CASH MONEY - If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
+     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules" , 
+     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Bluebird Delivers"
+    } ,
+   "ego": {
+     "bio": "EGO FEED - CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
+     "strains": "Hemp Capsules, Edible Butter" ,
+	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Green Mountain Delivers"
+     } ,
+   "adjacency": {
+     "bio": "THE HALO - CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
+     "strains": "Capsules, Extract, topical Shea Butter Creme" , 
+      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Palemetto Delivers"
+     } ,
+	"Courtney": {	
+    "bio": "Courtney, 29, is a paralegal in Charlotte, N.C. She’s engaged to her high school sweetheart. She’s a budding oenophile." ,
+    "strains": "Courtney loves her Samsung Galaxy, and uses it mostly to play games and watch YouTube videos. She’s a whiz at Excel and searching Westlaw." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
+     "sponsorImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/07/mondo-meds-valentines-day-ig-2017-84-1_orig.jpg?resize=300,250" , 
+     "sponsorURL": "http://www.mondomeds.com/product.html" , 
+     "sponsorTagline": "Mondo is an all-natural powder made from Blue Dream flowers"
+    } ,
+  "Alice": {
+    "bio": "Alice is a 34-year-old divorced single mother who just moved from Chicago to Phoenix with her teenage son. Her job as a waitress takes up most of her time, but she loves her weekly bowling league." ,
+    "strains": "Alice’s only computer is a cranky Dell she bought in 2011. She loves her iPod, but it doesn’t have enough memory for music and apps, so she sticks to music." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+    "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+    "sponsorTagline": "Precise dosage guaranteed."
+  } ,
+  "Edie": {
+    "bio": "Edie is a regular commenter on a major media site’s advice column. She’s 55, married, and works part-time as a bank teller in Ann Arbor, Mich. She enjoys quilting, photography, and pampering her poodle." ,
+    "strains": "Edie knows her way around her MacBook, but would have to Google how to clear her browser cookies." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+    "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+    "sponsorTagline": "Precise dosage guaranteed."
+    } ,
+  "Selena": {
+    "bio": "Alice is a 34-year-old divorced single mother who just moved from Chicago to Phoenix with her teenage son. Her job as a waitress takes up most of her time, but she loves her weekly bowling league." ,
+    "strains": "Alice’s only computer is a cranky Dell she bought in 2011. She loves her iPod, but it doesn’t have enough memory for music and apps, so she sticks to music." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+    "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+    "sponsorTagline": "Precise dosage guaranteed."
+  } , 
+  "Larry": {
+    "bio": "die is a regular commenter on a major media site’s advice column. She’s 55, married, and works part-time as a bank teller in Ann Arbor, Mich. She enjoys quilting, photography, and pampering her poodle." ,
+    "strains": "Edie knows her way around her MacBook, but would have to Google how to clear her browser cookies." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+    "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+    "sponsorTagline": "Precise dosage guaranteed."
+    } , 
+  "Adeline": {
+    "bio": "Adeline is a 48 year-old architect in Charleston, South Carolina. She’s married with two children, and she spends every weekend she can on her family’s sailboat. The ocean breezes calm her." ,
+    "strains": "Adeline could teach a master class in Adobe Illustrator, but she gets frustrated with some websites. She’d make a convincing argument that two-factor authentication is the devil’s work." , 
+    "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
+    "sponsorTagline": "Precise dosage guaranteed."
+  }
+}
