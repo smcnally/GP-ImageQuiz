@@ -14,7 +14,36 @@ class AnswerOption extends Component {
     };
   }
 
-  handleClick() {
+  /**
+   * capture the extraneous label click event
+   * 
+   * See https://stackoverflow.com/questions/38957978/react-i-cant-stop-propagation-of-a-label-click-within-a-table
+   * Yeah non-obvious :-(
+   *
+   * @param {event} e 
+   */
+  stopBubble(e) {  
+    if (e && e.stopPropagation) { 
+      e.stopPropagation();
+    } else {
+      window.event.cancelBubble = true;
+    }
+  }  
+
+  /**
+   * handle the user clicking within the AnswerOption
+   * 
+   * a click toggles the checked attribute for the input and the
+   * selected state for this component instance
+   * 
+   * A click also reports the state change up the chain
+   * If the question is multi, report the change to onItemSelected
+   * Else treat the change as onQuestionAnswered
+   *
+   * @param {event} event 
+   */
+  handleClick(event) {
+    this.stopBubble(event);
     let el = document.getElementById(this.props.id);
     if ( el ) {
       // toggle the input checked state
@@ -32,6 +61,7 @@ class AnswerOption extends Component {
         this.props.onItemSelected(this.props.id, this.props.type);
       }
     }
+    return false;
   }
 
   render() {
@@ -48,7 +78,7 @@ class AnswerOption extends Component {
             id={this.props.id}
             value={this.props.type}
           />
-          <label className="radioCustomLabel" htmlFor={this.props.id} onClick={this.handleClick}>
+          <label className="radioCustomLabel" htmlFor={this.props.id} onClick={this.stopBubble.bind(this)}>
             {this.props.content}
           </label>
         </div>
