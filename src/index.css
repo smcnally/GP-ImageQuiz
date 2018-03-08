@@ -388,3 +388,15 @@ input:checked + .button-label:hover {
     width: 20em;
   }
 }
+@media screen and (min-width: 40em) {
+  .answerDefault .answerOption {
+    width: 50%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 60em) {
+  .answerDefault .answerOption {
+    width: 33%;
+    display: inline-block;
+  }
+}
