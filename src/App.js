@@ -206,19 +206,16 @@ class App extends Component {
   }
 
   // render the result page
-  // TODO why not pass the result and bio to the Result component
-  // and let it sort out what to display?
-  // TODO lacking some error checking
   renderResult() {
+    // simply pass the relevant info as props
+    const questionProps = quizQuestions[0];
+    const resultProps = personalityResults[this.state.result];
+
     return (
       <div>
         <Result quizResult={this.state.result}
-          resultBio={personalityResults[this.state.result].bio} 
-          resultBioStrains={personalityResults[this.state.result].strains}
-          resultBioSuccessImg={personalityResults[this.state.result].successImg}
-          resultBioSponsorImg={personalityResults[this.state.result].sponsorImg}
-          resultBioSponsorURL={personalityResults[this.state.result].sponsorURL}
-          resultBioSponsorTagline={personalityResults[this.state.result].sponsorTagline}
+          {...resultProps}
+          {...questionProps}
          />
       </div>
     );

@@ -51,12 +51,17 @@ ul {
 /* Result Component */
 .result {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
   font-size: 14px;
   padding: .1rem .1rem;
   text-align: center;
 }
+.result-answer {
+  font-size: 18px;
+}
 .result-bio {
+  flex: 1 1 auto;
   justify-content: left;
   font-size: 13px;
   padding: .25rem .25rem;
@@ -65,11 +70,31 @@ ul {
 .result-container {
   width: 95vw;
   padding: .25em;
+  margin: 0 1em;
 }
 .result-sponsor {
   font-size: 10px;
   color: #2f222f;
   padding: .25em;
+}
+.result-sponsor img {
+  max-width: 100%;
+}
+.result-container a {
+  /* TODO */
+}
+
+@media (min-width: 30em) {
+  .result-container {
+    width: 100%;
+    max-width: 30em;
+  }
+  .result-answer {
+    font-size: 1.5em;
+  }
+  .result-bio {
+    font-size: 18px;
+  }
 }
 
 /* Quiz Component */
