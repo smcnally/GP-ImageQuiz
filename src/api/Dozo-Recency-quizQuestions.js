@@ -12,7 +12,8 @@ var quizQuestions = [
   relatedURL3: "" , 
   relatedURLLabel3: "" ,  
     // Group 1
-      question: "Which type of cannabis product have you used used most recently?",
+      question: "Which type of cannabis product have you used used most recently? (Select Any or All, then tap Next »)",
+      multi: "Next »",
       answers: [
           {
               type: "Edibles",
@@ -44,6 +45,7 @@ var quizQuestions = [
   {
     // Group 1
       question: "Which type of cannabis product have you used most frequently?",
+      multi: "Next »",
       answers: [
           {
               type: "Edibles",
@@ -74,7 +76,7 @@ var quizQuestions = [
   },
   {
 	// Group 1
-      question: "Which type of cannabis product do you generally prefer best?",
+      question: "Which type of cannabis product do you generally prefer best? (Pick one)",
       answers: [
           {
               type: "Edibles",

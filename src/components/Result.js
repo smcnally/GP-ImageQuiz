@@ -25,19 +25,17 @@ function Result(props) {
          <p /><p className="result-bio">
           {props.resultBioStrains}
         </p>
-          <ul>
-          <li>
-          <a href={quizQuestions[0].relatedURL0} target="_blank">{quizQuestions[0].relatedURLLabel0}</a>
-          </li>
-          <li>
-          <a href={quizQuestions[0].relatedURL1} target="_blank">{quizQuestions[0].relatedURLLabel1}</a>
-          </li>
-          <li>
-          <a href={quizQuestions[0].relatedURL2} target="_blank">{quizQuestions[0].relatedURLLabel2}</a>
-          </li>
-          </ul>
+          <h4>
+            <a href={quizQuestions[0].relatedURL0} target="_blank">{quizQuestions[0].relatedURLLabel0}</a>
+          </h4>
+          <h4>
+            <a href={quizQuestions[0].relatedURL1} target="_blank">{quizQuestions[0].relatedURLLabel1}</a>
+          </h4>
+          <h4>
+            <a href={quizQuestions[0].relatedURL2} target="_blank">{quizQuestions[0].relatedURLLabel2}</a>
+          </h4>
         </p>
-        <p className="result-sponsor">[Sponsor]</p>
+        <p className="result-sponsor"></p>
         <a href={props.resultBioSponsorURL} target="_blank">
        <img src={props.resultBioSponsorImg} alt="sponsor" />
        </a>
