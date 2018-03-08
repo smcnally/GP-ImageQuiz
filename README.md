@@ -12,7 +12,7 @@ Each question can have optional attributes to modify the display and handling:
 These attributes are tabulated from the type property of each answer.
 
 An answer can have these types:
-* Indica
+* "Indica"
 * {Indica: 3}
 * {Indica: 1, Sativa: -2}
 
