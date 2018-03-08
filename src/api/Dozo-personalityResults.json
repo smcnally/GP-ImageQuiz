@@ -1,39 +1,39 @@
 {  "Edibles": {
-    "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
-     "strains": "Restore, BrainPower, Complete in Oils, Extracts, and Capsules" , 
+    "bio": "Edibles can be a great way to ensure you're getting precise dosage. You need to make sure what you're consuming has been created with this precision, and maintain awareness of how much you consume over given periods of time." , 
+     "strains": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have options with edibles created with precision dosage in mind." , 
      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
      "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
      "sponsorURL": "https://palmettoharmony.com/" , 
      "sponsorTagline": "Bluebird Delivers"
     } ,
    "Vaping": {
-     "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
-     "strains": "Hemp Capsules, Edible Butter" ,
-	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
+     "bio": "Vaporizing cannabis can allow for accurate dosing; it's up to products to measure & communicate dosage accurately, and up to you to ensure proper dosage." , 
+     "strains": "Vaping also helps avoid harmful carcinogens while enjoy subtle cannabinoid and terpene profiles" ,
+	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200" , 
      "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
      "sponsorURL": "https://palmettoharmony.com/" , 
      "sponsorTagline": "Green Mountain Delivers"
      } ,
    "Smoking": {
-     "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
-     "strains": "Capsules, Extract, topical Shea Butter Creme" , 
+     "bio": "Smoking gives you a wide variety of product options, but it's the most difficult way to control your dose." , 
+     "strains": "A low-dose is considered 1 - 5mg of THC; A single toke of a joint can contain more than 10 millligrams of THC." , 
       "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
      "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
      "sponsorURL": "https://palmettoharmony.com/" , 
      "sponsorTagline": "Palemetto Delivers"
      } ,
 	"Topicals": {	
-    "bio": "You're on the way to learning more about the benefits of microdosing THC. Learn more about your options from our sponsors, partners, and the community. The Founders of Mondo and MedicineBox will be at our next Bake Sale -- details are below." ,
-    "strains": "Powders, Extracts, Tinctures, Topicals" , 
-    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
+    "bio": "Topicals are a good way to release medicine into your system slowly over time. Precision about the amount of product to use, the timing, and application areas all factor into dosage you'll receive." ,
+    "strains": "Topicals like sprays, lotions, and creams can help with area-specific pain and inflammation." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=200" , 
      "sponsorImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/07/mondo-meds-valentines-day-ig-2017-84-1_orig.jpg?resize=300,250" , 
      "sponsorURL": "http://www.mondomeds.com/product.html" , 
      "sponsorTagline": "Mondo is an all-natural powder made from Blue Dream flowers"
     } ,
     "Dabbing": {
-    "bio": "You know plenty about THC microdosing. Learn more about your options from our sponsors, partners, and the community. The Founders of Mondo and MedicineBox will be at our next Bake Sale -- details are below." ,
-    "strains": "Northern Lights, Kush, Critical Mass" , 
-    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "bio": "Dabbing is for ingesting significant amounts of THC and is not recommended as an effective means of precise low dosages." ,
+    "strains": "Anecdotal and medical studies have suggested microdosing helps with Chronic Pain, Migraines, Inflammation, Anxiety, Stress, Depression." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif?resize=200" , 
      "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
      "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
      "sponsorTagline": "Precise dosage guaranteed."
