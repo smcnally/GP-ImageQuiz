@@ -34,8 +34,11 @@ function Result(props) {
           <h4>
             <a href={quizQuestions[0].relatedURL2} target="_blank">{quizQuestions[0].relatedURLLabel2}</a>
           </h4>
+          <h4>
+            <a href={quizQuestions[0].relatedURL3} target="_blank">{quizQuestions[0].relatedURLLabel3}</a>
+          </h4>
         </p>
-        <p className="result-sponsor"></p>
+        <p className="result-sponsor">[Sponsor]</p>
         <a href={props.resultBioSponsorURL} target="_blank">
        <img src={props.resultBioSponsorImg} alt="sponsor" />
        </a>
