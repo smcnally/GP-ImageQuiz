@@ -68,7 +68,8 @@ class Quiz extends Component {
           <AnswerOptions
             {...this.props}
             onItemSelected={this.onItemSelected.bind(this)}
-            doneWithQuestion={this.handleDoneQuestion.bind(this)}/>
+            doneWithQuestion={this.handleDoneQuestion.bind(this)}
+          />
         </div>
       </ReactCSSTransitionGroup>
     );
