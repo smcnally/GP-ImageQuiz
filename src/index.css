@@ -185,9 +185,10 @@ button:focus {
 }
 
 .radioCustomLabel {
-    position: relative;
-    width: auto;
-    margin: 0;
+  user-select: none;
+  position: relative;
+  width: auto;
+  margin: 0;
     margin-left: 30px;
     /* where the li margins and padding are */
     padding: .15rem;
@@ -200,7 +201,7 @@ button:focus {
   vertical-align: text-bottom;
 }
 
-.radioCustomButton ~ .radioCustomLabel:before {
+.answerOption .radioCustomLabel:before {
     position: absolute;
     margin-right: .6rem;
     top: 4px;
@@ -217,18 +218,18 @@ button:focus {
     transition: all 0.3s;
 }
 
-.radioCustomButton:checked ~ .radioCustomLabel:before {
+.answerOption.answerSelected .radioCustomLabel:before {
     content: '';
     background: #3f6159 url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
     border-color: #3f6159;
 }
 
-.answerOption:hover .radioCustomButton ~ .radioCustomLabel:before {
+.answerOption:hover .radioCustomLabel:before {
   background-color: #00491e;
   border-color: #a7ffeb;
 }
-.answerOption:hover .radioCustomButton:checked ~ .radioCustomLabel:before {
+.answerOption.answerSelected:hover .radioCustomLabel:before {
   background-color: #00491e;
   border-color: #00491e;
 }
