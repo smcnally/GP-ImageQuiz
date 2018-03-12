@@ -1,0 +1,72 @@
+{  "revenue": {
+    "bio": "You like CASH MONEY." , 
+     "strains": "Most do. We're working on it" , 
+     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=200" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Larry.png?resize=300,250" , 
+     "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+     "sponsorTagline": "Meet Larry and the rest of the community @ The Coral Project"
+    } ,
+   "ego": {
+     "bio": "EGO FEED - " , 
+     "strains": "" ,
+	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Green Mountain Delivers"
+     } ,
+   "adjacency": {
+     "bio": "THE HALO " , 
+     "strains": "" , 
+      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+     "sponsorURL": "https://palmettoharmony.com/" , 
+     "sponsorTagline": "Palemetto Delivers"
+     } ,
+	"Courtney": {	
+    "bio": "Courtney loves her Samsung Galaxy, and uses it mostly to play games and watch YouTube videos. She’s a whiz at Excel and searching Westlaw." ,
+    "strains": "" , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=200" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Courtney.jpeg?resize=300,250" , 
+     "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+     "sponsorTagline": "Meet Courtney and the rest of the community @ The Coral Project"
+    } ,
+  "Alice": {
+    "bio": "Alice is a 34-year-old divorced single mother who just moved from Chicago to Phoenix with her teenage son. Her job as a waitress takes up most of her time, but she loves her weekly bowling league." ,
+    "strains": "Alice’s only computer is a cranky Dell she bought in 2011. She loves her iPod, but it doesn’t have enough memory for music and apps, so she sticks to music." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Alice.jpeg?resize=300,250" , 
+    "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+    "sponsorTagline": "Meet Alice and the rest of the community @ The Coral Project"
+  } ,
+  "Edie": {
+    "bio": "Edie knows her way around her MacBook, but would have to Google how to clear her browser cookies." ,
+    "strains": "" , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Edie.jpeg?resize=300,250" , 
+    "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+    "sponsorTagline": "Meet Edie and the rest of the community @ The Coral Project"
+    } ,
+  "Selena": {
+    "bio": "Alice’s only computer is a cranky Dell she bought in 2011. She loves her iPod, but it doesn’t have enough memory for music and apps, so she sticks to music." ,
+    "strains": "" , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Selena.jpeg?resize=300,250" , 
+    "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+    "sponsorTagline": "Meet Selena and the rest of the community @ The Coral Project"
+  } , 
+  "Larry": {
+    "bio": "die is a regular commenter on a major media site’s advice column. She’s 55, married, and works part-time as a bank teller in Ann Arbor, Mich. She enjoys quilting, photography, and pampering her poodle." ,
+    "strains": "Edie knows her way around her MacBook, but would have to Google how to clear her browser cookies." , 
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Larry.png?resize=300" , 
+    "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+    "sponsorTagline": "Meet Larry and the rest of the community @ The Coral Project"
+    } , 
+  "Adeline": {
+    "bio": "Adeline could teach a master class in Adobe Illustrator, but she gets frustrated with some websites. She’d make a convincing argument that two-factor authentication is the devil’s work." ,
+    "strains": "" , 
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Adeline.jpeg?resize=300,250" ,
+    "sponsorURL": "https://guides.coralproject.net/meet-our-users/" , 
+    "sponsorTagline": "Meet Adeline and the rest of the community @ The Coral Project"
+  }
+}

@@ -7,10 +7,9 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
-    "prop-types": "^15.5.8",
+    "prop-types": "^15.6.1",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
-    "react-addons-update": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "scripts": {

@@ -51,12 +51,17 @@ ul {
 /* Result Component */
 .result {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
   font-size: 14px;
   padding: .1rem .1rem;
   text-align: center;
 }
+.result-answer {
+  font-size: 18px;
+}
 .result-bio {
+  flex: 1 1 auto;
   justify-content: left;
   font-size: 13px;
   padding: .25rem .25rem;
@@ -65,11 +70,31 @@ ul {
 .result-container {
   width: 95vw;
   padding: .25em;
+  margin: 0 1em;
 }
 .result-sponsor {
   font-size: 10px;
   color: #2f222f;
   padding: .25em;
+}
+.result-sponsor img {
+  max-width: 100%;
+}
+.result-container a {
+  /* TODO */
+}
+
+@media (min-width: 30em) {
+  .result-container {
+    width: 100%;
+    max-width: 30em;
+  }
+  .result-answer {
+    font-size: 1.5em;
+  }
+  .result-bio {
+    font-size: 18px;
+  }
 }
 
 /* Quiz Component */
@@ -89,12 +114,46 @@ ul {
 
 /* Question Component */
 .question {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: grid;
+  align-items: center;
   margin: 0;
   background: #e0e2e5;
   color: #000000;
-  padding: 0.5rem .75rem .5rem .75rem;
-
 }
+.question span {
+  grid-column-start: 1;
+  padding: 0.5rem .75rem .5rem .75rem;
+}
+.question span.nextInstructions {
+  padding-top: 0;
+  font-style: italic;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+}
+.nextButton {
+  outline: none;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #29b765;
+  vertical-align: middle;
+  min-height: 3.5em;
+  margin: 3px;
+}
+.nextButton:hover, .nextButton:focus {
+  color: #2f222f;
+}
+button:focus {
+  outline: 0 !important;
+}
+h4.question {
+}
+
 
 /* AnswerOption Component */
 .answerOption {
@@ -116,7 +175,7 @@ ul {
   position: absolute;
   left: 10px;
   top: 10px;
-  padding: 5px 10px 10px 5px;
+  padding: 5px 10px 5px 5px;
   /* customize colors here */
   background-color: #043d30;
   color: white;
@@ -134,41 +193,62 @@ ul {
 
 .radioCustomButton,
 .radioCustomLabel {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .radioCustomLabel {
-    position: relative;
-    width: 100%;
-    margin: 0;
+  user-select: none;
+  position: relative;
+  width: auto;
+  margin: 0;
+    margin-left: 30px;
     /* where the li margins and padding are */
-    padding: .95rem .05rem .25rem 3rem;
+    padding: .15rem;
+    padding-top: 8px;
     font-size: 14px;
     line-height: 1.02;
+    min-height: 30px;
+}
+.radioCustomLabel::first-line {
+  vertical-align: text-bottom;
 }
 
-.radioCustomButton ~ .radioCustomLabel:before {
+.answerOption .radioCustomLabel:before {
     position: absolute;
-    top: 6px;
-    left: 12px;
+    margin-right: .6rem;
+    top: 4px;
+    left: -26px;
     width: 22px;
     height: 22px;
     content: '';
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    float: left;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.098);
     border-radius: 50%;
     transition: all 0.3s;
 }
 
-.radioCustomButton:checked ~ .radioCustomLabel:before {
+.answerOption.answerSelected .radioCustomLabel:before {
     content: '';
-    background: #a7ffeb url(./svg/icon-check.svg) no-repeat;
+    background: #3f6159 url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
-    border-color: #a7ffeb;
+    border-color: #3f6159;
+}
+
+.answerOption:hover .radioCustomLabel:before {
+  background-color: #00491e;
+  border-color: #a7ffeb;
+}
+.answerOption.answerSelected:hover .radioCustomLabel:before {
+  background-color: #00491e;
+  border-color: #00491e;
+}
+.answerOption:hover .answerOptionContainer {
+  color: rgba(240, 240, 240, 0.95);
+  background-color: #00491e;
 }
 
 /* New checkboxes */
@@ -194,12 +274,8 @@ ul {
   border-radius: 0.25em;
   background: #efefef;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .button-label h1 {
   font-size: 1em;
@@ -265,4 +341,101 @@ input:checked + .button-label:hover {
 .fade-appear.fade-appear-active {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+/* TODO */
+.answerDefault .answerOptionImage img {
+  width: 100%;
+  height: 100%;
+}
+.answerDefault .answerOptionContainer {
+  right: 10px;
+  left: auto;
+}
+
+/* AnswerOptions ul List custom formats */
+.coolMatrix {
+  background-color: #c5c5c5;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+.coolMatrix .answerOption {
+  user-select: none;
+  flex: 1 0 1;
+  background-color: #c5c5c5;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border: none;
+  border-radius: 0.25em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+.coolMatrix .answerOption:hover {
+  background-color: rgba(0, 0, 0, 0.32);
+}
+.coolMatrix .answerSelected {
+  background-color: magenta;
+  color: white;
+}
+.coolMatrix .answerSelected:hover {
+  background-color: rgba(255, 0, 255, 0.6);
+}
+.coolMatrix .answerOptionContainer {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  left: 0;
+  right: auto;
+  bottom: 5px;
+  top: auto;
+  width: 100%;
+}
+.coolMatrix .radioCustomButton,
+.coolMatrix .radioCustomLabel::before {
+  display: none;
+}
+.coolMatrix .radioCustomLabel {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  min-height: 0;
+}
+.coolMatrix .answerOptionImage {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.coolMatrix .answerOptionImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.coolMatrix .answerOption:hover .answerOptionContainer {
+  color: inherit;
+  background: transparent !important;
+}
+@media screen and (min-width: 30em) and (orientation: landscape) {
+  .coolMatrix .answerOption {
+    width: 20em;
+  }
+}
+@media screen and (min-width: 40em) {
+  .answerDefault .answerOption {
+    width: 50%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 60em) {
+  .answerDefault .answerOption {
+    width: 33%;
+    display: inline-block;
+  }
 }

@@ -1,83 +1,104 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
+// Display one choice within a question
+// Currently expect only one option to be selected
 
 class AnswerOption extends Component {
 
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      selected: false
+    };
   }
 
-  handleClick() {
-      let el = document.getElementById(this.props.answerType);
-      if ( el ) {
-        console.log(el);
-        el.checked = true;
+  /**
+   * capture the extraneous label click event
+   * 
+   * See https://stackoverflow.com/questions/38957978/react-i-cant-stop-propagation-of-a-label-click-within-a-table
+   * Yeah non-obvious :-(
+   *
+   * @param {event} e 
+   */
+  stopBubble(e) {  
+    if (e && e.stopPropagation) { 
+      e.stopPropagation();
+    } else {
+      window.event.cancelBubble = true;
+    }
+  }  
+
+  /**
+   * handle the user clicking within the AnswerOption
+   * 
+   * a click toggles the checked attribute for the input and the
+   * selected state for this component instance
+   * 
+   * A click also reports the state change up the chain
+   * If the question is multi, report the change to onItemSelected
+   * Else treat the change as onQuestionAnswered
+   *
+   * @param {event} event 
+   */
+  handleClick(event) {
+    this.stopBubble(event);
+    let el = document.getElementById(this.props.id);
+    if ( el ) {
+      // toggle the input checked state
+      el.checked = !el.checked;
+      // toggle the component state
+      this.setState( previousState => {
+        return { selected: !previousState.selected };
+      });
+
+      if (!this.props.multi) {
+        // if user can only pick one item, answered
+        this.props.onQuestionAnswered(this.props.type);
+      } else {
+        // otherwise keep tabs on which items are selected
+        this.props.onItemSelected(this.props.id, this.props.type);
       }
+    }
+    return false;
   }
 
   render() {
+    let questionOptionClass = "radioCustomButton";
+    let isSelected = this.state.selected;
+    let ulClasses = "answerOption" + (isSelected ? " answerSelected" : "");
     return (
-      <li className="answerOption">
+      <li className={ulClasses} onClick={this.handleClick}>
         <div className="answerOptionContainer">
           <input
-            type="radio"
-            className="radioCustomButton"
-            name="radioGroup"
-            checked={this.props.answerType === this.props.answer}
-            id={this.props.answerType}
-            value={this.props.answerType}
-            disabled={this.props.answer}
-            onChange={this.props.onAnswerSelected}
+            type="checkbox"
+            className={questionOptionClass}
+            defaultChecked={isSelected}
+            id={this.props.id}
+            value={this.props.type}
           />
-          <label className="radioCustomLabel" htmlFor={this.props.answerType}>
-            {this.props.answerContent}
+          <label className="radioCustomLabel" htmlFor={this.props.id} onClick={this.stopBubble.bind(this)}>
+            {this.props.content}
           </label>
         </div>
-        <div className="answerOptionImage" onClick={this.handleClick}>
-          <img src={this.props.answerImageSrc} alt={this.props.answer} height="100%" width="100%" />
+        <div className="answerOptionImage">
+          <img src={this.props.imageSrc} alt={this.props.answer} />
         </div>
       </li>
     );
   }
 
-/**
-
-	170521 - Have to work on the checkboxes,
-	and on App.js:71 (handleAnswerSelected) 
-	to break out the calc scores part from the move to the next q part
-
-
-    return (
-    <li className="answerOption">
-      <input
-        type="checkbox"
-        className="hidden radio-label"
-        className="button-label"
-        name="checkboxGroup"
-        checked={props.answerType === props.answer}
-        id={props.answerType}
-        value={props.answerType}
-        disabled={props.answer}
-        onChange={props.onAnswerSelected}        
-      />
-      <label className="button-label" htmlFor={props.answerType}>
-        {props.answerContent}
-        <p /><img src={props.answerImageSrc} alt={props.answer} height="60%" width="60%" />
-      </label>
-    </li>
-  );
-  **/
-
-  
 }
 
 AnswerOption.propTypes = {
-  answerType: React.PropTypes.string.isRequired,
-  answerContent: React.PropTypes.string.isRequired,
-  answerImageSrc: React.PropTypes.string,
-  answer: React.PropTypes.string.isRequired,
-  onAnswerSelected: React.PropTypes.func.isRequired
+  type: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object]).isRequired,
+  content: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
+  answer: PropTypes.string.isRequired,
+  onQuestionAnswered: PropTypes.func.isRequired
 };
 
 export default AnswerOption;

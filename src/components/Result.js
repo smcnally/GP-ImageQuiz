@@ -1,7 +1,6 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import quizQuestions from '../api/quizQuestions';
 
 function Result(props) {
   return (
@@ -16,41 +15,45 @@ function Result(props) {
     >
       <div className="result-container">
         <p className="result-answer">
-          Your <strong>{quizQuestions[0].scoreLabel}</strong> is <strong>{props.quizResult}</strong>!
+          Your <strong>{props.scoreLabel}</strong> is <strong>{props.quizResult}</strong>!
         </p>
-         <p />
-         <img src={props.resultBioSuccessImg} alt="Extroverting Success" />
+        <p>
+         <img src={props.successImg} alt="Success" />
+        </p>
         <p className="result-bio">
-          {props.resultBio}
-         <p /><p className="result-bio">
-          {props.resultBioStrains}
+          {props.bio}
         </p>
-          <ul>
-          <li>
-          <a href={quizQuestions[0].relatedURL0} target="_blank">{quizQuestions[0].relatedURLLabel0}</a>
-          </li>
-          <li>
-          <a href={quizQuestions[0].relatedURL1} target="_blank">{quizQuestions[0].relatedURLLabel1}</a>
-          </li>
-          <li>
-          <a href={quizQuestions[0].relatedURL2} target="_blank">{quizQuestions[0].relatedURLLabel2}</a>
-          </li>
-          </ul>
+        <p className="result-bio">
+          {props.strains}
         </p>
+        <h4>
+          <a href={props.relatedURL0} target="_blank">{props.relatedURLLabel0}</a>
+        </h4>
+        <h4>
+          <a href={props.relatedURL1} target="_blank">{props.relatedURLLabel1}</a>
+        </h4>
+        <h4>
+          <a href={props.relatedURL2} target="_blank">{props.relatedURLLabel2}</a>
+        </h4>
+        <h4>
+          <a href={props.relatedURL3} target="_blank">{props.relatedURLLabel3}</a>
+        </h4>
         <p className="result-sponsor">[Sponsor]</p>
-        <a href={props.resultBioSponsorURL} target="_blank">
-       <img src={props.resultBioSponsorImg} alt="sponsor" />
-       </a>
-       <p className="result-sponsor">
-       {props.resultBioSponsorTagline}
-       </p>
-        </div>
+        <p className="result-sponsor">
+          <a href={props.sponsorURL} target="_blank">
+            <img src={props.sponsorImg} alt="sponsor" />
+          </a>
+        </p>
+        <p className="result-sponsor">
+          {props.sponsorTagline}
+        </p>
+      </div>
     </ReactCSSTransitionGroup>
   );
 }
 
 Result.propTypes = {
-  quizResult: React.PropTypes.string.isRequired,
+  quizResult: PropTypes.string.isRequired,
 };
 
 export default Result;
