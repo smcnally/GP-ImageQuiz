@@ -378,7 +378,7 @@ input:checked + .button-label:hover {
 .coolMatrix .answerOption {
   user-select: none;
   flex: 1 0 1;
-  background-color: #c5c5c5;
+  background-color: #fff;
   color: #333;
   padding: 10px;
   margin: 5px;
@@ -389,14 +389,14 @@ input:checked + .button-label:hover {
   transition: 0.3s;
 }
 .coolMatrix .answerOption:hover {
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: #009bdf;
 }
 .coolMatrix .answerSelected {
-  background-color: magenta;
+  background-color: #009bdf;
   color: white;
 }
 .coolMatrix .answerSelected:hover {
-  background-color: rgba(255, 0, 255, 0.6);
+  background-color: #45d6ff;
 }
 .coolMatrix .answerOptionContainer {
   color: inherit;
