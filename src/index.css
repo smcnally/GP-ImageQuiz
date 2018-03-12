@@ -1,21 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,900);
 /* Shared */
 
 * {
   box-sizing: border-box;
 }
 
+a:link    { color:#45d6ff; text-decoration:none; }
+a:visited { color: #009bdf; text-decoration:none; }
+a:hover { text-decoration:underline; text-decoration-color: #009bdf}
+
 body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
   font-size: 14px;
-  color: #000000;
+  color: #333;
   padding-right: 7px;
   padding-left: 7px;
 }
@@ -35,8 +39,8 @@ ul {
   margin: 0 auto;
   background: #fff;
   border-radius: 3px;
-  font-family: Roboto, sans-serif;
-  background: #f5f5f6;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   border-radius: 2px;
@@ -74,15 +78,16 @@ ul {
 }
 .result-sponsor {
   font-size: 10px;
-  color: #2f222f;
+  color: #333;
   padding: .25em;
 }
 .result-sponsor img {
   max-width: 100%;
 }
-.result-container a {
+.result-container a:link {
   /* TODO */
-}
+  color: #45d6ff;
+  }
 
 @media (min-width: 30em) {
   .result-container {
@@ -106,9 +111,10 @@ ul {
 
 /* QuestionCount Component */
 .questionCount {
+  font-family: Ubuntu, sans-serif;
   font-size: 13px;
-  background: #e0e2e5;
-  color: #000000;
+  background: #fff;
+  color: #333333;
   padding: .5rem .5rem 0;
 }
 
@@ -120,14 +126,15 @@ ul {
   display: grid;
   align-items: center;
   margin: 0;
-  background: #e0e2e5;
-  color: #000000;
+  background: #fff;
+  color: #333333;
 }
 .question span {
   grid-column-start: 1;
   padding: 0.5rem .75rem .5rem .75rem;
 }
 .question span.nextInstructions {
+  font-family: Ubuntu, sans-serif;
   padding-top: 0;
   font-style: italic;
   font-weight: normal;
@@ -140,13 +147,13 @@ ul {
   cursor: pointer;
   color: #ffffff;
   border-radius: 5px;
-  background-color: #29b765;
+  background-color: #009bdf;
   vertical-align: middle;
   min-height: 3.5em;
   margin: 3px;
 }
 .nextButton:hover, .nextButton:focus {
-  color: #2f222f;
+  color: #333;
 }
 button:focus {
   outline: 0 !important;
@@ -177,7 +184,7 @@ h4.question {
   top: 10px;
   padding: 5px 10px 5px 5px;
   /* customize colors here */
-  background-color: #043d30;
+  background-color: #009bdf;
   color: white;
   border-radius: 5px;
 }
@@ -233,22 +240,22 @@ h4.question {
 
 .answerOption.answerSelected .radioCustomLabel:before {
     content: '';
-    background: #3f6159 url(./svg/icon-check.svg) no-repeat;
+    background: #45d6ff url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
-    border-color: #3f6159;
+    border-color: #009bdf;
 }
 
 .answerOption:hover .radioCustomLabel:before {
-  background-color: #00491e;
-  border-color: #a7ffeb;
+  background-color: #45d6ff;
+  border-color: #009bdf;
 }
 .answerOption.answerSelected:hover .radioCustomLabel:before {
-  background-color: #00491e;
-  border-color: #00491e;
+  background-color: #45d6ff;
+  border-color: #009bdf;
 }
 .answerOption:hover .answerOptionContainer {
   color: rgba(240, 240, 240, 0.95);
-  background-color: #00491e;
+  background-color: #009bdf;
 }
 
 /* New checkboxes */
@@ -270,7 +277,7 @@ h4.question {
   padding: 1em 2em;
   margin: 0.5em;
   cursor: pointer;
-  color: #292929;
+  color: #333;
   border-radius: 0.25em;
   background: #efefef;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
@@ -279,11 +286,11 @@ h4.question {
 }
 .button-label h1 {
   font-size: 1em;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .button-label:hover {
   background: #d6d6d6;
-  color: #101010;
+  color: #333333;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
 }
 .button-label:active {
@@ -300,11 +307,11 @@ h4.question {
 
 input:checked + .button-label {
   background: #2ECC71;
-  color: #efefef;
+  color: #fff;
 }
 input:checked + .button-label:hover {
   background: #29b765;
-  color: #e2e2e2;
+  color: #fff;
 }
 
 .hidden {
@@ -355,7 +362,7 @@ input:checked + .button-label:hover {
 
 /* AnswerOptions ul List custom formats */
 .coolMatrix {
-  background-color: #c5c5c5;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -365,7 +372,7 @@ input:checked + .button-label:hover {
   user-select: none;
   flex: 1 0 1;
   background-color: #c5c5c5;
-  color: black;
+  color: #333;
   padding: 10px;
   margin: 5px;
   width: 100%;

@@ -1,8 +1,9 @@
 .App {
   height: 100vh;
-  background-color: #e1e2e1;
+  background-color: #fff;
 }
 .App h2 {
+  font-family: Ubuntu, sans-serif;
   /*color: #34515e;*/
   /*width: 100vw;*/
 }
@@ -11,14 +12,16 @@
   height: 0;
 }
 .App-header {
-  background-color: #e0e2e5;
+  font-family: Ubuntu, sans-serif;
+  background-color: #fff;
   padding-top: 1px;
   padding-bottom: 1px;
-  color: #000000;
+  color: #333;
   text-align: center;
 }
 
 .App-intro {
+  font-family: Ubuntu, sans-serif;
   font-size: medium;
 }
 
