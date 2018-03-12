@@ -313,11 +313,11 @@ h4.question {
 }
 
 input:checked + .button-label {
-  background: #2ECC71;
+  background: #45d6ff;
   color: #fff;
 }
 input:checked + .button-label:hover {
-  background: #29b765;
+  background: #009bdf;
   color: #fff;
 }
 
