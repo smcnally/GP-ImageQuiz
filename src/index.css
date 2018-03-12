@@ -11,10 +11,10 @@ a:visited { color: #009bdf; text-decoration:none; }
 a:hover { text-decoration:underline; text-decoration-color: #009bdf}
 
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
@@ -77,16 +77,18 @@ ul {
   margin: 0 1em;
 }
 .result-sponsor {
-  font-size: 10px;
-  color: #333;
+  /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  font-size: 12px;
   padding: .25em;
 }
 .result-sponsor img {
-  max-width: 100%;
+  max-width: 300px;
 }
 .result-container a:link {
   /* TODO */
-  color: #45d6ff;
   }
 
 @media (min-width: 30em) {
@@ -111,10 +113,12 @@ ul {
 
 /* QuestionCount Component */
 .questionCount {
-  font-family: Ubuntu, sans-serif;
-  font-size: 13px;
+  /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 12px;
   background: #fff;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
   padding: .5rem .5rem 0;
 }
 
@@ -134,10 +138,12 @@ ul {
   padding: 0.5rem .75rem .5rem .75rem;
 }
 .question span.nextInstructions {
-  font-family: Ubuntu, sans-serif;
+  /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
+  font-family: 'Ubuntu Mono', sans-serif;
   padding-top: 0;
   font-style: italic;
   font-weight: normal;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
 }
 .nextButton {
@@ -153,7 +159,7 @@ ul {
   margin: 3px;
 }
 .nextButton:hover, .nextButton:focus {
-  color: #333;
+  color: #45d6ff;
 }
 button:focus {
   outline: 0 !important;
@@ -164,6 +170,7 @@ h4.question {
 
 /* AnswerOption Component */
 .answerOption {
+  font-family: 'Open Sans Condensed', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
 }
