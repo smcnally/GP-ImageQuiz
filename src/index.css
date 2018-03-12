@@ -76,13 +76,20 @@ ul {
   padding: .25em;
   margin: 0 1em;
 }
+.result-container h4 {
+  padding: .95;
+  margin: .75em;
+  text-align: left;
+}
 .result-sponsor {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
   font-family: 'Ubuntu Mono', sans-serif;
+  text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
   font-size: 12px;
   padding: .25em;
+
 }
 .result-sponsor img {
   max-width: 300px;
