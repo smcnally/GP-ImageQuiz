@@ -1,35 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-function Question(props) {
+class Question extends Component {
 
-  // if the user can select multiple items display a next button
-  let nextPrompt = props.multi || null;
-  let nextButton = null;
-  let nextInstructions = null;
+  render() {
+    // if the user can select multiple items display a next button
+    let nextPrompt = this.props.multi || null;
+    let questionImg = this.props.questionImg || null;
+    let nextButton = null;
+    let nextInstructions = null;
+    let optionalImage = null;
 
-  if (nextPrompt) {
-    nextButton = (
-      <button 
-        className="nextButton"
-        onClick={props.doneWithQuestion}>
-        {nextPrompt}
-      </button>
+
+    if (nextPrompt) {
+      nextButton = (
+        <button 
+          className="nextButton"
+          onClick={this.props.doneWithQuestion}>
+          {nextPrompt}
+        </button>
+      );
+      nextInstructions = (
+        <span className="nextInstructions">
+          Select one or more
+        </span>
+      )
+    }
+
+    if (questionImg) {
+      optionalImage = (
+        <img alt="" src={questionImg}/>
+      )
+    }
+
+    return (
+      <h4 id="questionh4" className="question">
+        <span>{this.props.question}</span>
+        {nextInstructions}
+        {optionalImage}
+        {nextButton}
+      </h4>
     );
-    nextInstructions = (
-      <span className="nextInstructions">
-        Select one or more
-      </span>
-    )
   }
-
-  return (
-    <h4 className="question">
-      <span>{props.question}</span>
-      {nextInstructions}
-      {nextButton}
-    </h4>
-  );
 
 }
 
