@@ -180,6 +180,8 @@ h4.question {
   font-family: 'Open Sans Condensed', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
+  display: block;
+  overflow: auto;
 }
 .answerOption:first-child {
   border-top: none;
@@ -204,6 +206,7 @@ h4.question {
 }
 .answerOptionImage {
   cursor: pointer;
+  min-height: 55px;
 }
 
 .radioCustomButton {
