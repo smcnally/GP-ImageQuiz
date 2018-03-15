@@ -68,6 +68,13 @@ class AnswerOption extends Component {
     let questionOptionClass = "radioCustomButton";
     let isSelected = this.state.selected;
     let ulClasses = "answerOption" + (isSelected ? " answerSelected" : "");
+    let optionImage = null;
+    if (this.props.imageSrc) {
+      optionImage = (
+        <img src={this.props.imageSrc} alt={this.props.answer} />
+      );
+    }
+
     return (
       <li className={ulClasses} onClick={this.handleClick}>
         <div className="answerOptionContainer">
@@ -83,7 +90,7 @@ class AnswerOption extends Component {
           </label>
         </div>
         <div className="answerOptionImage">
-          <img src={this.props.imageSrc} alt={this.props.answer} />
+          {optionImage}
         </div>
       </li>
     );

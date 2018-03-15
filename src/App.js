@@ -14,6 +14,7 @@ class App extends Component {
       counter: 0,
       questionId: 1,
       question: '',
+      imageSrc: null,
       answerOptions: [],
       answer: '',
       multi: null,
@@ -34,6 +35,7 @@ class App extends Component {
     let answersCount = this.tabulateAnswers(quizQuestions);
     this.setState({
       question: quizQuestions[0].question,
+      imageSrc: quizQuestions[0].imageSrc || null,
       multi: quizQuestions[0].multi || false,
       format: quizQuestions[0].format || "answerDefault",
       answersCount: answersCount,
@@ -149,6 +151,7 @@ class App extends Component {
       multi: quizQuestions[counter].multi || false,
       format: quizQuestions[counter].format || "answerDefault",
       question: quizQuestions[counter].question,
+      imageSrc: quizQuestions[counter].imageSrc || null,
       answerOptions: quizQuestions[counter].answers,
       answer: ''
     });
@@ -197,6 +200,7 @@ class App extends Component {
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
         question={this.state.question}
+        questionImg={this.state.imageSrc}
         multi={this.state.multi}
         format={this.state.format}
         questionTotal={quizQuestions.length}

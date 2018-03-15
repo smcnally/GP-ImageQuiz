@@ -153,6 +153,12 @@ ul {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
 }
+.question img {
+  width: 100%;
+  max-height: 80em;
+  grid-column: 1 / span 2;
+  transition: width 1s ease;
+}
 .nextButton {
   outline: none;
   grid-column-start: 2;
@@ -171,7 +177,20 @@ ul {
 button:focus {
   outline: 0 !important;
 }
-h4.question {
+@media screen and (min-width: 40em) {
+
+  .question span,
+  .question .nextButton {
+    grid-column-start: 2;
+  }
+  .question img {
+    transition: 1s;
+    width: auto;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    max-width: 50vw;
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -180,6 +199,8 @@ h4.question {
   font-family: 'Open Sans Condensed', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
+  display: block;
+  overflow: auto;
 }
 .answerOption:first-child {
   border-top: none;
@@ -204,6 +225,7 @@ h4.question {
 }
 .answerOptionImage {
   cursor: pointer;
+  min-height: 55px;
 }
 
 .radioCustomButton {

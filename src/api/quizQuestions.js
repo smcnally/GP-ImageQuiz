@@ -15,6 +15,7 @@ var quizQuestions = [
       question: "Which type of cannabis product have you used most recently?",
       multi: "Next »",
       format: "coolMatrix",
+      imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
       answers: [
           {
               type: "Edibles",
@@ -83,31 +84,27 @@ var quizQuestions = [
   {
     // Group 1
       question: "Which type of cannabis product have you used most frequently?",
+      imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
       answers: [
           {
               type: "Edibles",
-              content: "Edibles",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
+              content: "Edibles"
           },
           {
               type: "Smoking",
               content: "Flower / Smoking",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
           },
 		  {
               type: "Vaping",
               content: "Vaping",
-              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
           },
           {
               type: "Dabbing",
               content: "Dabbing",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
           {
               type: "Topicals",
               content: "Topicals, Lotions, or Ointments",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
           },
       ]
   },
