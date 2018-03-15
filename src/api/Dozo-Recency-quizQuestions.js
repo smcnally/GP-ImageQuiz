@@ -12,7 +12,7 @@ var quizQuestions = [
   relatedURL3: "https://globalnews.ca/news/4028071/microdosing-cannabis/" , 
   relatedURLLabel3: "The big surprise of cannabis legalization might be the size of the low dose market" ,  
     // Group 1
-      question: "Which type of cannabis product have you used used most recently? (Select Any / All & Tap Next »)",
+      question: "Which type of cannabis product have you used used most recently?",
       multi: "Next »",
       answers: [
           {
@@ -44,7 +44,7 @@ var quizQuestions = [
   },
   {
     // Group 1
-      question: "Which type of cannabis product have you used most frequently? (Select Any / All & Tap Next »)",
+      question: "Which type of cannabis product have you used most frequently?",
       multi: "Next »",
       answers: [
           {
@@ -76,7 +76,7 @@ var quizQuestions = [
   },
   {
 	// Group 1
-      question: "Which type of cannabis product do you generally prefer best? (Pick one)",
+      question: "Which type of cannabis product do you generally prefer best?",
       answers: [
           {
               type: "Edibles",
