@@ -30,6 +30,7 @@ class Question extends Component {
     }
 
     if (questionImg) {
+      questionClasses += " imgQuestion";
       optionalImage = (
         <img alt="" src={questionImg}/>
       )

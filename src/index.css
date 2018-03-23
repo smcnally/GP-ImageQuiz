@@ -182,17 +182,32 @@ button:focus {
 }
 @media screen and (min-width: 40em) {
 
-  .question span,
-  .question .nextButton {
+  .question {
+    grid-template-columns: 30fr 70fr;
+  }
+  .question.multiQuestion.imgQuestion {
+    grid-template-columns: 30fr 50fr 20fr;
+  }
+  .question span {
+    grid-column-start: 1;
+  }
+  .question.imgQuestion span,
+  .question.imgQuestion .nextButton {
     grid-column-start: 2;
   }
   .question img {
     transition: 1s;
-    width: auto;
+    width: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     max-width: 50vw;
     margin-bottom: 5px;
+  }
+  .question.multiQuestion img {
+    grid-column: 1 / span 1;
+  }
+  .question.multiQuestion.imgQuestion .nextButton {
+    grid-column-start: 3;
   }
 }
 
