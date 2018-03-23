@@ -156,8 +156,11 @@ ul {
 .question img {
   width: 100%;
   max-height: 80em;
-  grid-column: 1 / span 2;
+  grid-column: 1;
   transition: width 1s ease;
+}
+.question.multiQuestion img {
+  grid-column: 1 / span 2;
 }
 .nextButton {
   outline: none;
@@ -225,7 +228,7 @@ button:focus {
 }
 .answerOptionImage {
   cursor: pointer;
-  min-height: 55px;
+  min-height: 65px;
 }
 
 .radioCustomButton {
