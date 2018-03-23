@@ -70,8 +70,11 @@ class AnswerOption extends Component {
     let ulClasses = "answerOption" + (isSelected ? " answerSelected" : "");
     let optionImage = null;
     if (this.props.imageSrc) {
+      ulClasses += " imgAnswerOption";
       optionImage = (
-        <img src={this.props.imageSrc} alt={this.props.answer} />
+        <div className="answerOptionImage">
+          <img src={this.props.imageSrc} alt={this.props.answer} />
+        </div>
       );
     }
 
@@ -89,9 +92,7 @@ class AnswerOption extends Component {
             {this.props.content}
           </label>
         </div>
-        <div className="answerOptionImage">
-          {optionImage}
-        </div>
+        {optionImage}
       </li>
     );
   }

@@ -241,7 +241,7 @@ button:focus {
   color: white;
   border-radius: 5px;
 }
-.answerOptionImage {
+.answerOption .answerOptionImage {
   cursor: pointer;
   min-height: 65px;
 }
@@ -410,8 +410,17 @@ input:checked + .button-label:hover {
   height: 100%;
 }
 .answerDefault .answerOptionContainer {
-  right: 10px;
+  width: auto;
   left: auto;
+  top: auto;
+  display: inline-grid;
+  position: inherit;
+  margin: 8px 8px 0 8px;
+}
+.answerDefault .imgAnswerOption .answerOptionContainer {
+  left: 8px;
+  top: 10px;
+  position: absolute;
 }
 
 /* AnswerOptions ul List custom formats */
