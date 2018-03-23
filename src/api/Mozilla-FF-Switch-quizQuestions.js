@@ -1,8 +1,8 @@
 var quizQuestions = [
     {
         // Game-wide values
-        intro: "Know What This Is?",
-        scoreLabel: "",
+        intro: "What is this in my browser?",
+        scoreLabel: "Score",
         relatedURL0: "https://blog.mozilla.org/firefox/switch-chrome-firefox-just-minutes/",
         relatedURLLabel0: "The latest technology, speed and security all ready to roll by default",
         relatedURL1: "https://www.mozilla.org/en-US/firefox/switch/",
@@ -13,62 +13,64 @@ var quizQuestions = [
         relatedURLLabel3: "",
         // Group 1
         question: "What is this?",
-        imageSrc: "https://meanbusiness.com/wp-content/uploads/2018/03/Coral-Newspaper_Face.gif",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Lightbeam-OneSite.gif?crop=300,250",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
                 content: "Web Cookies and Trackers from visiting just ONE site",
-                imageSrc: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif"
+                imageSrc: ""
             },
             {
                 type: { funny: 1, other: 0, Edie: 0 },
                 content: "That's Laser Floyd, man!",
-                imageSrc: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif"
+                imageSrc: ""
             },
             {
                 type: { switch: 1, Courtney: 0, Edie: 0 },
                 content: "Is that cruft sites add when I'm surfing?",
-                imageSrc: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif"
+                imageSrc: ""
             },
         ]
     },
     {
         question: "Know What this is?",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Chrome-Cookies_Scroll-4secs.gif?crop=300,250",
         answers: [
             {
                 type: { funny: 1, other: 0, Edie: 0 },
                 content: "The worst To Do list, EVER",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
                 content: "That's the list of Cookies and Trackers I've collected",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
             {
                 type: { switch: 1, Courtney: 0, Edie: 0 },
                 content: "Wait. What? I've never gone to ANY of those sites!",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
         ]
     },
     {
         question: "Know What this is?",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=300,250",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
                 content: "That's how I know I'm browsing Privately",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
             {
                 type: { switch: 1, Courtney: 0, Edie: 0 },
                 content: "Would this help me manage my personal Data?",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
             {
                 type: { funny: 1, other: 0, Edie: 0 },
                 content: "Some new kind of kink? What's the address?",
-                imageSrc: "https://i.pinimg.com/originals/4a/f3/38/4af33868a1d5c71a286a66e16bb56494.png"
+                imageSrc: ""
             },
         ]
     },
