@@ -156,8 +156,11 @@ ul {
 .question img {
   width: 100%;
   max-height: 80em;
-  grid-column: 1 / span 2;
+  grid-column: 1;
   transition: width 1s ease;
+}
+.question.multiQuestion img {
+  grid-column: 1 / span 2;
 }
 .nextButton {
   outline: none;
@@ -179,17 +182,32 @@ button:focus {
 }
 @media screen and (min-width: 40em) {
 
-  .question span,
-  .question .nextButton {
+  .question {
+    grid-template-columns: 30fr 70fr;
+  }
+  .question.multiQuestion.imgQuestion {
+    grid-template-columns: 30fr 50fr 20fr;
+  }
+  .question span {
+    grid-column-start: 1;
+  }
+  .question.imgQuestion span,
+  .question.imgQuestion .nextButton {
     grid-column-start: 2;
   }
   .question img {
     transition: 1s;
-    width: auto;
+    width: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     max-width: 50vw;
     margin-bottom: 5px;
+  }
+  .question.multiQuestion img {
+    grid-column: 1 / span 1;
+  }
+  .question.multiQuestion.imgQuestion .nextButton {
+    grid-column-start: 3;
   }
 }
 
@@ -223,9 +241,9 @@ button:focus {
   color: white;
   border-radius: 5px;
 }
-.answerOptionImage {
+.answerOption .answerOptionImage {
   cursor: pointer;
-  min-height: 55px;
+  min-height: 65px;
 }
 
 .radioCustomButton {
@@ -392,8 +410,17 @@ input:checked + .button-label:hover {
   height: 100%;
 }
 .answerDefault .answerOptionContainer {
-  right: 10px;
+  width: auto;
   left: auto;
+  top: auto;
+  display: inline-grid;
+  position: inherit;
+  margin: 8px 8px 0 8px;
+}
+.answerDefault .imgAnswerOption .answerOptionContainer {
+  left: 8px;
+  top: 10px;
+  position: absolute;
 }
 
 /* AnswerOptions ul List custom formats */

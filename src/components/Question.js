@@ -10,9 +10,11 @@ class Question extends Component {
     let nextButton = null;
     let nextInstructions = null;
     let optionalImage = null;
+    let questionClasses = "question";
 
 
     if (nextPrompt) {
+      questionClasses += " multiQuestion";
       nextButton = (
         <button 
           className="nextButton"
@@ -28,13 +30,14 @@ class Question extends Component {
     }
 
     if (questionImg) {
+      questionClasses += " imgQuestion";
       optionalImage = (
         <img alt="" src={questionImg}/>
       )
     }
 
     return (
-      <h4 id="questionh4" className="question">
+      <h4 id="questionh4" className={questionClasses}>
         <span>{this.props.question}</span>
         {nextInstructions}
         {optionalImage}
