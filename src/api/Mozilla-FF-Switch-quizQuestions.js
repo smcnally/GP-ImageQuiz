@@ -13,7 +13,7 @@ var quizQuestions = [
         relatedURLLabel3: "",
         // Group 1
         question: "What is this?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Lightbeam-OneSite.gif?crop=300,250",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Lightbeam-OneSite.gif?crop=0,0,80,80&h=250",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
@@ -34,7 +34,7 @@ var quizQuestions = [
     },
     {
         question: "Know What this is?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Chrome-Cookies_Scroll-4secs.gif?crop=300,250",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Chrome-Cookies_Scroll-4secs.gif?crop=0,0,100,50",
         answers: [
             {
                 type: { funny: 1, other: 0, Edie: 0 },
@@ -55,7 +55,7 @@ var quizQuestions = [
     },
     {
         question: "Know What this is?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=300,250",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=0,20,100,50",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
