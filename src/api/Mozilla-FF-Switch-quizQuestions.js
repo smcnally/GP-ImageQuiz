@@ -55,7 +55,7 @@ var quizQuestions = [
     },
     {
         question: "Know What this is?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=0,20,100,50",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=0,22,100,55",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
