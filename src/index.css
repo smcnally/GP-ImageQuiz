@@ -522,3 +522,8 @@ input:checked + .button-label:hover {
 .constrain-300x600 .result-container {
   width: 300px;
 }
+.constrain-300x600 img {
+  width: auto !important;
+  max-width: 300px !important;
+  max-height: 250px !important;
+}
