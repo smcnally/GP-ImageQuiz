@@ -519,8 +519,14 @@ input:checked + .button-label:hover {
 .constrain-300x600 .answerDefault .answerOption {
   width: 100%; 
 }
+.constrain-300x600 .coolMatrix .answerOption {
+  width: 45%; 
+}
 .constrain-300x600 .result-container {
   width: 300px;
+}
+.constrain-300x600 .question {
+  padding: 0;
 }
 .constrain-300x600 img {
   width: auto !important;
