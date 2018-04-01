@@ -522,14 +522,19 @@ input:checked + .button-label:hover {
 .constrain-300x600 .coolMatrix .answerOption {
   width: 45%; 
 }
+.constrain-300x600 .coolMatrix .answerOptionImage img {
+  max-height: 85px;
+}
 .constrain-300x600 .result-container {
   width: 300px;
 }
 .constrain-300x600 .question {
   padding: 0;
 }
+.constrain-300x600 .question img {
+  margin: 0 auto 0 auto;
+}
 .constrain-300x600 img {
   width: auto !important;
   max-width: 300px !important;
-  max-height: 250px !important;
 }
