@@ -94,9 +94,6 @@ ul {
 .result-sponsor img {
   max-width: 300px;
 }
-.result-container a:link {
-  /* TODO */
-  }
 
 @media (min-width: 30em) {
   .unconstrained .result-container {
