@@ -96,10 +96,14 @@ class App extends Component {
    * 
    */
   playSound(soundSrc) {
-    let sound = new Audio(soundSrc);
+    let sound = new Audio();
+    sound.preload = 'auto';
+    sound.src = soundSrc;
     if (sound) {
+      sound.load();
       sound.currentTime = 0;
-      sound.play();
+      sound.play().then(() => console.log("played"))
+        .catch(error => console.log(error));
     }
   }
 

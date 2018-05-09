@@ -16,7 +16,7 @@ var quizQuestions = [
       multi: "Next »",
       format: "coolMatrix",
       imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
-      soundSrc: "https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-one/comedy_swipe_001.mp3?_=5",
+      soundSrc: "https://i1.theportalwiki.net/img/a/a5/Portal2_sfx_button_positive.m4a",
       answers: [
           {
               type: "Edibles",
