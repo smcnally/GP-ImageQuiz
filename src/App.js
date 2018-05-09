@@ -15,6 +15,7 @@ class App extends Component {
       questionId: 1,
       question: '',
       imageSrc: null,
+      soundSrc: null,
       answerOptions: [],
       answer: '',
       multi: null,
@@ -36,6 +37,7 @@ class App extends Component {
     this.setState({
       question: quizQuestions[0].question,
       imageSrc: quizQuestions[0].imageSrc || null,
+      soundSrc: quizQuestions[0].soundSrc || null,
       multi: quizQuestions[0].multi || false,
       format: quizQuestions[0].format || "answerDefault",
       answersCount: answersCount,
@@ -90,6 +92,18 @@ class App extends Component {
   };
 
   /**
+   * play a sound given a url
+   * 
+   */
+  playSound(soundSrc) {
+    let sound = new Audio(soundSrc);
+    if (sound) {
+      sound.currentTime = 0;
+      sound.play();
+    }
+  }
+
+  /**
    * handler for a question being answered
    * 
    * receives a list of types and a count, e.g. {Hybrid:2,Sativa:1}
@@ -106,6 +120,9 @@ class App extends Component {
       let key = answers;
       answers = {};
       answers[key] = 1;
+    }
+    if (this.state.soundSrc) {
+      this.playSound(this.state.soundSrc);
     }
     this.setUserAnswer(answers);
 
