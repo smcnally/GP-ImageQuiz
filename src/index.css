@@ -47,7 +47,7 @@ ul {
 }
 
 @media (min-width: 300px) {
-  .container {
+  .unconstrained .container {
     margin: .25rem auto;
   }
 }
@@ -94,19 +94,16 @@ ul {
 .result-sponsor img {
   max-width: 300px;
 }
-.result-container a:link {
-  /* TODO */
-  }
 
 @media (min-width: 30em) {
-  .result-container {
+  .unconstrained .result-container {
     width: 100%;
     max-width: 30em;
   }
-  .result-answer {
+  .unconstrained .result-answer {
     font-size: 1.5em;
   }
-  .result-bio {
+  .unconstrained .result-bio {
     font-size: 18px;
   }
 }
@@ -180,22 +177,23 @@ ul {
 button:focus {
   outline: 0 !important;
 }
+
 @media screen and (min-width: 40em) {
 
-  .question {
+  .unconstrained .question {
     grid-template-columns: 30fr 70fr;
   }
-  .question.multiQuestion.imgQuestion {
+  .unconstrained .question.multiQuestion.imgQuestion {
     grid-template-columns: 30fr 50fr 20fr;
   }
-  .question span {
+  .unconstrained .question span {
     grid-column-start: 1;
   }
-  .question.imgQuestion span,
+  .unconstrained .question.imgQuestion span,
   .question.imgQuestion .nextButton {
     grid-column-start: 2;
   }
-  .question img {
+  .unconstrained .question img {
     transition: 1s;
     width: 100%;
     grid-column: 1 / span 1;
@@ -203,14 +201,13 @@ button:focus {
     max-width: 50vw;
     margin-bottom: 5px;
   }
-  .question.multiQuestion img {
+  .unconstrained .question.multiQuestion img {
     grid-column: 1 / span 1;
   }
-  .question.multiQuestion.imgQuestion .nextButton {
+  .unconstrained .question.multiQuestion.imgQuestion .nextButton {
     grid-column-start: 3;
   }
 }
-
 
 /* AnswerOption Component */
 .answerOption {
@@ -493,19 +490,48 @@ input:checked + .button-label:hover {
   background: transparent !important;
 }
 @media screen and (min-width: 30em) and (orientation: landscape) {
-  .coolMatrix .answerOption {
+  .unconstrained .coolMatrix .answerOption {
     width: 20em;
   }
 }
 @media screen and (min-width: 40em) {
-  .answerDefault .answerOption {
+  .unconstrained .answerDefault .answerOption {
     width: 50%;
     display: inline-block;
   }
 }
 @media screen and (min-width: 60em) {
-  .answerDefault .answerOption {
+  .unconstrained .answerDefault .answerOption {
     width: 33%;
     display: inline-block;
   }
+}
+
+/* constrain to 300x600 */
+.constrain-300x600 {
+  width: 300px;
+  height: 600px;
+  overflow: scroll;
+}
+.constrain-300x600 .answerDefault .answerOption {
+  width: 100%; 
+}
+.constrain-300x600 .coolMatrix .answerOption {
+  width: 45%; 
+}
+.constrain-300x600 .coolMatrix .answerOptionImage img {
+  max-height: 85px;
+}
+.constrain-300x600 .result-container {
+  width: 300px;
+}
+.constrain-300x600 .question {
+  padding: 0;
+}
+.constrain-300x600 .question img {
+  margin: 0 auto 0 auto;
+}
+.constrain-300x600 img {
+  width: auto !important;
+  max-width: 300px !important;
 }

@@ -226,9 +226,10 @@ class App extends Component {
   }
 
   // seems [0].intro is empty, should we hide the header when that happens?
+  // use constrain-300x600 or unconstrained as a class next to App
   render() {
     return (
-      <div className="App">
+      <div className="App constrain-300x600">
         <div className="App-header">
           <h4>{quizQuestions[0].intro}</h4>
         </div>
