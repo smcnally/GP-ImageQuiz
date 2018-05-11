@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { playSound } from '../helpers'; // helper not component
 
 // Display one choice within a question
 // Currently expect only one option to be selected
@@ -57,6 +58,9 @@ class AnswerOption extends Component {
         // if user can only pick one item, answered
         this.props.onQuestionAnswered(this.props.type);
       } else {
+        // play a sound if multi
+        let selectSoundSrc = this.props.answerSoundSrc || null;
+        playSound(selectSoundSrc);
         // otherwise keep tabs on which items are selected
         this.props.onItemSelected(this.props.id, this.props.type);
       }
