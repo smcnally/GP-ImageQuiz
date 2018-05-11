@@ -13,7 +13,9 @@ var quizQuestions = [
         relatedURLLabel3: "",
         // Group 1
         question: "What is this?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Lightbeam-OneSite.gif?crop=0,0,80,80&h=250",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Lightbeam-OneSite.gif?crop=300,250",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/AMBPC_026.wav",
+        multiAnswerSoundSrc: "https://meanbusiness.com/gamepath/AmbientHits/AMBPC_030.wav",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
@@ -34,7 +36,8 @@ var quizQuestions = [
     },
     {
         question: "Know What this is?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Chrome-Cookies_Scroll-4secs.gif?crop=0,0,100,50",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Mozilla-Chrome-Cookies_Scroll-4secs.gif?crop=300,250",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/AMBPC_030.wav",
         answers: [
             {
                 type: { funny: 1, other: 0, Edie: 0 },
@@ -55,7 +58,8 @@ var quizQuestions = [
     },
     {
         question: "Know What this is?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=0,22,100,55",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/AMBSPH_065.wav",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/FF-Private_Session-Purple_Mask.png?crop=300,250",
         answers: [
             {
                 type: { mozilla: 1, Courtney: 0, Edie: 0 },
