@@ -165,6 +165,7 @@ class App extends Component {
   setNextQuestion() {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
+    const defaultSoundSrc = quizQuestions[0].soundSrc || null;
 
     this.setState({
       counter: counter,
@@ -173,6 +174,7 @@ class App extends Component {
       format: quizQuestions[counter].format || "answerDefault",
       question: quizQuestions[counter].question,
       imageSrc: quizQuestions[counter].imageSrc || null,
+      soundSrc: quizQuestions[counter].soundSrc || defaultSoundSrc,
       answerOptions: quizQuestions[counter].answers,
       answer: ''
     });

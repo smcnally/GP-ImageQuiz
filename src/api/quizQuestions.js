@@ -112,6 +112,7 @@ var quizQuestions = [
   {
 	// Group 1
       question: "Which type of cannabis product do you generally prefer best?",
+      soundSrc: "http://honegger.weebly.com/uploads/9/5/3/3/9533249/applause_clapping.m4a",
       answers: [
           {
               type: "Edibles",
