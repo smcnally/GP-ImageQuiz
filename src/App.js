@@ -3,6 +3,7 @@ import quizQuestions from './api/quizQuestions';
 import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
+import { playSound } from './helpers'; // helper not component
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
       question: '',
       imageSrc: null,
       soundSrc: null,
+      multiAnswerSoundSrc: null,
       answerOptions: [],
       answer: '',
       multi: null,
@@ -38,6 +40,7 @@ class App extends Component {
       question: quizQuestions[0].question,
       imageSrc: quizQuestions[0].imageSrc || null,
       soundSrc: quizQuestions[0].soundSrc || null,
+      multiAnswerSoundSrc: quizQuestions[0].multiAnswerSoundSrc || null,
       multi: quizQuestions[0].multi || false,
       format: quizQuestions[0].format || "answerDefault",
       answersCount: answersCount,
@@ -91,21 +94,7 @@ class App extends Component {
     return array;
   };
 
-  /**
-   * play a sound given a url
-   * 
-   */
-  playSound(soundSrc) {
-    let sound = new Audio();
-    sound.preload = 'auto';
-    sound.src = soundSrc;
-    if (sound) {
-      sound.load();
-      sound.currentTime = 0;
-      sound.play().then(() => console.log("played"))
-        .catch(error => console.log(error));
-    }
-  }
+  
 
   /**
    * handler for a question being answered
@@ -126,7 +115,7 @@ class App extends Component {
       answers[key] = 1;
     }
     if (this.state.soundSrc) {
-      this.playSound(this.state.soundSrc);
+      playSound(this.state.soundSrc);
     }
     this.setUserAnswer(answers);
 
@@ -166,6 +155,7 @@ class App extends Component {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
     const defaultSoundSrc = quizQuestions[0].soundSrc || null;
+    const defaultMultiSoundSrc = quizQuestions[0].multiAnswerSoundSrc || null;
 
     this.setState({
       counter: counter,
@@ -175,6 +165,7 @@ class App extends Component {
       question: quizQuestions[counter].question,
       imageSrc: quizQuestions[counter].imageSrc || null,
       soundSrc: quizQuestions[counter].soundSrc || defaultSoundSrc,
+      multiAnswerSoundSrc: quizQuestions[counter].multiAnswerSoundSrc || defaultMultiSoundSrc,
       answerOptions: quizQuestions[counter].answers,
       answer: ''
     });
@@ -221,6 +212,7 @@ class App extends Component {
       <Quiz
         answer={this.state.answer || ""}
         answerOptions={this.state.answerOptions}
+        multiAnswerSoundSrc={this.state.multiAnswerSoundSrc}
         questionId={this.state.questionId}
         question={this.state.question}
         questionImg={this.state.imageSrc}
