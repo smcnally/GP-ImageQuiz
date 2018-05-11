@@ -8,6 +8,7 @@ import AnswerOption from './AnswerOption';
  * Each option has 3 attributes:
  * - content (text)
  * - imageSrc (background image)
+ * - soundSrc (optional sfx to play when selected, for multi)
  * - type (personality type to match)
  * 
  * To allow duplicate types, the id is generated sequentially
@@ -19,6 +20,7 @@ class AnswerOptions extends Component {
     if (!this.props.answerOptions) {
       return null;
     }
+    const defaultSoundSrc = this.props.multiAnswerSoundSrc || null;
     const list = this.props.answerOptions.map(option => {
       id++;
       let domId = 'answer' + id;
@@ -26,6 +28,7 @@ class AnswerOptions extends Component {
         <AnswerOption 
           key={option.content}
           id={domId}
+          answerSoundSrc={option.soundSrc || defaultSoundSrc}
           onItemSelected={this.props.onItemSelected}
           {...option}
           {...this.props}
