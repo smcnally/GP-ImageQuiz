@@ -8,9 +8,9 @@ var quizQuestions = [
   relatedURL3: "http://medicinebox.green/dosage/" , 
   relatedURLLabel3: "Mindful Consumption from MedicineBox" ,  
   relatedURL2: "https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" , 
-  relatedURLLabel0: "Join Us & the Community at the next Bake Sale" ,
-  relatedURL0: "http://www.cannabisfeminist.com/blog/2017/6/27/the-bake-sale-hosted-by-matt-nordgren" , 
-  relatedURLLabel2: "Marketing, Retail, & Business" , 
+  relatedURLLabel0: "" ,
+  relatedURL0: "" , 
+  relatedURLLabel2: "" , 
     // Group 1
       question: "What's the recommended amount of THC for a Microdose?",
       soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn.m4a" ,
@@ -38,8 +38,7 @@ var quizQuestions = [
   {
     // Group 1
       question: "What dosage do you get smoking a joint or bong?",
-      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/qubodup-megaswosh1.wav" ,
-      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn.m4a" ,
+      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn-2.m4a" ,
       answers: [
           {
               type: "Charming",
