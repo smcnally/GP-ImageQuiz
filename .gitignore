@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules
+*-build/
+src/api/*-quizQuestions.js
+src/api/*-personalityResults.json
