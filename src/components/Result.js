@@ -15,7 +15,7 @@ function Result(props) {
     >
       <div className="result-container">
         <p className="result-answer">
-          Your <strong>{props.scoreLabel}</strong> is <strong>{props.quizResult}</strong>!
+          {/* Your <strong>{props.scoreLabel}</strong> is <strong>{props.quizResult}</strong>! */}
         </p>
         <p>
          <img src={props.successImg} alt="Success" />
