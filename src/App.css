@@ -3,7 +3,7 @@
   background-color: #fff;
 }
 .App h2 {
-  font-family: Ubuntu, sans-serif;
+  font-family: Montserrat, sans-serif;
   /*color: #34515e;*/
   /*width: 100vw;*/
 }
@@ -12,16 +12,18 @@
   height: 0;
 }
 .App-header {
-  font-family: Ubuntu, sans-serif;
-  background-color: #fff;
+  font-family: Montserrat, sans-serif;
+  background-color: #eee5d6;
   padding-top: 1px;
   padding-bottom: 1px;
-  color: #333;
   text-align: center;
+  font-weight: 400;
+  color: #5e6472;
+  line-height: 1.65;
 }
 
 .App-intro {
-  font-family: Ubuntu, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: medium;
 }
 

@@ -7,14 +7,14 @@
 }
 
 a:link    { color:#aed1e3; text-decoration:none; }
-a:visited { color: #009bdf; text-decoration:none; }
-a:hover { text-decoration:underline; text-decoration-color: #009bdf}
+a:visited { color: #98d0a0; text-decoration:none; }
+a:hover { text-decoration:underline; text-decoration-color: #98d0a0}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #fffbf5;
 }
 
 h4 {
@@ -40,8 +40,9 @@ ul {
   padding: .1rem .5rem;
   background: #fff;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
-  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  /* Answer Area */
+  background: #fffbf5;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   border-radius: 2px;
@@ -121,7 +122,7 @@ ul {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
   font-family: 'Ubuntu Mono', sans-serif;
   font-size: 12px;
-  background: #fff;
+  background: #fffbf5;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
   padding: .5rem .5rem 0;
@@ -135,7 +136,7 @@ ul {
   display: grid;
   align-items: center;
   margin: 0;
-  background: #fff;
+  background: #fffbf5;
   color: #333333;
 }
 .question span {
@@ -167,7 +168,7 @@ ul {
   cursor: pointer;
   color: #ffffff;
   border-radius: 5px;
-  background-color: #009bdf;
+  background-color: #98d0a0;
   vertical-align: middle;
   min-height: 3.5em;
   margin: 3px;
@@ -212,7 +213,7 @@ button:focus {
 
 /* AnswerOption Component */
 .answerOption {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat Condensed', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
   display: block;
@@ -235,7 +236,7 @@ button:focus {
   top: 10px;
   padding: 5px 10px 5px 5px;
   /* customize colors here */
-  background-color: #009bdf;
+  background-color: #98d0a0;
   color: white;
   border-radius: 5px;
 }
@@ -294,20 +295,20 @@ button:focus {
     content: '';
     background: #45d6ff url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
-    border-color: #009bdf;
+    border-color: #98d0a0;
 }
 
 .answerOption:hover .radioCustomLabel:before {
   background-color: #45d6ff;
-  border-color: #009bdf;
+  border-color: #98d0a0;
 }
 .answerOption.answerSelected:hover .radioCustomLabel:before {
   background-color: #45d6ff;
-  border-color: #009bdf;
+  border-color: #98d0a0;
 }
 .answerOption:hover .answerOptionContainer {
   color: rgba(240, 240, 240, 0.95);
-  background-color: #009bdf;
+  background-color: #98d0a0;
 }
 
 /* New checkboxes */
@@ -338,7 +339,7 @@ button:focus {
 }
 .button-label h1 {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .button-label:hover {
   background: #d6d6d6;
@@ -362,7 +363,7 @@ input:checked + .button-label {
   color: #fff;
 }
 input:checked + .button-label:hover {
-  background: #009bdf;
+  background: #98d0a0;
   color: #fff;
 }
 
@@ -443,10 +444,10 @@ input:checked + .button-label:hover {
   transition: 0.3s;
 }
 .coolMatrix .answerOption:hover {
-  background-color: #009bdf;
+  background-color: #98d0a0;
 }
 .coolMatrix .answerSelected {
-  background-color: #009bdf;
+  background-color: #98d0a0;
   color: white;
 }
 .coolMatrix .answerSelected:hover {
