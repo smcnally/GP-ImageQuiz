@@ -75,14 +75,28 @@ class App extends Component {
     return answers;
   }
 
+  // Don't shuffle answerOptions - either this OR the next
   shuffleArray(array) {
+    var currentIndex = array.length;
+    while (0 !== currentIndex) {
+      currentIndex -= 1;
+    }
+    return array;
+  };
+
+  // Shuffle answerOptions - either this OR the previous
+/**  
+ *  shuffleArray(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
 
       // Pick a remaining element...
+      // randomIndex = Math.floor(Math.random() * currentIndex);
+      // Don't shuffle - 
       randomIndex = Math.floor(Math.random() * currentIndex);
+
       currentIndex -= 1;
 
       // And swap it with the current element.
@@ -93,8 +107,7 @@ class App extends Component {
 
     return array;
   };
-
-  
+  */  
 
   /**
    * handler for a question being answered

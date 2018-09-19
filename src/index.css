@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,900);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,900);
+
 /* Shared */
 
 * {
@@ -9,17 +11,23 @@
 a:link    { color:#aed1e3; text-decoration:none; }
 a:visited { color: #98d0a0; text-decoration:none; }
 a:hover { text-decoration:underline; text-decoration-color: #98d0a0}
+font-family: 'Montserrat', sans-serif;
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
   background: #fffbf5;
 }
 
 h4 {
-  font-size: 14px;
-  color: #5e6472;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: .9;
+  color: #fff;
   padding-right: 7px;
   padding-left: 7px;
 }
@@ -48,7 +56,7 @@ ul {
   border-radius: 2px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 290px) {
   .unconstrained .container {
     margin: .25rem auto;
   }
@@ -67,9 +75,14 @@ ul {
   font-size: 18px;
 }
 .result-bio {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5e6472;
+  line-height: 1.4;
   flex: 1 1 auto;
   justify-content: left;
-  font-size: 13px;
+  font-size: 14px;
   padding: .25rem .7rem;
   text-align: left;
 }
@@ -120,16 +133,19 @@ ul {
 /* QuestionCount Component */
 .questionCount {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   background: #fffbf5;
   color: rgba(0, 0, 0, 0.6);
-  font-style: italic;
   padding: .5rem .5rem 0;
 }
 
 /* Question Component */
 .question {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -137,7 +153,7 @@ ul {
   align-items: center;
   margin: 0;
   background: #fffbf5;
-  color: #333333;
+  color: #5e6472;
 }
 .question span {
   grid-column-start: 1;
@@ -213,7 +229,7 @@ button:focus {
 
 /* AnswerOption Component */
 .answerOption {
-  font-family: 'Montserrat Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
   display: block;
@@ -267,8 +283,9 @@ button:focus {
     /* where the li margins and padding are */
     padding: .15rem;
     padding-top: 8px;
-    font-size: 14px;
-    line-height: 1.02;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
     min-height: 30px;
 }
 .radioCustomLabel::first-line {
@@ -511,12 +528,12 @@ input:checked + .button-label:hover {
 
 /* constrain to 300x600 */
 .constrain-300x600 {
-  width: 300px;
-  height: 600px;
+  width: 299px;
+  height: 599px;
   overflow: scroll;
 }
 .constrain-300x600 .answerDefault .answerOption {
-  width: 100%; 
+  width: 95%; 
 }
 .constrain-300x600 .coolMatrix .answerOption {
   width: 45%; 
@@ -525,15 +542,16 @@ input:checked + .button-label:hover {
   max-height: 85px;
 }
 .constrain-300x600 .result-container {
-  width: 300px;
+  width: 299px;
 }
 .constrain-300x600 .question {
   padding: 0;
+  width: 280px;
 }
 .constrain-300x600 .question img {
   margin: 0 auto 0 auto;
 }
 .constrain-300x600 img {
   width: auto !important;
-  max-width: 300px !important;
+  max-width: 290px !important;
 }
