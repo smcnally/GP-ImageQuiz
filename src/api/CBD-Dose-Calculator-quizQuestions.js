@@ -19,7 +19,7 @@ var quizQuestions = [
             {
                 type: "Average",
                 content: "Answer these simple questions and get our best recommendation.",
-                imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Lucent_Logo-With_Background-400x350.png?resize=250"
+                imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Lucent_Logo-With_Background-400x350.png?w=250"
             },
         ]
     },
@@ -77,7 +77,7 @@ var quizQuestions = [
 {
     // Group 1
     question: "Have you taken CBD before? If so, how sensitive to the effects did you feel? If not, we’ll start slow by assuming you’re more sensitive.",
-    imageSrc: "https://meanbusiness.com/wp-content/uploads/2018/08/Dog_Going_Upstairs_Backward.gif",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Dog_Going_Upstairs_Backward.gif?w=250",
     //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
     answers: [
         {
