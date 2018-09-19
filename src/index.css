@@ -528,9 +528,7 @@ input:checked + .button-label:hover {
 
 /* constrain to 300x600 */
 .constrain-300x600 {
-  width: 299px;
-  height: 599px;
-  overflow: scroll;
+  width: 100%;
 }
 .constrain-300x600 .answerDefault .answerOption {
   width: 95%; 
@@ -542,16 +540,12 @@ input:checked + .button-label:hover {
   max-height: 85px;
 }
 .constrain-300x600 .result-container {
-  width: 299px;
+  width: 100%;
 }
 .constrain-300x600 .question {
   padding: 0;
-  width: 280px;
+  width: 95%;
 }
 .constrain-300x600 .question img {
   margin: 0 auto 0 auto;
-}
-.constrain-300x600 img {
-  width: auto !important;
-  max-width: 290px !important;
 }
