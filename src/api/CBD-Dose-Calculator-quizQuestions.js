@@ -13,13 +13,18 @@ var quizQuestions = [
         relatedURLLabel3: "How to Find the Right CBD Dose for You",
         // Group 1
         question: "How much CBD should you take?",
-        //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Bwip1-rise-analog-1_5sec.m4a",
-        multiAnswerSoundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Ahhh-AMBSPH_012.m4a",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
+        multiAnswerSoundSrc: "",
+        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
         answers: [
             {
                 type: "Average",
                 content: "Answer these simple questions and get our best recommendation.",
-                imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Lucent_Logo-With_Background-400x350.png?w=250"
+                imageSrc: ""
+            },
+            {
+                type: "Average",
+                content: " GET STARTED >>",    
             },
         ]
     },
@@ -27,7 +32,7 @@ var quizQuestions = [
         // Group 1
           question: "No surprise, smaller people tend to need less CBD to get the same effect. So what’s your weight range?",
           imageSrc: "",
-          //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Bwip1-rise-analog-1_5sec.m4a",
+          soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
           answers: [
               {
                 type: { "Novice": 1,  "Sensitive": 0 },
@@ -55,10 +60,10 @@ var quizQuestions = [
         // Group 1
         question: "How strong an effect are you looking for? For example, if you’re looking for pain relief, how severe is the pain? Or, if you are looking for a sense of calm, how anxious are you?",
         imageSrc: "",
-        //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Ahhh-AMBSPH_012.m4a",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
         answers: [
             {
-                type: { "Novice": 0,  "Sensitive": 1 },
+                type: { "Novice": 1,  "Sensitive": 0 },
                 content: "A small boost",
                 imageSrc: ""
             },
@@ -76,17 +81,18 @@ var quizQuestions = [
 },
 {
     // Group 1
-    question: "Have you taken CBD before? If so, how sensitive to the effects did you feel? If not, we’ll start slow by assuming you’re more sensitive.",
-    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Dog_Going_Upstairs_Backward.gif?w=250",
+    question: "Have you taken CBD before? If so, how sensitive to the effects did you feel?",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Dog_Going_Upstairs_Backward.gif?resize=220,125",
+    soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn.m4a",
     //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
     answers: [
         {
-            type: { "Novice": 1,  "Sensitive": 1 },
+            type: { "Novice": 1,  "Sensitive": 0 },
             content: "Never taken CBD / More sensitive",
             imageSrc: ""
         },
         {
-            type: { "Sensitive": 1, "Average": 1 },
+            type: { "Novice": 1, "Average": 1 },
             content: "Fairly sensitive",
 
         },

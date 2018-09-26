@@ -9,6 +9,7 @@ export function playSound(soundSrc) {
     if (sound) {
         sound.load();
         sound.currentTime = 0;
+        sound.volume = .25;
         sound.play().then(() => console.log("played"))
         .catch(error => console.log(error));
     }
