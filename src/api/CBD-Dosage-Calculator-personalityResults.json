@@ -1,7 +1,7 @@
 {
   "Novice": {
-    "bio": "We suggest a starting dose of 10mg of CBD. Your profile suggests a more modest beginning point -- We'll build slowly from there.",
-    "strains": "",
+    "bio": "We suggest a starting dose of 10mg of CBD.",
+    "strains": "Your profile suggests a more modest beginning point. Build slowly from there as-needed.",
     "successImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/04/PuppyEatingBanana.gif?resize=250,150",
     "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/calm_48149f98-d556-4f4d-8a8d-214f9b113e5f_250x.jpg?v=1535506090",
     "sponsorURL": "https://lucentbotanicals.com/products/calm-cbd-mints",
@@ -16,16 +16,16 @@
     "sponsorTagline": "Green Mountain Delivers"
   },
   "Average": {
-    "bio": "We suggest a starting dose of 20mg of CBD. Your profile appears to be more typical and 20 mg should provide a solid baseline to work from. Build slowly until you reach the desired effects.",
-    "strains": "",
+    "bio": "We suggest a starting dose of 20mg of CBD.",
+    "strains": "Your profile appears to be more typical and 20 mg should provide a solid baseline. Build slowly from there until you reach the desired effects.",
     "successImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/RunningABusiness-HardWork.gif?resize=250,150",
     "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/sleep_a3a71e2a-a0a7-4da3-8540-40a7488f3c70_250x.jpg?v=1535508007",
     "sponsorURL": "https://lucentbotanicals.com/products/calm-cbd-mints",
     "sponsorTagline": "Lucent Botanicals Sleep CBD Mints"
   },
   "Heavy": {
-    "bio": "We suggest a starting dose of 30mg of CBD. Your profile suggests a higher beginning dose than average. After your first time or two, you will feel confident increasing to a higher dose if necessary.",
-    "strains": "",
+    "bio": "We suggest a starting dose of 30mg of CBD.",
+    "strains": "Your profile suggests a higher beginning dose than average. After your first time or two, increase to a higher dose if necessary.",
     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=250,150",
     "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/pain_relief_250x.jpg?v=1535507862",
     "sponsorURL": "https://lucentbotanicals.com/products/pain-relief-cbd-mints",

@@ -28,8 +28,8 @@ h4 {
   font-style: normal;
   line-height: .9;
   color: #fff;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 ul {
@@ -295,7 +295,7 @@ button:focus {
 
 .answerOption .radioCustomLabel:before {
     position: absolute;
-    margin-right: .6rem;
+    margin-right: 2px;
     top: 4px;
     left: -26px;
     width: 22px;

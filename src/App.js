@@ -264,7 +264,7 @@ class App extends Component {
     return (
       <div className={"App " + constrainClass}>
         <div className="App-header">
-          <h4>{quizQuestions[0].intro}</h4>
+          <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>

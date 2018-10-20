@@ -12,16 +12,11 @@ var quizQuestions = [
         relatedURL3: "https://lucentbotanicals.com/blogs/news/how-to-find-right-cbd-dose",
         relatedURLLabel3: "How to Find the Right CBD Dose for You",
         // Group 1
-        question: "How much CBD should you take?",
-        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
+        question: "How much CBD should you take? Answer these simple questions and get our best recommendation.",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         multiAnswerSoundSrc: "",
         imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
         answers: [
-            {
-                type: "Average",
-                content: "Answer these simple questions and get our best recommendation.",
-                imageSrc: ""
-            },
             {
                 type: "Average",
                 content: " GET STARTED >>",    
@@ -32,7 +27,7 @@ var quizQuestions = [
         // Group 1
           question: "No surprise, smaller people tend to need less CBD to get the same effect. So what’s your weight range?",
           imageSrc: "",
-          soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
+          soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
           answers: [
               {
                 type: { "Novice": 1,  "Sensitive": 0 },
@@ -60,7 +55,7 @@ var quizQuestions = [
         // Group 1
         question: "How strong an effect are you looking for? For example, if you’re looking for pain relief, how severe is the pain? Or, if you are looking for a sense of calm, how anxious are you?",
         imageSrc: "",
-        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBOC_026.m4v",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         answers: [
             {
                 type: { "Novice": 1,  "Sensitive": 0 },
