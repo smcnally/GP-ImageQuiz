@@ -1,57 +1,57 @@
-{  "Bluebird": {
-    "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC." , 
-     "strains": "" , 
-     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
-     "sponsorURL": "https://palmettoharmony.com/" , 
-     "sponsorTagline": "Bluebird Delivers"
-    } ,
-   "GreenMountain": {
-     "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis." , 
-     "strains": "" ,
-	 "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
-     "sponsorURL": "https://palmettoharmony.com/" , 
-     "sponsorTagline": "Green Mountain Delivers"
-     } ,
-   "Palmetto": {
-     "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
-     "strains": "" , 
-      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
-     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
-     "sponsorURL": "https://palmettoharmony.com/" , 
-     "sponsorTagline": "Palemetto Delivers"
-     } ,
-   "Deteriorated": {
-     "bio": "Nope. Patients performed better"
-     } ,
-   "Improved": {
-     "bio": "Yes - Patients got faster and more accurate. Read what Harvard found out about other improvements to brain function, sleep, and overall health."
-     } ,
-   "Same": {
-     "bio": "Read what Harvard found out about other improvements to brain function, sleep, and overall health."
-   } , 
-	"Sativa": {	
-    "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress." ,
-    "strains": "Sour Diesel, Maui Waui, Amnesia Haze" ,
-    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" ,  
-     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Levo-Oil.jpg?resize=300,250" , 
-     "sponsorURL": "https://www.levooil.com/" , 
-     "sponsorTagline": "Levo: Oil Infusion. Reimagined."
-    } ,
-    "Indica": {
-    "bio": "Indica strains relax muscles and work as general analgesics. They also help with sleep." ,
-    "strains": "Northern Lights, Kush, Critical Mass" , 
-     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250" , 
-     "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
-     "sponsorTagline": "The Science of Sleep"
-    } ,
-    "Hybrid": {
-    "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities." ,
-    "strains": "Blue Dream, Pineapple Express, Skywalker OG" 
-     , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/hmbldt-4pack-1-sm.jpg" , 
-     "sponsorURL": "http://hmbldt.com/formulas/" , 
-     "sponsorTagline": "hmbldt formulas to suit your occasion"
-    }
+{
+  "Bluebird": {
+    "bio": "If you prefer cannabis' therapeutic effects -- calming, pain management, anti-anxiety -- more than its heady, trippy aspects, you have many options with products high in CBD and low in THC.",
+    "strains": "",
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=150,150",
+    "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg",
+    "sponsorURL": "https://palmettoharmony.com/",
+    "sponsorTagline": "Bluebird Delivers"
+  },
+  "GreenMountain": {
+    "bio": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis.",
+    "strains": "",
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,200",
+    "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg",
+    "sponsorURL": "https://palmettoharmony.com/",
+    "sponsorTagline": "Green Mountain Delivers"
+  },
+  "Palmetto": {
+    "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time.",
+    "strains": "",
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif",
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg",
+    "sponsorURL": "https://palmettoharmony.com/",
+    "sponsorTagline": "Palemetto Delivers"
+  },
+  "Deteriorated": {
+    "bio": "Nope. Patients performed better"
+  },
+  "Improved": {
+    "bio": "Yes - Patients got faster and more accurate. Read what Harvard found out about other improvements to brain function, sleep, and overall health."
+  },
+  "Same": {
+    "bio": "Read what Harvard found out about other improvements to brain function, sleep, and overall health."
+  },
+  "Sativa": {
+    "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress.",
+    "strains": "Sour Diesel, Maui Waui, Amnesia Haze",
+    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif",
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Levo-Oil.jpg?resize=300,250",
+    "sponsorURL": "https://www.levooil.com/",
+    "sponsorTagline": "Levo: Oil Infusion. Reimagined."
+  },
+  "Indica": {
+    "bio": "Indica strains relax muscles and work as general analgesics. They also help with sleep.",
+    "strains": "Northern Lights, Kush, Critical Mass",
+    "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/hmbldt-sleep-Large.jpeg?resize=300,250",
+    "sponsorURL": "http://hmbldt.com/pen-sleep/",
+    "sponsorTagline": "The Science of Sleep"
+  },
+  "Hybrid": {
+    "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities.",
+    "strains": "Blue Dream, Pineapple Express, Skywalker OG",
+    "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/hmbldt-4pack-1-sm.jpg",
+    "sponsorURL": "http://hmbldt.com/formulas/",
+    "sponsorTagline": "hmbldt formulas to suit your occasion"
+  }
 }

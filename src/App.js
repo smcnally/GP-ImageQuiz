@@ -3,6 +3,7 @@ import quizQuestions from './api/quizQuestions';
 import personalityResults from './api/personalityResults.json';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
+import { playSound } from './helpers'; // helper not component
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
       question: '',
       imageSrc: null,
       soundSrc: null,
+      multiAnswerSoundSrc: null,
       answerOptions: [],
       answer: '',
       multi: null,
@@ -38,6 +40,7 @@ class App extends Component {
       question: quizQuestions[0].question,
       imageSrc: quizQuestions[0].imageSrc || null,
       soundSrc: quizQuestions[0].soundSrc || null,
+      multiAnswerSoundSrc: quizQuestions[0].multiAnswerSoundSrc || null,
       multi: quizQuestions[0].multi || false,
       format: quizQuestions[0].format || "answerDefault",
       answersCount: answersCount,
@@ -72,14 +75,28 @@ class App extends Component {
     return answers;
   }
 
+  // Don't shuffle answerOptions - either this OR the next
   shuffleArray(array) {
+    var currentIndex = array.length;
+    while (0 !== currentIndex) {
+      currentIndex -= 1;
+    }
+    return array;
+  };
+
+  // Shuffle answerOptions - either this OR the previous
+/**  
+ *  shuffleArray(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
 
       // Pick a remaining element...
+      // randomIndex = Math.floor(Math.random() * currentIndex);
+      // Don't shuffle - 
       randomIndex = Math.floor(Math.random() * currentIndex);
+
       currentIndex -= 1;
 
       // And swap it with the current element.
@@ -90,22 +107,7 @@ class App extends Component {
 
     return array;
   };
-
-  /**
-   * play a sound given a url
-   * 
-   */
-  playSound(soundSrc) {
-    let sound = new Audio();
-    sound.preload = 'auto';
-    sound.src = soundSrc;
-    if (sound) {
-      sound.load();
-      sound.currentTime = 0;
-      sound.play().then(() => console.log("played"))
-        .catch(error => console.log(error));
-    }
-  }
+  */  
 
   /**
    * handler for a question being answered
@@ -126,7 +128,7 @@ class App extends Component {
       answers[key] = 1;
     }
     if (this.state.soundSrc) {
-      this.playSound(this.state.soundSrc);
+      playSound(this.state.soundSrc);
     }
     this.setUserAnswer(answers);
 
@@ -165,6 +167,8 @@ class App extends Component {
   setNextQuestion() {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
+    const defaultSoundSrc = quizQuestions[0].soundSrc || null;
+    const defaultMultiSoundSrc = quizQuestions[0].multiAnswerSoundSrc || null;
 
     this.setState({
       counter: counter,
@@ -173,6 +177,8 @@ class App extends Component {
       format: quizQuestions[counter].format || "answerDefault",
       question: quizQuestions[counter].question,
       imageSrc: quizQuestions[counter].imageSrc || null,
+      soundSrc: quizQuestions[counter].soundSrc || defaultSoundSrc,
+      multiAnswerSoundSrc: quizQuestions[counter].multiAnswerSoundSrc || defaultMultiSoundSrc,
       answerOptions: quizQuestions[counter].answers,
       answer: ''
     });
@@ -219,6 +225,7 @@ class App extends Component {
       <Quiz
         answer={this.state.answer || ""}
         answerOptions={this.state.answerOptions}
+        multiAnswerSoundSrc={this.state.multiAnswerSoundSrc}
         questionId={this.state.questionId}
         question={this.state.question}
         questionImg={this.state.imageSrc}
@@ -249,10 +256,15 @@ class App extends Component {
   // seems [0].intro is empty, should we hide the header when that happens?
   // use constrain-300x600 or unconstrained as a class next to App
   render() {
+    // if iframe, use constrained class
+    let constrainClass = "unconstrained";
+    if (window !== top) {
+      constrainClass = "constrain-300x600";
+    }
     return (
-      <div className="App constrain-300x600">
+      <div className={"App " + constrainClass}>
         <div className="App-header">
-          <h4>{quizQuestions[0].intro}</h4>
+          <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>

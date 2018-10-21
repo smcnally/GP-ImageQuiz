@@ -14,18 +14,12 @@ function Result(props) {
       transitionAppearTimeout={500}
     >
       <div className="result-container">
-        <p className="result-answer">
-          Your <strong>{props.scoreLabel}</strong> is <strong>{props.quizResult}</strong>!
-        </p>
+        <p className="result-answer" dangerouslySetInnerHTML={{__html: props.scoreLabel}} />
         <p>
          <img src={props.successImg} alt="Success" />
         </p>
-        <p className="result-bio">
-          {props.bio}
-        </p>
-        <p className="result-bio">
-          {props.strains}
-        </p>
+        <p className="result-bio" dangerouslySetInnerHTML={{__html: props.bio}} />
+        <p className="result-bio" dangerouslySetInnerHTML={{__html: props.strains}} />
         <h4>
           <a href={props.relatedURL0} target="_blank">{props.relatedURLLabel0}</a>
         </h4>
@@ -38,6 +32,7 @@ function Result(props) {
         <h4>
           <a href={props.relatedURL3} target="_blank">{props.relatedURLLabel3}</a>
         </h4>
+        {/**
         <p className="result-sponsor">[Sponsor]</p>
         <p className="result-sponsor">
           <a href={props.sponsorURL} target="_blank">
@@ -47,6 +42,7 @@ function Result(props) {
         <p className="result-sponsor">
           {props.sponsorTagline}
         </p>
+        */}
       </div>
     </ReactCSSTransitionGroup>
   );

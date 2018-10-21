@@ -17,6 +17,7 @@ var quizQuestions = [
       format: "coolMatrix",
       imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
       soundSrc: "https://i1.theportalwiki.net/img/a/a5/Portal2_sfx_button_positive.m4a",
+      multiAnswerSoundSrc: "http://localhost:5000/Blip_Select4.m4a",
       answers: [
           {
               type: "Edibles",
@@ -26,6 +27,7 @@ var quizQuestions = [
           {
               type: "Smoking",
               content: "Flower / Smoking",
+              soundSrc: "http://localhost:5000/Blip_Select10.m4a",
               imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
           },
 		  {
@@ -83,6 +85,40 @@ var quizQuestions = [
       ]
   },
   {
+    question: "Which effect do you prefer?",
+    format: "binaryText",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
+    answers: [
+        {
+            type: "Sativa",
+            content: "Relaxed",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+        },
+        {
+            type: "Indica",
+            content: "Focused",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
+        }
+    ]
+  },
+  {
+    question: "Which effect do you prefer?",
+    format: "binaryImage",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
+    answers: [
+        {
+            type: "Sativa",
+            content: "Relaxed",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+        },
+        {
+            type: "Indica",
+            content: "Focused",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
+        }
+    ]
+  },
+  {
     // Group 1
       question: "Which type of cannabis product have you used most frequently?",
       imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
@@ -112,6 +148,7 @@ var quizQuestions = [
   {
 	// Group 1
       question: "Which type of cannabis product do you generally prefer best?",
+      soundSrc: "http://honegger.weebly.com/uploads/9/5/3/3/9533249/applause_clapping.m4a",
       answers: [
           {
               type: "Edibles",
