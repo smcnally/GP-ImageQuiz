@@ -12,7 +12,10 @@ var quizQuestions = [
   relatedURL3: "" , 
   relatedURLLabel3: "" ,  
     // Group 1
-      question: "Do you take meds for any of these conditions? (Pick one)",
+      question: "Do you take meds for any of these conditions?",
+      multi: "Next »",
+      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Hit_Prommer-Simon_Carter.m4a",
+      multiAnswerSoundSrc: "https://meanbusiness.com/gamepath/AmbientHits/AMBPC_030.wav",
       answers: [
           {
               type: "Bluebird",
@@ -39,6 +42,7 @@ var quizQuestions = [
   {
     // Group 1
       question: "What will you be doing after medicating?",
+      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Hit_Prommer-Simon_Carter.m4a",
       answers: [
           {
               type: "GreenMountain",
@@ -60,6 +64,7 @@ var quizQuestions = [
   {
 	// Group 1
       question: "How do you prefer taking your meds?",
+      soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Hit_Prommer-Simon_Carter.m4a",
       answers: [
           {
               type: "Bluebird",
