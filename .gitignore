@@ -1,6 +1,8 @@
 # Dependency directories
 node_modules
 builds
+*.DS_Store*
+src/svg/
 *-build/
 src/api/*-quizQuestions.js
 src/api/*-personalityResults.json
