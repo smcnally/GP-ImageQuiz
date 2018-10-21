@@ -1,27 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,900);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,900);
+
 /* Shared */
 
 * {
   box-sizing: border-box;
 }
 
-a:link    { color:#45d6ff; text-decoration:none; }
-a:visited { color: #009bdf; text-decoration:none; }
-a:hover { text-decoration:underline; text-decoration-color: #009bdf}
+a:link    { color:#aed1e3; text-decoration:none; }
+a:visited { color: #98d0a0; text-decoration:none; }
+a:hover { text-decoration:underline; text-decoration-color: #98d0a0}
+font-family: 'Montserrat', sans-serif;
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #fffbf5;
 }
 
 h4 {
-  font-size: 14px;
-  color: #333;
-  padding-right: 7px;
-  padding-left: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: .9;
+  color: #fff;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 ul {
@@ -37,16 +45,18 @@ ul {
   position: relative;
   min-height: 70vh;
   margin: 0 auto;
+  padding: .1rem .5rem;
   background: #fff;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
-  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  /* Answer Area */
+  background: #fffbf5;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   border-radius: 2px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 290px) {
   .unconstrained .container {
     margin: .25rem auto;
   }
@@ -65,11 +75,17 @@ ul {
   font-size: 18px;
 }
 .result-bio {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5e6472;
+  line-height: 1.3;
+  margin: .1rem .1rem; 
   flex: 1 1 auto;
   justify-content: left;
-  font-size: 13px;
-  padding: .25rem .25rem;
+  font-size: 14px;
   text-align: left;
+  margin: .7em .7em;
 }
 .result-container {
   width: 95vw;
@@ -118,24 +134,27 @@ ul {
 /* QuestionCount Component */
 .questionCount {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  background: #fff;
+  background: #fffbf5;
   color: rgba(0, 0, 0, 0.6);
-  font-style: italic;
   padding: .5rem .5rem 0;
 }
 
 /* Question Component */
 .question {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
   position: sticky;
   top: 0;
   z-index: 2;
   display: grid;
   align-items: center;
   margin: 0;
-  background: #fff;
-  color: #333333;
+  background: #fffbf5;
+  color: #5e6472;
 }
 .question span {
   grid-column-start: 1;
@@ -166,7 +185,7 @@ ul {
   cursor: pointer;
   color: #ffffff;
   border-radius: 5px;
-  background-color: #009bdf;
+  background-color: #98d0a0;
   vertical-align: middle;
   min-height: 3.5em;
   margin: 3px;
@@ -211,7 +230,7 @@ button:focus {
 
 /* AnswerOption Component */
 .answerOption {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-top: 1px solid #fff;
   position: relative;
   display: block;
@@ -234,7 +253,7 @@ button:focus {
   top: 10px;
   padding: 5px 10px 5px 5px;
   /* customize colors here */
-  background-color: #009bdf;
+  background-color: #98d0a0;
   color: white;
   border-radius: 5px;
 }
@@ -264,9 +283,10 @@ button:focus {
     margin-left: 30px;
     /* where the li margins and padding are */
     padding: .15rem;
-    padding-top: 8px;
-    font-size: 14px;
-    line-height: 1.02;
+    padding-top: 7px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
     min-height: 30px;
 }
 .radioCustomLabel::first-line {
@@ -275,7 +295,7 @@ button:focus {
 
 .answerOption .radioCustomLabel:before {
     position: absolute;
-    margin-right: .6rem;
+    margin-right: 2px;
     top: 4px;
     left: -26px;
     width: 22px;
@@ -293,20 +313,20 @@ button:focus {
     content: '';
     background: #45d6ff url(./svg/icon-check.svg) no-repeat;
     background-size: 22px;
-    border-color: #009bdf;
+    border-color: #98d0a0;
 }
 
 .answerOption:hover .radioCustomLabel:before {
   background-color: #45d6ff;
-  border-color: #009bdf;
+  border-color: #98d0a0;
 }
 .answerOption.answerSelected:hover .radioCustomLabel:before {
   background-color: #45d6ff;
-  border-color: #009bdf;
+  border-color: #98d0a0;
 }
 .answerOption:hover .answerOptionContainer {
   color: rgba(240, 240, 240, 0.95);
-  background-color: #009bdf;
+  background-color: #98d0a0;
 }
 
 /* New checkboxes */
@@ -337,7 +357,7 @@ button:focus {
 }
 .button-label h1 {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .button-label:hover {
   background: #d6d6d6;
@@ -361,7 +381,7 @@ input:checked + .button-label {
   color: #fff;
 }
 input:checked + .button-label:hover {
-  background: #009bdf;
+  background: #98d0a0;
   color: #fff;
 }
 
@@ -442,10 +462,10 @@ input:checked + .button-label:hover {
   transition: 0.3s;
 }
 .coolMatrix .answerOption:hover {
-  background-color: #009bdf;
+  background-color: #98d0a0;
 }
 .coolMatrix .answerSelected {
-  background-color: #009bdf;
+  background-color: #98d0a0;
   color: white;
 }
 .coolMatrix .answerSelected:hover {
@@ -509,12 +529,10 @@ input:checked + .button-label:hover {
 
 /* constrain to 300x600 */
 .constrain-300x600 {
-  width: 300px;
-  height: 600px;
-  overflow: scroll;
+  width: 100%;
 }
 .constrain-300x600 .answerDefault .answerOption {
-  width: 100%; 
+  width: 95%; 
 }
 .constrain-300x600 .coolMatrix .answerOption {
   width: 45%; 
@@ -523,15 +541,12 @@ input:checked + .button-label:hover {
   max-height: 85px;
 }
 .constrain-300x600 .result-container {
-  width: 300px;
+  width: 100%;
 }
 .constrain-300x600 .question {
   padding: 0;
+  width: 95%;
 }
 .constrain-300x600 .question img {
   margin: 0 auto 0 auto;
-}
-.constrain-300x600 img {
-  width: auto !important;
-  max-width: 300px !important;
 }

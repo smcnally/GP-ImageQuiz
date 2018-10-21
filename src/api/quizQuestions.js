@@ -85,6 +85,40 @@ var quizQuestions = [
       ]
   },
   {
+    question: "Which effect do you prefer?",
+    format: "binaryText",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
+    answers: [
+        {
+            type: "Sativa",
+            content: "Relaxed",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+        },
+        {
+            type: "Indica",
+            content: "Focused",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
+        }
+    ]
+  },
+  {
+    question: "Which effect do you prefer?",
+    format: "binaryImage",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
+    answers: [
+        {
+            type: "Sativa",
+            content: "Relaxed",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+        },
+        {
+            type: "Indica",
+            content: "Focused",
+            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
+        }
+    ]
+  },
+  {
     // Group 1
       question: "Which type of cannabis product have you used most frequently?",
       imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
