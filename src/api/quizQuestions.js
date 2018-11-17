@@ -1,182 +1,109 @@
 var quizQuestions = [
-  {
-   // Game-wide values
-  intro: "Products Used Within the Last month" , 
-  scoreLabel: "Preference" , 
-  relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html" , 
-  relatedURLLabel0: "Claim your Gift!" ,
-  relatedURL1: "" , 
-  relatedURLLabel1: "" ,  
-  relatedURL2: "" , 
-  relatedURLLabel2: "" ,
-  relatedURL3: "" , 
-  relatedURLLabel3: "" ,  
+    {
+        // Game-wide values
+        intro: "CBD Dosage Calculator",
+        scoreLabel: "<em>Your Best Life Is Inside</em>",
+        // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
+        // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",
+        relatedURL1: "",
+        relatedURLLabel1: "",
+        relatedURL2: "",
+        relatedURLLabel2: "",
+        // relatedURL3: "https://lucentbotanicals.com/blogs/news/how-to-find-right-cbd-dose",
+        // relatedURLLabel3: "How to Find the Right CBD Dose for You",
+        // Group 1
+        question: "How much CBD should you take? Answer these simple questions and get our best recommendation.",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+        multiAnswerSoundSrc: "",
+        // imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
+        imageSrc: "https://gamepath.io/wp-content/uploads/sites/4/2018/11/Lucent-Kirby-I-800k.gif",
+        answers: [
+            {
+                type: "Average",
+                content: " GET STARTED >>",    
+            },
+        ]
+    },
+    {
+        // Group 1
+          question: "No surprise, smaller people tend to need less CBD to get the same effect. So what’s your weight range?",
+          imageSrc: "",
+          soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+          answers: [
+              {
+                type: { "Novice": 1,  "Sensitive": 0 },
+                content: "Under 110 lbs (50 kg)",
+                imageSrc: ""
+              },
+              {
+                type: { "Novice": 1,  "Sensitive": 0 },
+                content: "110 - 150 lbs (50 - 70 kg)",
+                imageSrc: ""
+              },
+              {
+                type: { "Average": 1, "Heavy": 1 },
+                content: "150 - 220 lbs (70 - 100 kg)",
+                imageSrc: ""
+              },
+              {
+                type: { "Average": 0, "Heavy": 1 },
+                content: "More than 220 lbs (100 kg)",
+                imageSrc: ""
+            },
+          ]
+      },
+    {
+        // Group 1
+        question: "How strong an effect are you looking for? For example, if you’re looking for pain relief, how severe is the pain? Or, if you are looking for a sense of calm, how anxious are you?",
+        imageSrc: "",
+        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+        answers: [
+            {
+                type: { "Novice": 1,  "Sensitive": 0 },
+                content: "A small boost",
+                imageSrc: ""
+            },
+            {
+                type: { "Sensitive": 0, "Average": 1 },
+                content: "A moderate but significant effect",
+
+            },
+            {
+                type: { "Average": 0, "Heavy": 1 },
+                content: "A strong effect",
+                imageSrc: ""
+            },
+]
+},
+{
     // Group 1
-      question: "Which type of cannabis product have you used most recently?",
-      multi: "Next »",
-      format: "coolMatrix",
-      imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
-      soundSrc: "https://i1.theportalwiki.net/img/a/a5/Portal2_sfx_button_positive.m4a",
-      multiAnswerSoundSrc: "http://localhost:5000/Blip_Select4.m4a",
-      answers: [
-          {
-              type: "Edibles",
-              content: "Edibles This is a bunch of extra text so things wrap like so",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
-          },
-          {
-              type: "Smoking",
-              content: "Flower / Smoking",
-              soundSrc: "http://localhost:5000/Blip_Select10.m4a",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
-          },
-		  {
-              type: "Vaping",
-              content: "Vaping",
-              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
-          },
-          {
-              type: "Dabbing",
-              content: "Dabbing",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
-          },
-          {
-              type: "Topicals",
-              content: "Topicals, Lotions, or Ointments",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
-          },
-      ]
-  },
-  {
-      question: "Pick all the effects you'd like to achieve",
-      multi: "Next »",
-      format: "coolMatrix",
-      answers: [
-          {
-              type: "Sativa",
-              content: "Euphoric",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
-          },
-          {
-              type: "Sativa",
-              content: "Relaxed",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
-          },
-          {
-              type: "Sativa",
-              content: "Hungry",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
-          },
-          {
-              type: "Sativa",
-              content: "Creative",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
-          },
-          {
-              type: {"Sativa": 1, "Indica": -1},
-              content: "Energetic",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
-          },
-          {
-              type: "Indica",
-              content: "Focused",
-              imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
-          }
-      ]
-  },
-  {
-    question: "Which effect do you prefer?",
-    format: "binaryText",
-    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
+    question: "Have you taken CBD before? If so, how sensitive to the effects did you feel?",
+    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/08/Dog_Going_Upstairs_Backward.gif?resize=220,125",
+    soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn.m4a",
+    //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
     answers: [
         {
-            type: "Sativa",
-            content: "Relaxed",
-            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+            type: { "Novice": 1,  "Sensitive": 0 },
+            content: "Never taken CBD / More sensitive",
+            imageSrc: ""
         },
         {
-            type: "Indica",
-            content: "Focused",
-            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
-        }
-    ]
-  },
-  {
-    question: "Which effect do you prefer?",
-    format: "binaryImage",
-    imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
-    answers: [
-        {
-            type: "Sativa",
-            content: "Relaxed",
-            imageSrc: "https://twemoji.maxcdn.com/72x72/1f600.png"
+            type: { "Novice": 1, "Average": 1 },
+            content: "Fairly sensitive",
+
         },
         {
-            type: "Indica",
-            content: "Focused",
-            imageSrc: "https://twemoji.maxcdn.com/72x72/1f610.png"
-        }
-    ]
-  },
-  {
-    // Group 1
-      question: "Which type of cannabis product have you used most frequently?",
-      imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200",
-      answers: [
-          {
-              type: "Edibles",
-              content: "Edibles"
-          },
-          {
-              type: "Smoking",
-              content: "Flower / Smoking",
-          },
-		  {
-              type: "Vaping",
-              content: "Vaping",
-          },
-          {
-              type: "Dabbing",
-              content: "Dabbing",
-          },
-          {
-              type: "Topicals",
-              content: "Topicals, Lotions, or Ointments",
-          },
-      ]
-  },
-  {
-	// Group 1
-      question: "Which type of cannabis product do you generally prefer best?",
-      soundSrc: "http://honegger.weebly.com/uploads/9/5/3/3/9533249/applause_clapping.m4a",
-      answers: [
-          {
-              type: "Edibles",
-              content: "Edibles",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/Insomnia-Woman.jpg?resize=300,200"
-          },
-          {
-              type: "Smoking",
-              content: "Flower / Smoking",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200"
-          },
-		  {
-              type: "Vaping",
-              content: "Vaping",
-              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=300,200"
-          },
-          {
-              type: "Dabbing",
-              content: "Dabbing",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
-          },
-          {
-              type: "Topicals",
-              content: "Topicals, Lotions, or Ointments",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/04/Muscles-Back-Shoulders-Illustration.jpg?resize=300,200"
-          },
-      ]
-  },
+            type: { "Average": 1, "Heavy": 0 },
+            content: "Average",
+            imageSrc: ""
+        },
+        {
+            type: { "Average": 0, "Heavy": 1 },
+            content: "Not sensitive",
+            imageSrc: ""
+        },
+]
+}
 ];
 
 export default quizQuestions;

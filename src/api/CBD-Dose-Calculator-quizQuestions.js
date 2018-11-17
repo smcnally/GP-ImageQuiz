@@ -2,20 +2,21 @@ var quizQuestions = [
     {
         // Game-wide values
         intro: "CBD Dosage Calculator",
-        scoreLabel: "Preference",
+        scoreLabel: "<em>Your Best Life Is Inside</em>",
         // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
         // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",
-        relatedURL1: "https://www.medicalnewstoday.com/articles/319475.php",
-        relatedURLLabel1: "Does CBD oil work for chronic pain management?",
-        relatedURL2: "https://www.projectcbd.org/guidance/cbd-users-manual",
-        relatedURLLabel2: "CBD User’s Manual",
-        relatedURL3: "https://lucentbotanicals.com/blogs/news/how-to-find-right-cbd-dose",
-        relatedURLLabel3: "How to Find the Right CBD Dose for You",
+        relatedURL1: "",
+        relatedURLLabel1: "",
+        relatedURL2: "",
+        relatedURLLabel2: "",
+        // relatedURL3: "https://lucentbotanicals.com/blogs/news/how-to-find-right-cbd-dose",
+        // relatedURLLabel3: "How to Find the Right CBD Dose for You",
         // Group 1
         question: "How much CBD should you take? Answer these simple questions and get our best recommendation.",
         soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         multiAnswerSoundSrc: "",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
+        // imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
+        imageSrc: "https://gamepath.io/wp-content/uploads/sites/4/2018/11/Lucent-Kirby-I-800k.gif",
         answers: [
             {
                 type: "Average",
