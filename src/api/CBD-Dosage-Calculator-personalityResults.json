@@ -1,34 +1,26 @@
 {
   "Novice": {
-    "bio": "We suggest a starting dose of 10mg of CBD.",
-    "strains": "Lucent Botanicals makes taking your perfect dose easy. <a href='https://lucentbotanicals.com/products/collection-of-cbd-mints'>Buy a box of 40 mints</a>",
-    "successImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/04/PuppyEatingBanana.gif?resize=200,100",
-    "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/lineup-2_0cbfe57c-ba76-4f97-866d-8b72e495467a_200x.jpg?v=1539101388",
+    "bio": "We suggest a starting dose of 10mg of CBD. <strong>Lucent Botanicals</strong> makes taking your perfect dose easy.",
+    "strains": "<a href='https://lucentbotanicals.com/products/collection-of-cbd-mints' target='_blank' onclick='EB.clickthrough()'><strong>Buy a box of 40 mints</strong></a>.",
+    "successImg": "https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/11/pastel_balloons_pattern-300x300-1.gif?crop=0,20,84,25",
+    "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/Lucent-Botanicals-2018-11-09-512-300dpi_250x.jpg?v=1542297027",
     "sponsorURL": "https://lucentbotanicals.com/products/collection-of-cbd-mints",
-    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/collection-of-cbd-mints'>Lucent Botanicals Collection of CBD Mints</a> <br> Your Best Life Is Inside"
-  },
-  "Sensitive": {
-    "bio": "[Not Used]",
-    "strains": "",
-    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,100",
-    "sponsorImg": "https://meanbusiness.com/wp-content/uploads/2017/05/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg",
-    "sponsorURL": "https://palmettoharmony.com/",
-    "sponsorTagline": "Green Mountain Delivers"
+    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/collection-of-cbd-mints' target='_blank' onclick='EB.clickthrough()'>Lucent Botanicals Collection of CBD Mints</a> <br> Your Best Life Is Inside"
   },
   "Average": {
-    "bio": "We suggest a starting dose of 20mg of CBD.",
-    "strains": "Lucent Botanicals makes taking your perfect dose easy. <a href='https://lucentbotanicals.com/products/energy-cbd-mints'>Buy a box of 40 Energy CBD mints</a>.",
-    "successImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/RunningABusiness-HardWork.gif?resize=200,115",
-    "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/focus_19441b9f-e11c-475c-8d14-ce74879a7f40_200x.jpg?v=1535507404",
+    "bio": "We suggest a starting dose of 20mg of CBD. <strong>Lucent Botanicals</strong> makes taking your perfect dose easy.",
+    "strains": "<a href='https://lucentbotanicals.com/products/energy-cbd-mints' target='_blank'><strong>Buy a box of 40 mints</strong></a>.",
+    "successImg": "https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/11/pastel_stars_pattern-300x168.gif?crop=0,20,84,44",
+    "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/Lucent-Botanicals-2018-11-09-514-300dpi_250x.jpg?v=1542297107",
     "sponsorURL": "https://lucentbotanicals.com/products/energy-cbd-mints",
-    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/energy-cbd-mints'>Lucent Botanicals Energy CBD Mints</a> <br> Your Best Life Is Inside"
+    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/energy-cbd-mints' target='_blank'>Lucent Botanicals Energy CBD Mints</a> <br> Your Best Life Is Inside"
   },
   "Heavy": {
-    "bio": "We suggest a starting dose of 30mg of CBD.",
-    "strains": "Lucent Botanicals makes taking your perfect dose easy.  <a href='https://lucentbotanicals.com/products/pain-relief-cbd-mints'>Buy a box of 40 mints.</a>",
-    "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200,100",
-    "sponsorImg": "https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/11/Lucent-Pain-formula-Take-2-300px.gif?resize=225,112",
+    "bio": "We suggest a starting dose of 30mg of CBD. <strong>Lucent Botanicals</strong> makes taking your perfect dose easy.",
+    "strains": "<a href='https://lucentbotanicals.com/products/pain-relief-cbd-mints' target='_blank'><strong>Buy a box of 40 mints.</strong></a>",
+    "successImg": "https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/11/pastel_vr_pattern-300x300-1.gif?crop=0,20,84,25",
+    "sponsorImg": "https://cdn.shopify.com/s/files/1/0032/8273/1123/products/Lucent-Botanicals-2018-11-09-522-300dpi_250x.jpg?v=1542297331",
     "sponsorURL": "https://lucentbotanicals.com/products/pain-relief-cbd-mints",
-    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/pain-relief-cbd-mints'>Lucent Botanicals Pain Relief CBD Mints</a> <br> Your Best Life Is Inside"
+    "sponsorTagline": "<a href='https://lucentbotanicals.com/products/pain-relief-cbd-mints' target='_blank'>Lucent Botanicals Pain Relief CBD Mints</a> <br> Your Best Life Is Inside"
   }
 }
