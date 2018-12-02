@@ -108,7 +108,7 @@ class Quiz extends Component {
         component="div"
         transitionName="fade"
         transitionEnterTimeout={800}
-        transitionLeaveTimeout={500}
+        transitionLeaveTimeout={500}ß
         transitionAppear
         transitionAppearTimeout={500}
       >
@@ -121,7 +121,7 @@ class Quiz extends Component {
                 counter={this.props.questionId}
                 total={this.props.questionTotal}
               />
-              <Question {...this.props} doneWithQuestion={this.handleDoneQuestion.bind(this)}/>
+              <Question appHeaderTypeColor={this.props.appHeaderTypeColor} appHeaderBgColor={this.props.appHeaderBgColor} appHeaderLogo={this.props.appHeaderLogo} {...this.props} doneWithQuestion={this.handleDoneQuestion.bind(this)}/>
               <AnswerOptions
                 {...this.props}
                 onItemSelected={this.onItemSelected.bind(this)}
@@ -141,7 +141,10 @@ Quiz.propTypes = {
   question: PropTypes.string.isRequired,
   questionId: PropTypes.number.isRequired,
   questionTotal: PropTypes.number.isRequired,
-  onQuestionAnswered: PropTypes.func.isRequired
+  onQuestionAnswered: PropTypes.func.isRequired,
+  appHeaderTypeColor: React.PropTypes.string,
+  appHeaderBgColor: React.PropTypes.string,
+  appHeaderLogo: React.PropTypes.string
 };
 
 export default Quiz;

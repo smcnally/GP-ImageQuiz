@@ -1,7 +1,10 @@
 var quizQuestions = [
     {
         // Game-wide values
-        intro: "CBD Dosage Calculator",
+        intro: "",
+        appHeaderTypeColor: "",
+        appHeaderBgColor: "",
+        appHeaderLogo: "https://gamepath.io/wp-content/uploads/sites/4/2018/12/cbd-dosage-calculator-title.png",
         scoreLabel: "<em>Your Best Life Is Inside</em>",
         // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
         // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",
