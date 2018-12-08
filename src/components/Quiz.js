@@ -108,7 +108,7 @@ class Quiz extends Component {
         component="div"
         transitionName="fade"
         transitionEnterTimeout={800}
-        transitionLeaveTimeout={500}ß
+        transitionLeaveTimeout={500}
         transitionAppear
         transitionAppearTimeout={500}
       >

@@ -15,9 +15,10 @@ class App extends Component {
       counter: 0,
       questionId: 1,
       question: '',
+      optionalIntroText: '',
       appHeaderTypeColor: '',
       appHeaderBgColor: '',
-      appHeaderLogo: 'https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/11/pastel_balloons_pattern-300x300-1.gif?crop=0,20,84,25',
+      appHeaderLogo: '',
       imageSrc: null,
       soundSrc: null,
       multiAnswerSoundSrc: null,
@@ -270,13 +271,17 @@ class App extends Component {
   render() {
     // if iframe, use constrained class
     let constrainClass = "unconstrained";
+    let optionalIntroText = quizQuestions[0].intro;
     if (window !== top) {
       constrainClass = "constrain-300x600";
     }
+    if (optionalIntroText) {
+      optionalIntroText = "<h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />";
+        }
     return (
       <div className={"App " + constrainClass}>
         <div className="App-header">
-          <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />
+          {optionalIntroText}
           <div className='logo-td'><img className='app-logo' src={quizQuestions[0].appHeaderLogo} alt={this.props.content}></img></div>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}

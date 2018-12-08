@@ -16,10 +16,10 @@ function Result(props) {
       <div className="constrain-300x600 result-container">
         {/**
         <p className="result-answer" dangerouslySetInnerHTML={{__html: props.scoreLabel}} />
-        */}
         <p>
-         <img class="constrain-300x600" src={props.successImg} alt="Success" />
+         <img className="constrain-300x600" src={props.successImg} alt="Success" />
         </p>
+        */}
         <p className="result-bio" dangerouslySetInnerHTML={{__html: props.bio}} />
         <p className="result-bio" dangerouslySetInnerHTML={{__html: props.strains}} />
         <h4>

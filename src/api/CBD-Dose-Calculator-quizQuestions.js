@@ -4,7 +4,7 @@ var quizQuestions = [
         intro: "",
         appHeaderTypeColor: "",
         appHeaderBgColor: "",
-        appHeaderLogo: "https://gamepath.io/wp-content/uploads/sites/4/2018/12/cbd-dosage-calculator-title.png",
+        appHeaderLogo: "https://i0.wp.com/gamepath.io/wp-content/uploads/sites/4/2018/12/cbd-dosage-calculator-title.png?crop=5,3,90,95&w=268",
         scoreLabel: "<em>Your Best Life Is Inside</em>",
         // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
         // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",

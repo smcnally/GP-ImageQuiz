@@ -13,7 +13,6 @@
 a:link    { color:#aed1e3; text-decoration:none; }
 a:visited { color: #98d0a0; text-decoration:none; }
 a:hover { text-decoration:underline; text-decoration-color: #98d0a0}
-font-family: 'Montserrat', sans-serif;
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -45,7 +44,7 @@ ul {
 
 .container {
   position: relative;
-  min-height: 70vh;
+  min-height: 91%;
   margin: 0 auto;
   padding: .1rem .5rem;
   background: #fff;
@@ -101,11 +100,11 @@ ul {
 }
 .result-sponsor {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
   padding: .25em;
 
 }
@@ -165,7 +164,7 @@ ul {
 }
 .question span.nextInstructions {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 0;
   font-style: italic;
   font-weight: normal;
@@ -533,7 +532,7 @@ input:checked + .button-label:hover {
 /* constrain to 300x600 */
 .constrain-300x600 {
   width: 100%;
-  height: 100%;
+  height: 599px;
 }
 .constrain-300x600 .answerDefault .answerOption {
   width: 95%; 
