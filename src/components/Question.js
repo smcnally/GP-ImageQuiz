@@ -11,7 +11,7 @@ class Question extends Component {
     let nextInstructions = null;
     let optionalImage = null;
     let questionClasses = "question";
-
+    let logoImage = null;
 
     if (nextPrompt) {
       questionClasses += " multiQuestion";
@@ -42,6 +42,7 @@ class Question extends Component {
         {nextInstructions}
         {optionalImage}
         {nextButton}
+        {logoImage}
       </h4>
     );
   }

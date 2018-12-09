@@ -1,5 +1,7 @@
+/* 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,900);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,900);
+*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,900);
 
 /* Shared */
@@ -11,7 +13,6 @@
 a:link    { color:#aed1e3; text-decoration:none; }
 a:visited { color: #98d0a0; text-decoration:none; }
 a:hover { text-decoration:underline; text-decoration-color: #98d0a0}
-font-family: 'Montserrat', sans-serif;
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -43,7 +44,7 @@ ul {
 
 .container {
   position: relative;
-  min-height: 70vh;
+  min-height: 91%;
   margin: 0 auto;
   padding: .1rem .5rem;
   background: #fff;
@@ -88,7 +89,7 @@ ul {
   margin: .7em .7em;
 }
 .result-container {
-  width: 95vw;
+  width: 3vw;
   padding: .25em;
   margin: 0 1em;
 }
@@ -99,11 +100,11 @@ ul {
 }
 .result-sponsor {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
   padding: .25em;
 
 }
@@ -113,8 +114,8 @@ ul {
 
 @media (min-width: 30em) {
   .unconstrained .result-container {
-    width: 100%;
-    max-width: 30em;
+    width: 97%;   /* Changed from 100% 181121 */
+    max-width: 98%; /* Changed from 30em 181121 */
   }
   .unconstrained .result-answer {
     font-size: 1.5em;
@@ -153,16 +154,17 @@ ul {
   display: grid;
   align-items: center;
   margin: 0;
+  margin-bottom: 25px;
   background: #fffbf5;
   color: #5e6472;
 }
 .question span {
   grid-column-start: 1;
-  padding: 0.5rem .75rem .5rem .75rem;
+  padding: 0.5rem .3rem;
 }
 .question span.nextInstructions {
   /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 0;
   font-style: italic;
   font-weight: normal;
@@ -430,9 +432,9 @@ input:checked + .button-label:hover {
   width: auto;
   left: auto;
   top: auto;
-  display: inline-grid;
+  /* display: inline-grid; */
   position: inherit;
-  margin: 8px 8px 0 8px;
+  margin: .5rem .3rem;
 }
 .answerDefault .imgAnswerOption .answerOptionContainer {
   left: 8px;
@@ -530,6 +532,7 @@ input:checked + .button-label:hover {
 /* constrain to 300x600 */
 .constrain-300x600 {
   width: 100%;
+  height: 599px;
 }
 .constrain-300x600 .answerDefault .answerOption {
   width: 95%; 

@@ -15,6 +15,10 @@ class App extends Component {
       counter: 0,
       questionId: 1,
       question: '',
+      optionalIntroText: '',
+      appHeaderTypeColor: '',
+      appHeaderBgColor: '',
+      appHeaderLogo: '',
       imageSrc: null,
       soundSrc: null,
       multiAnswerSoundSrc: null,
@@ -38,6 +42,9 @@ class App extends Component {
     let answersCount = this.tabulateAnswers(quizQuestions);
     this.setState({
       question: quizQuestions[0].question,
+      appHeaderTypeColor: quizQuestions[0].appHeaderTypeColor,
+      appHeaderBgColor : quizQuestions[0].appHeaderBgColor,
+      appHeaderLogo : quizQuestions[0].appHeaderLogo,
       imageSrc: quizQuestions[0].imageSrc || null,
       soundSrc: quizQuestions[0].soundSrc || null,
       multiAnswerSoundSrc: quizQuestions[0].multiAnswerSoundSrc || null,
@@ -180,7 +187,10 @@ class App extends Component {
       soundSrc: quizQuestions[counter].soundSrc || defaultSoundSrc,
       multiAnswerSoundSrc: quizQuestions[counter].multiAnswerSoundSrc || defaultMultiSoundSrc,
       answerOptions: quizQuestions[counter].answers,
-      answer: ''
+      answer: '',
+      appHeaderTypeColor: quizQuestions[counter].appHeaderTypeColor,
+      appHeaderBgColor : quizQuestions[counter].appHeaderBgColor,
+      appHeaderLogo : quizQuestions[counter].appHeaderLogo 
     });
 
     // position new Q at top
@@ -233,6 +243,9 @@ class App extends Component {
         format={this.state.format}
         questionTotal={quizQuestions.length}
         onQuestionAnswered={this.handleQuestionAnswered}
+        appHeaderTypeColor={this.state.appHeaderTypeColor}
+        appHeaderBgColor={this.state.appHeaderBgColor}
+        appHeaderLogo={this.state.appHeaderLogo}   
       />
     );
   }
@@ -258,13 +271,18 @@ class App extends Component {
   render() {
     // if iframe, use constrained class
     let constrainClass = "unconstrained";
+    let optionalIntroText = quizQuestions[0].intro;
     if (window !== top) {
       constrainClass = "constrain-300x600";
     }
+    if (optionalIntroText) {
+      optionalIntroText = "<h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />";
+        }
     return (
       <div className={"App " + constrainClass}>
         <div className="App-header">
-          <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />
+          {optionalIntroText}
+          <div className='logo-td'><img className='app-logo' src={quizQuestions[0].appHeaderLogo} alt={this.props.content}></img></div>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>

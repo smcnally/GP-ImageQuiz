@@ -13,13 +13,13 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <div className="result-container">
+      <div className="constrain-300x600 result-container">
         {/**
         <p className="result-answer" dangerouslySetInnerHTML={{__html: props.scoreLabel}} />
-        */}
         <p>
-         <img src={props.successImg} alt="Success" />
+         <img className="constrain-300x600" src={props.successImg} alt="Success" />
         </p>
+        */}
         <p className="result-bio" dangerouslySetInnerHTML={{__html: props.bio}} />
         <p className="result-bio" dangerouslySetInnerHTML={{__html: props.strains}} />
         <h4>
