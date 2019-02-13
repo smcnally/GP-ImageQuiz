@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules
 builds
+package-lock.json
 *.DS_Store*
 src/svg/
 *-build/

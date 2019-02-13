@@ -276,7 +276,7 @@ class App extends Component {
       constrainClass = "constrain-300x600";
     }
     if (optionalIntroText) {
-      optionalIntroText = "<h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />";
+      optionalIntroText = <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />;
         }
     return (
       <div className={"App " + constrainClass}>
