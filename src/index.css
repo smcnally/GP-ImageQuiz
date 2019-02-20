@@ -453,7 +453,7 @@ input:checked + .button-label:hover {
 }
 */
 
-/* not used
+/* moved to q-and-a.css
 / AnswerOptions ul List custom formats /
 .coolMatrix {
   background-color: #fff;
@@ -528,9 +528,8 @@ input:checked + .button-label:hover {
     width: 20em;
   }
 }
-*/
 
-/* moved to q-and-a.css
+
 @media screen and (min-width: 40em) {
   .unconstrained .answerDefault .answerOption {
     width: 50%;
