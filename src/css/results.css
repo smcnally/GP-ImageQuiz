@@ -1,0 +1,65 @@
+/* Result Component */
+.result {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 14px;
+    padding: .1rem .1rem;
+    text-align: center;
+  }
+  .result-answer {
+    font-size: 18px;
+  }
+  .result-bio {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5e6472;
+    line-height: 1.3;
+    margin: .1rem .1rem; 
+    flex: 1 1 auto;
+    justify-content: left;
+    font-size: 14px;
+    text-align: left;
+    margin: .7em .7em;
+  }
+  .result-container {
+    /*width: 3vw;*/
+    padding: .25em;
+    margin: 0 1em;
+  }
+  .result-container h4 {
+    padding: .95;
+    margin: .75em;
+    text-align: left;
+  }
+  .result-sponsor {
+    /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+    font-size: 13px;
+    padding: .25em;
+  
+  }
+  .result-sponsor img {
+    max-width: 300px;
+  }
+  
+  @media (min-width: 30em) {
+    .unconstrained .result-container {
+      width: 97%;   /* Changed from 100% 181121 */
+      max-width: 98%; /* Changed from 30em 181121 */
+    }
+    .unconstrained .result-answer {
+      font-size: 1.5em;
+    }
+    .unconstrained .result-bio {
+      font-size: 18px;
+    }
+  }
+
+  .constrain-300x600 .result-container {
+    width: 100%;
+  }
