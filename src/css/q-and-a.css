@@ -54,7 +54,7 @@ ul {
   }
   .question span {
     grid-column-start: 1;
-    padding: 0.5rem .3rem;
+    padding: 0.3rem .2rem;
   }
   .question span.nextInstructions {
     /* 'System Msgs' share the same style and include result-sponsor, questionCount, span.nextInstructions */
