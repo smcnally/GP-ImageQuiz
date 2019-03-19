@@ -1,8 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import MyCalendar from './MyCalendar';
 
 function Result(props) {
+  let Calendar;
+  if(props.successCalendar !== 0 && props.successCalendar !== "0" && typeof props.successCalendar !== "undefined"){
+     let currDate = new Date();
+     let tomorrowDate = new Date(currDate.setDate(currDate.getDate() + 1)); 
+     let startDate = tomorrowDate.setHours(3, 0, 0, 0);
+     let endDate = tomorrowDate.setHours(3, 15, 0, 0);
+     let event = {
+        title: props.scoreLabel.replace(/(<([^>]+)>)/ig,""),
+        description: props.bio,
+        location: 'Everywhere',
+        startTime: startDate,
+        endTime: endDate
+    }
+    Calendar = <MyCalendar event={event} />
+  }else{
+    Calendar = '';
+  }
+
   return (
     <ReactCSSTransitionGroup
       className="container result"
@@ -43,6 +62,9 @@ function Result(props) {
           </a>
         </p>
         <p className="result-sponsor" dangerouslySetInnerHTML={{__html: props.sponsorTagline}} />
+        
+        {Calendar}
+
       </div>
     </ReactCSSTransitionGroup>
   );
