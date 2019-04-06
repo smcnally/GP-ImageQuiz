@@ -47,26 +47,18 @@
     max-width: 300px;
   }
 
-  .react-add-to-calendar__wrapper{
-     text-align: center;
+  .react-add-to-calendar__wrapper a:hover{
+      text-decoration: none
   }
-  .react-add-to-calendar__wrapper a{
-      display:block;
-      width:173px;
-      height:42px;
-      background: url('../img/addToCal.png') no-repeat;
-      margin: 15px auto;
+  .react-add-to-calendar__wrapper {
+    text-align: center;
+}
+  .react-add-to-calendar__dropdown {
+    min-width: 200px;
+  }
 
-  }
-  .react-add-to-calendar__wrapper a span{
-      display:none;
-  }
-  .react-add-to-calendar__dropdown li{
-     margin-top: 10px;
-  }
-  .react-add-to-calendar__dropdown li a{
-    color: #5e6472;
-  }
+  
+ 
   
   @media (min-width: 30em) {
     .unconstrained .result-container {
