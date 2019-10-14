@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules
+*/static/*
 builds
 package-lock.json
 *.DS_Store*
