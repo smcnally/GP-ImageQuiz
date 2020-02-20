@@ -1,3 +1,21 @@
+200219 - 
+
+    - GP executions are now in their own repo? 
+    - else update .gitignore in GP-IQ 
+    - right now, not tracking new *quizQuestions.js and *personalityResults.js in GP-IQ . fine if the executions repo is good to go 
+    - 5:22 - will leave new configs in the fs for now. I should have an executions-only repo -- though they're tied to other changes made ... whichneeds to be addressed 
+    - fttb, i'm in the appropriate branch WhichIsYourBrand - 
+    - 6:26 - WhichIsYourBrand / findYourBrand-* is in good shape. 
+    - "Drive traffic to your property" is solved with this. 
+    - Next ups: 1) foot traffic to retail locations, 2) download software. 
+        - Calculator, Coffee chatbot, and FF swiper are the examples. 
+        - Calculator is "put this in your cart" 
+        - Coffee chatbot is "answer a bunch of questions and get a coupn code" 
+        - FF is DOwnload software. (put more link / CTA into lower3rds)
+
+
+
+
 190923 - 
 
     Looking for your Wellness or your Highness?

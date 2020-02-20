@@ -13,10 +13,10 @@ var quizQuestions = [
         relatedURLLabel3: "",
         // Group 1
         question: "Do you ever treat yourself to a joint/vape/dab or five?",
-        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+        // soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         multiAnswerSoundSrc: "",
-        // imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif",
+        // imageSrc: "https://meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
+        imageSrc: "https://meanbusiness.com/wp-content/uploads/Roller_Broad_City.gif",
         answers: [
             {
                 type: { "Medicine-seeker": 1,  "Parent": 1 },
@@ -32,8 +32,8 @@ var quizQuestions = [
     {
         // Group 1
         question: "Are you Experienced?",
-        imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Woman-Mouth-Smoke-300.gif?resize=200,200",
-        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+        imageSrc: "https://meanbusiness.com/wp-content/uploads/Woman-Mouth-Smoke-300.gif?resize=200,200",
+        //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
         answers: [
             {
@@ -57,7 +57,7 @@ var quizQuestions = [
         // Group 1
           question: "What's your take on cannabis culture?",
           imageSrc: "",
-          soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
+          //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
           answers: [
               {
                 type: { "Millennial": 1,  "Sensitive": 0 },
@@ -80,7 +80,7 @@ var quizQuestions = [
         // Group 1
         question: "How strong an effect are you looking to achieve?",
         imageSrc: "",
-        soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/SynthChordsCm11-PercTVOn.m4a",
+        soundSrc: "https://meanbusiness.com/wp-content/uploads/sounds/SynthChordsCm11-PercTVOn.m4a",
         answers: [
             {
                 type: { "Parent": 1,  "Medicine-seeker": 1 },
