@@ -1,0 +1,650 @@
+200228 - 
+
+    - GP-IQ for gp.io 
+        - Update Q1 to 3 possibilities 
+
+
+
+200227 - 
+
+4PM 
+
+GP-IQ - 
+
+    - FINE AS-IS for video capture
+
+    - GIF in Q 2 of 3 (Dinner party) should be smaller 
+        - Can't do it in Inspector as it reloads 
+        - Actually, it's fine in a smaller window
+
+    http://meanbusiness.com/wp-content/uploads/BlackMedicine-gMaps-SilverLake-LG.png
+
+GP-Chatbot - UPDATED 
+
+/home/smcnally/Documents/GP_chatbot/examples_GP/BlackMedicine-Intensified-GP-Chatbot.html
+file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-Intensified-GP-Chatbot.html 
+        - Updated with LA disp - DONE 
+        - Update the map image to silver lake - DONE 
+        from 
+        https://meanbusiness.com/wp-content/uploads/BlackMedicine-GoogleMaps-Stanford.png
+        to 
+        http://meanbusiness.com/wp-content/uploads/BlackMedicine-gMaps-SilverLake-LG.png
+
+    prepping video capture of GP executions 
+
+    - GP-Chatbot (Brand and Retail)
+        - capture just before "Black Medicine Intensified ..."
+            - capture the map, 
+            - capture the discount "... by the time you get to the store ... "Yes, Please!"
+            - Update the grocery stores to Dispensaries in LA  
+
+            - (though, this is a brand play ...)
+
+            MOTA Medicine Of The Angels
+            https://www.google.com/maps/dir/34.0233232,-118.3812558/dispensary+%22Silver+Lake%22+LA/@34.0554717,-118.3898837,12z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80c2c74917f79ac7:0x17116550e4a4f18d!2m2!1d-118.2803666!2d34.0927841
+
+            same without qstring: 
+
+            https://www.google.com/maps/dir/34.0233232,-118.3812558/@34.0554717,-118.3898837,12z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80c2c74917f79ac7:0x17116550e4a4f18d!2m2!1d-118.2803666!2d34.0927841
+
+            Green Earth Collective
+            https://www.google.com/maps/dir/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80c2c156a6de7f85:0xf055ca66c0a93661?sa=X&ved=2ahUKEwi1rqaj8_LnAhUDQK0KHVIuBuQQ9RcwAHoECAMQCQ
+
+            https://www.google.com/maps/dir//dispensary+%22Silver+Lake%22+LA/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80c2c156a6de7f85:0xf055ca66c0a93661?sa=X&ved=2ahUKEwi1rqaj8_LnAhUDQK0KHVIuBuQQ9RcwAHoECAMQCQ
+
+            LitCo
+            https://www.google.com/maps/dir/34.0233232,-118.3812558/dispensary+DTLA/@34.0293866,-118.3926276,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80c2c73bf5b31c7f:0xd38b7f9f305a3f5f!2m2!1d-118.2677598!2d34.0393914
+
+    - GP-Swiper (Delivery; Retail)
+        - "What are you up for today?" 
+            - Something to Smoke, Vape, Munch on, Dab
+        - capture 
+            - Smoke + Pop Promo
+            - Edibles 
+            - Topicals - (and Dispensary menu promo)
+        - clean this up and capture in phone format 
+            - again: constrain image sizes throughout
+            - more space for images; 
+            - less space for instructions 
+            - "Nah" and "Yeah"
+            - Also note: we'll happily fake the mobile phone experience by capturing desktop and resizing accordingly. 
+
+    - GP-IQ (Ecommerce) 
+        - Let's get you to your destination
+        - capture effects, plans, and Success 
+        - Leave as Lucent for CBD and Pain Relief+ for THC 
+            - Magnolia in Oakland needs to pop the gMap 
+            Lucent Pain Relief+ is available near you at Magnolia Oakland.
+        - update Success screen - NAH 
+
+
+200226 - 
+
+8:30 - 
+    - GP-Chatbot 
+        - conversational-forms GamePath had 110px of padding-top. Updated that to 10px.
+        - i shouldn't need to rebuild. lessee if I can cp the html to the latest build dir ...  
+
+7PM 
+
+    - In the GP-IQ success screen, the conversational-form leads with a ton of space above the start of the content well. 
+    - the GP-IQ build iframes this on the Success screen: https://gamepath.io/gamepath/GP.io-cforms/build/ -- update the c-f file and update the index.html symlink to point to the new version 
+
+
+6:30 
+    gulp from root created the build/ dir (self-contained)
+    /home/smcnally/Documents/conversational-form/
+    smcnally@FredTheBeast:~/Documents/conversational-form$ gulp 
+
+
+
+5PM 
+
+    Add privacy policy blurb to GP-IQ sponsorTagline 
+
+		<cf-robot-message cf-questions="GamePath doesn't share your info."></cf-robot-message>
+
+            <p style="float: left; color: #33475bd3; font-size: 12px;">(<em>GamePath does not share your info.<br /> [<a href='https://gamepath.io/privacy-policy' target='_blank'>Privacy Policy</a></em>])</p>
+
+
+
+4PM
+    GP-IQ gp.io updates - 
+        - Removed GIF from Success screen to leave more room for chat 
+        - Add gif to the end of the chat! 
+    https://meanbusiness.com/wp-content/uploads/barrel-roll-300x167-1.gif
+        - need reminder re making Comments in JSON?
+
+        - moved cform iframe code to "sponsorTagline" to "strains" -- both render html -- good
+        - removed sponsor URL. having "" values in sponsor fields should remove "Sponsor" label
+
+    cforms
+
+        this for just text without ask for input
+        <input type="text" cf-questions="Perfect, let's get started." name="getstarted">
+
+        <input type="text" required cf-error="Text is wrong wrong|Input is not right" />
+            - the pipe randomizes which message is used 
+        
+        https://space10-community.github.io/conversational-form/docs/1.0.0/functionality/conditionals-and-branching/
+
+        respond to this gh issue: 
+        https://github.com/space10-community/conversational-form/issues/325
+            - I had analytics.js. this expects gtag.js (throws errors otherwise)
+            - With gTM, this works: ...
+
+    - conversational-form - How / does it build for deployment anywhere? or does it need to be installed?
+        - build/ is in the root 
+        - cp my execution there and see ... 
+        - Works as Designed with the specific config file / .html added to build/
+            but ... build process adds relative paths to ../../build 
+            - so i can't rename the dir 
+            - have to put build/ into the renamed dir 
+                - THEN review build scripts
+            - (aside: review network calls to and from gp.io ... lotsa holdups)
+        - Tweak copy; add Fun (emojii and gifs)
+            - AFTER getting current build into the live widget on gp.io 
+            - have to update, rebuild, re-deploy GP-IQ for gp.io 
+    - Video capture of GPs in mobile device 
+    - GP-IQ for gp.io updates 
+        - single answer (remove multi)
+        - answer image sizes
+    - gtag.js into gTM - 
+        - current c-form execution has both gTM and explicit gtag.js references 
+
+    - VSCode: 
+        - Add "Save As ..." to right-click menu 
+        - Noise in terminal after awaking from sleep 
+
+
+200225 - 
+
+10PM
+
+http://localhost:8080/conversational-form/src/GP.io-ConvoForm.html
+looks and works OK - 
+
+iframe that into Success Screen 
+
+
+<p style="text-align: center;"><iframe src="https://player.vimeo.com/video/324468270?color=ffc843&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe></p>
+
+<p style='text-align: center;'><iframe src='http://localhost:8080/conversational-form/src/GP.io-ConvoForm.html' width='300' height='301' frameborder='0'></iframe></p>
+
+7:30 
+
+    - have mobile, email being requested 
+    - need to capture values / keyboard entry for both 
+
+
+7:15
+
+
+start with 
+
+http://localhost:8080/conversational-form/src/development-input-types.html
+
+add gTM 
+suck in only phone and email fields 
+
+    - then work in optional, one or the opther 
+    - then add events 
+
+
+7pm
+    - conversational-form is working from localhost (http:// not file:///)
+
+http://localhost:8080/conversational-form/src/GP.io-ConvoForm.html
+
+    - Add gTM to this 
+    - Doink with it 
+    - bubble-chat kicked my ass for some time today. there'd be more to do after. 
+    - Get it Working. then make it work better. 
+
+
+        "A link describing you, your product, or service is optional, ", 
+        "And helps respond with a GamePath that works for your business."
+
+    - Complete the Request for Info GamePath for gampath.io 
+    - GP-Chatbot - what's being captured in gA? 
+        - elements I click are being captured as GP_Answers (GP_Clicks, Outbound) (dirtily, but captured)
+        - works accessed from meanbusiness.com or gamepath.io
+        - Event Label is null from GP-Chatbot 
+            Category - GP_Answers 
+            Action - text label, properly / cleanly 
+            Label - Null 
+
+            Remove EBLoader from gTM 
+                - give steve@meanbusiness.com admin access to smcnally@gmail.com gTM
+
+        - capture class input-wrap
+            - grab any text entered 
+            - send a gA event 
+
+        - Optimally - 
+            - Hide input-wrap until someone clicks mobile or email 
+            - sanitize input by stripping it all 
+                - strip in chat-bubble does this 
+            - feed back what was input 
+            - format that feedback 
+
+
+
+
+        - NOT when I'm running from localhost as file:///
+            - which i should address. 
+            - can i do so by updating /etc/hosts on FtB?
+            - else, deploy to test gA / gTM 
+
+
+
+200224 - 
+
+If I want to collect cel, email, and link in GP-Vhatbot, 
+I need to handle the input, 
+make sure it doesn't trigger chat-bubble's miss() 
+validate mobile or email 
+and ensure gA picks up the customer contact info reasonably. 
+
+
+Your mobile number or email address
+A link describing you, your product, or service. (optional and helpful)
+
+
+
+200223 - 
+
+7:30
+
+http://localhost:3000/?message=%27Your%20Savings%20Code%20is%20INTENSIFIED0324%27&number=16464685875&subject=1
+
+localhost:3000/?message=[Test from localHOST]&number=16464685875&subject=1
+
+INTENSIFIED0324 is your savings code valid for 2 hours.  
+
+    5:45 - 
+    replace hubspot form in 
+
+    /home/smcnally/Documents/GP_chatbot/examples_GP/BlackMedicine-CelNumber-SNS.html
+
+    with local jf form. 
+
+    examples_GP/BlackMedicine-CelNumber-SNS.html
+
+
+GP-Swiper - 
+    main content well background color in 
+    /home/smcnally/Documents/GP-Swiper/src/index.css
+
+    (needs to be configurable)
+
+    line 104: 
+
+
+body{
+	background-color:#5497a0;
+
+    GP-Swiper 
+        New Amsterdam Naturals 
+        cannabisFormats-quizQuestions.js
+
+            - Title? "Have You Tried this?"
+            - bgcolor (not blue)
+
+            - Image sizes - 
+                - Woman blowing smoke smaller 
+                - Product shots for Moxie dabs and Ointment - smaller 
+
+https://res.cloudinary.com/papa-barkley/image/upload/h_100,w_100/v1581577904/Releaf-Balms_qfqonc.jpg
+
+                - Pacific Stone product shot in lower3rd
+            
+            - Styling - lower3rds - text, allow markup 
+
+            - Success Page: 
+                - Links to Special Offers 
+                - highlight delivery (in copy) 
+                - Relateds vs. Bio
+
+
+
+
+1PM
+
+    GP-IQ 
+        Lucent - Reliever Relaxer - Precision Dosing
+        /GP-IQ/src/api/Reliever_Relaxer-Precision_Dosing-Lucent-quizQuestions.js
+
+            - Drive Add to Cart (1st)
+            - Visits to Retail (2nd)
+
+    GP-chatbot
+        Black Medicine - Intensified 
+        file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-Consumer-chatbot.html
+
+            - Drive Visits to Retail (1st) 
+            - Drives Clickthroughs and Opt-Ins to SMS lists (2nd, 3rd) 
+
+    GP-Swiper 
+        New Amsterdam Naturals 
+        cannabisFormats-quizQuestions.js
+
+            - Drive to Delivery (1st)
+            - Dive Visits to Retail (2nd)
+            - Drive to Clicks (3rd)
+        
+
+
+12:30PM
+    GP-IQ 
+
+        /GP-IQ/src/api/Reliever_Relaxer-Precision_Dosing-Lucent-quizQuestions.js 
+        better than 
+        /GP-IQ/src/api/Reliever_Relaxer-quizQuestions.js
+
+        Keep it as Lucent 
+        Stick to Mood, Calm, and Relief 
+        Drives Adds to Cart 
+            - "LB Pain is available throughout the US. Buy it now and you'll have it delivered to your door this week." 
+        (Add Microdosing 4:1 formula for Drive to Retail)
+            - "LB Pain Relief+ is available nearby at [Dispensary]. Visit [] to pick some up today.  
+
+        Tighter product shots from lb.com 
+            - i'm already using the tightest 
+        Sounds - Click 
+
+    GP-Swiper - 
+        - Then back to styling 
+
+
+200222 - 
+
+    - GP-IQ, GP-chatbot - have good examples 
+    - Drive to Store, Drive to Shopping Cart, Drive Downloads - have good examples 
+
+    GP-chatbot
+
+        Black Medicine - Intensified 
+        file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-Consumer-chatbot.html
+
+            - Drive Visits to Retail 
+            - Drives Clickthroughs and Opt-Ins to SMS lists 
+            - Execution is clean
+                - Update copy to include Cannabis-Infused special offer "available only at these local shops" before "Do Exceptionally-Smart People ..."
+                - Update copy after [Privacy Policy] to note ~ "Coupon is good for 2 hours. "If you're not ready to shop now, let us know and we'll send you future offers. ... But 'Black Medicine - Intensified' is a limited-run exclusive."
+                    - Intensified for Focus and Energy 
+
+        Mozilla #Secondary after cannabis needs walkthrough  
+        file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/Mozilla-FF_Fb_Container-chatbot.html
+
+            - Drive Downloads
+            - Execution is clean
+                - Images are in-place and good (sizing good) 
+                - Emoji need display format work -they're B&W 
+
+ 
+    GP-IQ 
+
+        https://gamepath.io/gamepath/qp/precision_dosing/
+        where are the execution config files? (see them on WD3TB / 27iMac)
+            Now on FtB local: 
+            /Documents/GP-IQ/src/api
+            Reliever_Relaxer-*
+
+        Good one as it's clean 
+        Can keep the sound in the last 
+        (or simpler click sounds for quicker load times & some feedback[tbd])
+        Success Screen needs updates 
+            for Drive to Store / Drive to Delivery 
+            with specific product recs and promotions 
+
+    GP-Swiper 
+    
+        cannabisFormats-quizQuestions.js
+
+        
+
+
+
+To Be Done: 
+
+    Get image sizes correct. 
+    wp-cli doesn't resize animated gifs as animated gifs
+    lower3rds styles - typeface, anchor links underlined and link-blue 
+
+    - Get all execution configs into a single repo 
+        - Note on each the mechanic, build, and branch they belong to 
+
+200221 - 
+
+    GP-Swiper cannabisFormats-quizQuestions.js
+        - leads down the path 
+        - multiple 404 images 
+        (things are set as bgimages which is a PITA during dev)
+            https://meanbusiness.com/wp-content/uploads/teens-vaping.png?resize=300
+
+            https://meanbusiness.com/wp-content/uploads/herb.coIs-dabbing-really-bad-for-d77f814d549de49aea55b89ca50d9ec63b9edf93.jpg
+
+            https://meanbusiness.com/wp-content/uploads/herb.cocannabis-vs-lupus-topical-a1d8661d1b32c154069f00507677c395ffa3e98b.jpg
+
+
+        - Needs the Results / Success screen to drive to dispensary site / menues / specials 
+            - plus the coupon code opt-in 
+            - plus the Save your Prefs (and add a reminder to your calendar)
+
+        - Currently, it's a Mozilla success screen 
+
+    Swiper - 
+        Drive to Clicks 
+        Drive to Delivery (Service)
+        Use Amsterdam as an example in personalityResults  
+
+            - Flower - Pre-Roll - Brand-Verified 
+            https://weedmaps.com/dispensaries/nncc-nature-s-natural-collective-care/menu/pacific-stone-lemon-sativa-pre-rolls-14pk-7g
+
+            - Edible - Cookie - Brand-Verified 
+            https://weedmaps.com/dispensaries/nncc-nature-s-natural-collective-care/menu/1-1-cbd-thc-vanilla-bean-mini-cookies
+
+
+            "Add to Cart" from Weedmaps is not a straightforward URL 
+                - already a hairy yak and distraction from a completed GP-Swiper
+
+
+200220 - 
+
+    - GP-IQ, GP-chatbot - have good examples 
+    - Drive to Store, Drive to Shopping Cart, Drive Downloads - have good examples 
+    - Blackmedicine chatbot also has drive to opt-ins to sms 
+
+    - Need: GP-Swiper 
+        - best to in Cannabis 
+        - Drive outbound clicks
+            - menu items matching answers and persona  
+            - save and recall answers and options 
+            - opt-ins to sms
+            - 
+
+    GP-Swiper cannabisFormats-quizQuestions.js
+        - leads down the path 
+        - multiple 404 images 
+        - Needs the Results / Success screen to drive to dispensary site / menues / specials 
+            - plus the coupon code opt-in 
+            - plus the Save your Prefs (and add a reminder to your calendar)
+
+        - Currently, it's a Mozilla success screen 
+
+    CBDvTHC-quizQuestions.js
+        - remove sound
+        - Getting Well More Than High 
+        - Success Screen is not relevant to Getting Well More than High 
+        - It's also GP-IQ -- I need a GP-Swiper
+
+        - 404 
+        https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200
+        https://meanbusiness.com/wp-content/uploads/2017/05/woman-anxiety-300.gif?resize=300,200
+
+
+    CannabIQ-quizQuestions.js
+        - Newsworthy 
+        - Industry message for hiring boards, orgs looking to hire, govts looking to attract  
+
+
+6:30PM 
+    GP-Swiper 
+    VibesOrNugs 
+    src/api/Vibes_or_Nugs-quizQuestions.js
+
+
+6PM
+
+    FF Swiper and chatbots 
+
+    GP-IQ 
+    https://meanbusiness.com/gamepath/qp/mozilla/moz-personal-data/
+    https://meanbusiness.com/gamepath/qp/mozilla/ff-switch-IQ/
+        - similar to but not exacly the same as moz-per-data 
+    
+    GP-Swiper 
+    https://meanbusiness.com/gamepath/qp/mozilla/ff-container-swiper/
+        - All the images work 
+        - Can add CTA to lower3rds 
+
+    GP chatbot 
+    https://meanbusiness.com/gamepath/chat-bubble/examples/Mozilla-FF_Fb_Container-chatbot.html
+        - Has CTAs to download FF and Fb Container in-dialog - +1
+        - [Start Over] at the end is handy for dev; not for final 
+
+        - No longer 404 
+        https://meanbusiness.com/wp-content/uploads/2018/03/Coral-Fb-350x350.gif
+        https://meanbusiness.com/wp-content/uploads/2018/03/Animation-CloseCurtains-300x300.gif
+        https://meanbusiness.com/wp-content/uploads/2018/03/Animation-Woman_Subway_Phone_Onlookers.gif
+
+    
+    Making it work locally: 
+
+    /home/smcnally/Documents/GP_chatbot/chat-bubble/examples/Mozilla-FF_Fb_Container-chatbot.html
+
+    vs 
+    /home/smcnally/Documents/GP_chatbot/examples_GP/Mozilla-FF_Fb_Container-chatbot.html
+
+
+
+
+
+200219 - 
+
+    For thursday, work on FF swiper and chatbots - 
+
+    mozilla
+    https://meanbusiness.com/gamepath/qp/mozilla/moz-personal-data/; as elsewhere, remove all sound other than Success. this is another vector of approach theme. 
+    https://meanbusiness.com/gamepath/qp/mozilla/ff-switch-IQ/; same execution as above
+    https://meanbusiness.com/gamepath/qp/mozilla/ff-container-swiper/; evergreen for switch, for downloading containers. good example of driving downloads. Education and awareness in context.   
+
+    - 7PM - 
+    - local chatbots need to be run from /GP_chatbot/chat-bubble/examples/
+
+    file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-Consumer-chatbot.html
+
+    "It's Cold-Pressed Iced Coffee Intensified for performance."
+
+    add "Intensified for performance with CBD, THC, essence of [strain]"
+    with CBD and related ingredients we can't talk about here. 
+    Let us know if you'd like to hear about Special Formulations available only near you." 
+
+    https://meanbusiness.com/wp-content/uploads/Black-Medicine-Iced-Coffee-swaps-out-glass-bottles-for-cans_wrbm_large.jpg
+
+    Need to update this form - file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-CelNumber.html
+        - Works with multiple CRMs 
+        - here's with Pinpoint and SES (or what it was)
+
+--
+
+    - GP executions are now in their own repo? 
+    - else update .gitignore in GP-IQ 
+    - right now, not tracking new *quizQuestions.js and *personalityResults.js in GP-IQ . fine if the executions repo is good to go 
+    - 5:22 - will leave new configs in the fs for now. I should have an executions-only repo -- though they're tied to other changes made ... whichneeds to be addressed . maybe links to a deeper page - product-specific page (no need. move to Download / FF)
+    - fttb, i'm in the appropriate branch WhichIsYourBrand - 
+    - 6:26 - WhichIsYourBrand / findYourBrand-* is in good shape. 
+    - "Drive traffic to your property" is solved with this. 
+    - Next ups: 1) foot traffic to retail locations, 2) download software. 
+        - Calculator, Coffee chatbot, and FF swiper are the examples. 
+        - Calculator is "put this in your cart" 
+        - Coffee chatbot is "answer a bunch of questions and get a coupn code" 
+        - FF is DOwnload software. (put more link / CTA into lower3rds)
+
+/home/smcnally/Documents/GP_chatbot/examples_GP/BlackMedicine-Consumer-chatbot.html
+
+
+
+190923 - 
+
+    Looking for your Wellness or your Highness?
+
+    - I'm more interested in getting Well than getting High 
+    - I want to get High 
+    - I want to get Stoned 
+
+    Are you Experienced?
+
+    - Regular 
+    - Have in the past, but not in awhile 
+    - Looking to try 
+
+    Most true for you:
+
+    - Cannabis is part of my lifestyle 
+    - I enjoy the Cannabis Lifestyle 
+
+
+
+
+    Parents: 
+
+    https://www.omura.com/
+    Designed for convenience and treated like tech, this product practically begs parents to give it a puff.
+    https://media.licdn.com/dms/image/C5612AQHX_7T-UFq3vg/article-inline_image-shrink_1500_2232/0?e=1574899200&v=beta&t=6CBsUYD3LIfRQlKX447hrAEfqfpwjCC_dOXLbBA64H8
+
+
+
+
+190922 - 
+
+    FtB token 
+    19e37667757e51ae3b702682f44cc95d417c4f52
+    Needed this for 2FA and private repos. Use token in place of password when rec'v "Git: remote: Invalid username or password" error 
+
+    Working from Danielle's "Which Brand is Yours" 
+
+    https://www.linkedin.com/pulse/theres-cannabis-brand-everyonewhats-yours-danielle-meyers/?trackingId=ZFjHUhONSwPFkNQb48wx0g%3D%3D
+
+
+    Millennial professional, Curious parent, Medicine-seeker, Cannabis cultured, Ultra-feminine, Cali surfer, True stoner, Social enthusiast, or Boob guy
+
+    - comments in json files, at least my json files in GP-IQ  
+
+    - have these so far - will map them out 
+
+Millennial professional, Curious parent, Medicine-seeker, Cannabis cultured, Ultra-feminine
+
+
+    - SEED Ensemble is fucking outstanding 
+
+
+Millennial - 
+
+Canndescent 
+Consistently stylish. High end, yet attainable.
+https://media.licdn.com/dms/image/C5612AQFFYzJCdQMgdQ/article-inline_image-shrink_1000_1488/0?e=1574899200&v=beta&t=rBtpcA1FhdyAajd-2bxGI9MKRMask7auUtnmVIaXvWA
+
+Sunday Goods 
+A down-to-earth take on cannabis culture. Perfect for financial advisors and hipsters alike.
+http://www.instagram.com/p/B2hUTcdB0Xy/
+
+Instagram: @sundaygoods
+
+dompen
+A convenient, well-designed product with futuristic style for days.
+https://media.licdn.com/dms/image/C5612AQEtLtDx7KUjlQ/article-inline_image-shrink_1000_1488/0?e=1574899200&v=beta&t=HfznNIJi9zq-DUGcFW6GaR1yGIxsI0W_UUF8pZoCxGM
+Instagram: @dompenvape
+
+Canndescent, Sunday Goods, dompen

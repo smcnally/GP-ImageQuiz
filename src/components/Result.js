@@ -12,7 +12,8 @@ function Result(props) {
     let endDate = tomorrowDate.setHours(3, 15, 0, 0);
     let event = {
       title: props.scoreLabel.replace(/(<([^>]+)>)/ig,""),
-      description: props.bio,
+      description: props.bio +'\n'+ props.strains + " " + 
+      props.relatedURLLabel1 + ", " + props.relatedURLLabel2 + ", " + props.relatedURLLabel3,
       location: 'Everywhere',
       startTime: startDate,
       endTime: endDate
