@@ -1,7 +1,124 @@
 200228 - 
 
+11PM 
+
+    - Deploy build for Video caps 
+        - GP-IQ 
+        file:///home/smcnally/Documents/GP-IQ/LucentBotanicals-GP-IQ/index.html
+
+        - GP-Swiper 
+        file:///home/smcnally/Documents/GP-Swiper/NewAmsterdamNaturals-GP-Swiper/index.html
+
+        - GP-Chatbot 
+        file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-Intensified-GP-Chatbot.html
+
+
+9PM 
+
+    - GP-IQ and GP-Chatbot (c-f) for gp.io are working and Live on gp.io 
+        - though i should re-build and redeploy to ensure All is Well in the local code 
+    - Now back to video capture, etc. 
+
+
+8PM 
+
+the whole time doinking with all the other css, it was leading font family with Roboto that funcked things up 
+
+
+html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-input.animate-in div.inputWrapper input
+
+
+html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable div.scrollableInner.scroll cf-chat-response.robot.peak-thumb.show text p.show
+
+
+html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable div.scrollableInner.scroll cf-chat-response.robot.peak-thumb.show text p.show
+
+cf-chat-response.robot:nth-child(4) > text:nth-child(2) > p:nth-child(1)
+
+cf-chat-response.robot:nth-child(1)
+
+2PM 
+    Overriding style is kicking my ass. 
+    file:///home/smcnally/Documents/conversational-form/src/GP.io-ConvoForm.html
+
+    html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable
+
+    OK - With big dumb explicit css paths set, I'm overriding styles in-line in the .html config itself. Taking the "Win" for now and moving on 
+        - WaD local (FtB)
+        file:///home/smcnally/Documents/conversational-form/src/GP.io-ConvoForm.html
+        - WaD on gp.io 
+        https://gamepath.io/gamepath/GP.io-cforms/build/
+            - Not quite WaD on the server. 
+            - Spacing has crept into the chat copy. More later 
+
+            cf-context needs to be < 295
+            check CSS path and selector 
+selector 
+            html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable div.scrollableInner.scroll
+path
+            html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable div.scrollableInner.scroll
+
+input button selector
+.cf-input-button
+
+path
+html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-input.animate-in div.inputWrapper cf-input-button.cf-input-button
+
+
+1PM 
+    - OK - Now it's updated on gp.io
+https://gamepath.io/gamepath/GamePath.io-FocusAreas
+file:///home/smcnally/Documents/GP-IQ/GamePath.io-FocusAreas/index.html
+
+    - get c-f .css reflecting what I have locally 
+
+    https://gamepath.io/gamepath/GP.io-cforms/build/
+
+    have to change the css in src/ v /build 
+    and then re-build
+    and then re-deploy 
+    (first: I'll change the .css in the current build on the server - NO I WONT)
+
+        - override .css locally / in-line 
+
+        cf-chat-response.robot:nth-child(4) > text:nth-child(2) > p:nth-child(1)
+
+        
+
+
+Noon 
     - GP-IQ for gp.io 
-        - Update Q1 to 3 possibilities 
+        - Update Q1 to 3 possibilities - DONE 
+        - Create new branch from master - DONE 
+
+    - [LATER:] - Review branches, which can be auto-merged and deleted - 
+    https://github.com/smcnally/GP-IQ/branches
+
+    GP-Chatbot (convo-forms)
+        - Tighten the chat content window 
+        - Use GP fonts - Ubuntu and Roboto (iirc)
+        - Remove the border 
+        - Reduce padding around "scrollable"
+        html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-chat scrollable
+        - reduce font size from 18px to 14 or 16 
+        html body div#cf-context div#conversational-form.conversational-form.browser-firefox.conversational-form--enable-animation.conversational-form--show div.conversational-form-inner cf-input.animate-in div.inputWrapper input
+        - updating 
+        build/conversational-form-green.css
+            font-family, size 
+            scrollable
+
+        [Later:] - I cloned from c-f master. Need a fork. 
+
+
+
+        - [LATER:]
+            - Add conversational-forms to GP-Chatbot repo 
+            - Get gtag.js firing ffrom gTM 
+            - Push path and domain values from cf to gA 
+            - Credit noun project & contributors on Success Screens
+                - credit conversational-forms 
+                - office-quiz  
+
 
 
 
@@ -92,7 +209,7 @@ file:///home/smcnally/Documents/GP_chatbot/chat-bubble/examples/BlackMedicine-In
 
 
 6:30 
-    gulp from root created the build/ dir (self-contained)
+    ls -ltap from root created the build/ dir (self-contained)
     /home/smcnally/Documents/conversational-form/
     smcnally@FredTheBeast:~/Documents/conversational-form$ gulp 
 
