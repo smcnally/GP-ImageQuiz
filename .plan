@@ -1,5 +1,572 @@
+200302 - 
+
+11PM 
+
+smc-mozilla branch - Deleting 
+            - RT's got updates in .js files all of which can likely be accepted 
+            https://github.com/smcnally/GP-IQ/compare/master...smc-mozilla?expand=1
+            src/App.js
+
+                - Just adds the optional answer image / imgSrc.
+                - which is definitely in master  
+
+            src/components/Question.js
+
+                - RT's much better handling 
+                - SMc - Thinking these both are accounted for 
+                    - Yes - this is in master 
+                    /home/smcnally/Documents/GP-IQ/src/components/Question.js
+
+            src/index.css
+
+                - these are in master, too 
+                - much of this style rules are commented out leading with 
+                /* moved to header_intro.css
+                /home/smcnally/Documents/GP-IQ/src/index.css:29
+                - PLUS all style rules need review / reconsideration
+                - So, we should just delete smc-mozilla  
+
+
+tylt branch is a config and margin change. Deleting
+gpupdates1 is Constellation-related. Won't delete tonight 
+ff-switch -  Won't delete tonight
+    minor changes to 
+        src/App.js
+        src/components/Result.js
+
+
+https://github.com/smcnally/GP-IQ/commit/9a4572c2873d1dc303aeb77e3016e1588ade2cdb
+
+
+8PM 
+    To Do - picking up later 
+        - Move the IQ configs out of Swipe tree on FtB - DONE 
+        - Go through more IQ configs, but they're all Working (not blowing up app)
+        - Review [Dev] and [CSS] tasks, but 
+        - [GameDev] tasks are higher-prio than refactors and enhancements, like these e.g.   
+           - [GameDev] - make EmilyNussBot work and share with Emily.
+                        - Complete the execution 
+                        - Share with Mike D and David C. 
+                        - Bullet the plan for how I'll get it out 
+                        - Ask them what they need to also distribute?  
+           - [GameDev] - create results for celebQuotes and NJCI to drive TextProject subs  
+                    - "[] Goes deep into cannabis for NJ.com"
+                    - "Find [] on [{twtr}, {site}, {channel}]"
+                    - "Get up close with [] on TextProject"]
+                        - SMc - find the words they use 
+                        - Complete the execution 
+                        - Share with Mike D and David C. 
+                        - Bullet the plan for how I'll get it out 
+                        - Ask them what they need to also distribute?
+
+Dev and CSS tasks (Speach to Text had that as "Death in CSS tasks")
+[Dev] and [CSS] tasks
+
+        All for after [gamedev] tasks
+            [Dev] explore config‘s that work in other branches
+            [Dev] explore Rogers code not yet reflected in master
+            [Dev] CSS - check out styles used, image constraints, etc. 
+
+    - Config Tests (LIFO)
+
+    celebQuotes-quizQuestions.js
+        - Works 
+        - Where the celebQuote personality results? 
+            - look for personalityResults with "Quotifying"
+            - Don't see any. prolly not done. 
+            - quizResult: Quotifying is in Result node
+            - [GameDev] - so results are needed 
+            - this is a good newsworthy thing i will ask Mike D about for News and Tyle GamePaths 
+                - GameDev to drive TextProject subs and Tylt followers 
+                    - "[] Goes deep into cannabis for NJ.com"
+                    - "Find [] on [{twtr}, {site}, {channel}]"
+                    - "Get up close with [] on TextProject"]
+                        - SMc - find the words they use 
+                        - Complete the execution 
+                        - Share with Mike D and David C. 
+                        - Bullet the plan for how I'll get it out 
+                        - Ask them what they need to also distribute? 
+
+
+
+        - [Dev] - Move from here is to get the IQ configs out of the Swipe dir. 
+            - Move them to ~/Documents/GP-Swiper/src/api to ./GP-IQ_Configs_FtB
+            - LATER - compare overlap and gaps per MBP17 IQ configs. 
+        - has 7 questions; does App node know? 
+            - doesn't look like this DOES 
+            - looks like it COULD 
+            - the Quiz node knows -- questionTotal
+
+app node 
+{
+  "counter": 0,
+  "questionId": 1,
+  "question": "\"The only thing dangerous about weed is being caught with it.\"",
+  "optionalIntroText": "",
+  "imageSrc": null,
+  "soundSrc": null,
+  "multiAnswerSoundSrc": null,
+  "answerOptions": [
+    "{content: \"Chris Rock\", imageSrc: \"https://i0.wp.co…}",
+    "{content: \"Bill Murray\", imageSrc: \"https://i0.wp.c…}",
+    "{content: \"Louis C.K\", imageSrc: \"https://i0.wp.com…}",
+    "{content: \"Seth Rogan\", imageSrc: \"https://i0.wp.co…}"
+  ],
+  "answer": "",
+  "multi": false,
+  "format": "answerDefault",
+  "answersCount": {
+    "Quotifying": 0,
+    "Quotastic": 0
+  },
+  "result": "",
+  "personality": ""
+}
+
+
+    Dozo-Recency-quizQuestions.js
+        - Works 
+        - Single Qs w mix of images and no 
+        - Multi and non 
+        - sounds 
+        - [Dev] - All of these have ReactSwipe nodes 
+        - [Dev] - Make sure I don't update global React env until 
+            - Create a virtual env for latest React 
+            - Update props as noted: 
+            Warning: Accessing PropTypes via the main React package is deprecated, and will be removed in  React v16.0. Use the latest available v15.* prop-types package from npm instead. For info on usage, compatibility, migration and more, see https://fb.me/prop-types-docs lowPriorityWarning.js:38
+        - [Dev][CSS] - 
+        This page uses the non standard property “zoom”. Consider using calc() in the relevant property values, or using “transform” along with “transform-origin: 0 0”. addStyles.js:225
+
+
+
+ReactSwipe: 
+{
+  "onSwipeStart": "onSwipeStart",
+  "onSwipeMove": "bound onSwipeMove",
+  "onSwipeEnd": "bound onSwipeEnd",
+  "children": "<div />",
+  "tagName": "div",
+  "allowMouseEvents": false,
+  "onSwipeUp": "onSwipeUp",
+  "onSwipeDown": "onSwipeDown",
+  "onSwipeLeft": "onSwipeLeft",
+  "onSwipeRight": "onSwipeRight",
+  "tolerance": 0
+}
+
+Result node{
+  "quizResult": "Edibles",
+  "intro": "Products Used Within the Last month",
+  "scoreLabel": "Preference",
+  "relatedURL0": "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
+  "relatedURLLabel0": "Claim your Gift!",
+  "relatedURL1": "http://www.greenstate.com/explained/microdosing-new-way-get-benefits-without-getting-stoned/",
+  "relatedURLLabel1": "Microdosing: A new way to get benefits without getting stoned",
+  "relatedURL2": "https://www.medicalnewstoday.com/articles/317777.php",
+  "relatedURLLabel2": "Cannabis does relieve stress, but only at low doses",
+  "relatedURL3": "https://globalnews.ca/news/4028071/microdosing-cannabis/",
+  "relatedURLLabel3": "The big surprise of cannabis legalization might be the size of the low dose market",
+  "question": "Which type of cannabis product have you used used most recently?",
+  "multi": "Next »",
+  "soundSrc": "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Hit_Prommer-Simon_Carter.m4a",
+  "multiAnswerSoundSrc": "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06.m4a",
+  "answers": [
+    "{content: \"Edibles\", imageSrc: \"https://i0.wp.com/e…}",
+    "{content: \"Flower / Smoking\", imageSrc: \"\", type: \"…}",
+    "{content: \"Vaping\", imageSrc: \"https://i0.wp.com/ex…}",
+    "{content: \"Dabbing\", imageSrc: \"\", type: \"Dabbing\"}",
+    "{content: \"Topicals, Lotions, or Ointments\", imageS…}"
+  ]
+}
+
+
+    CoralProject-quizQuestions.js is "the same" as CoralProject-Guides-quizQuestions.js
+        - node app doesn't reload 
+        - though file sizes differ 
+
+Result props 
+{
+  "quizResult": "revenue",
+  "bio": "You like CASH MONEY.",
+  "strains": "Most do. We're working on it",
+  "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=200",
+  "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Larry.png?resize=300,250",
+  "sponsorURL": "https://guides.coralproject.net/meet-our-users/",
+  "sponsorTagline": "Meet Larry and the rest of the community @ The Coral Project",
+  "intro": "Participation in News Conversations",
+  "scoreLabel": "Preference",
+  "relatedURL0": "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
+  "relatedURLLabel0": "Claim your Gift!",
+  "relatedURL1": "",
+  "relatedURLLabel1": "",
+  "relatedURL2": "",
+  "relatedURLLabel2": "",
+  "relatedURL3": "",
+  "relatedURLLabel3": "",
+  "question": "What else could your preferred news & information communities do to encourage you to participate more actively and regularly?",
+  "multi": "Next »",
+  "format": "coolMatrix",
+  "answers": [
+    "{content: \"Highlight my comment in the discussion s…}",
+    "{content: \"Feature my comment next to the main arti…}",
+    "{content: \"Allow me to moderate others' comments\", …}",
+    "{content: \"Offer me a freelance position\", imageSrc…}"
+  ]
+}
+
+    CoralProject-Guides-quizQuestions.js
+        - Works 
+        - Not as refined as CoralProject-Personas-quizQuestions.js
+        - Clearly an earlier state of production 
+        - Result node has helpful info 
+        - App node has plenty of DIFFERNT and less-helpful info that Result node (compare same against CoralProject-Personas-quizQuestions App and Result nodes)
+        - Uses Multi  -- Next button takes space 
+        - [CSS] - wants to be more horizontal
+            - when not using multi, that Next space is still reserved
+            -  fix that in post-production!
+        - [404] result has a link to games.gamepath.io - 
+
+
+Result.h4.a node: 
+       - {
+  "href": "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
+  "target": "_blank",
+  "children": "Claim your Gift!"
+}
+
+h4 
+{
+  "id": "questionh4",
+  "className": "question multiQuestion",
+  "children": [
+    "<span />",
+    "<span />",
+    null,
+    "<button />",
+    null
+  ]
+}
+
+Question.h4.button: 
+
+            {
+  "className": "nextButton",
+  "onClick": "bound handleDoneQuestion",
+  "children": "Next »"
+}
+
+    CoralProject-Personas-quizQuestions.js; Coral-personalityResults.json
+        - Works 
+        - [CSS] Question.h4.span expects vertical layout / aspect:ratio 
+        - Good quiz for persona modeling 
+        - Took screenshot 
+        [aside] - get my screenshot OCR shit running on FtB 
+            - h/t / ack devs
+            - ack ff devs  
+            - link to gists  
+
+Result node: 
+        {
+  "quizResult": "Courtney",
+  "bio": "Courtney loves her Samsung Galaxy, and uses it mostly to play games and watch YouTube videos. She’s a whiz at Excel and searching Westlaw.",
+  "strains": "",
+  "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/TinaFey-Self-HighFive.gif?resize=200",
+  "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2018/03/Coral-Courtney.jpeg?resize=300,250",
+  "sponsorURL": "https://guides.coralproject.net/meet-our-users/",
+  "sponsorTagline": "Meet Courtney and the rest of the community @ The Coral Project",
+  "intro": "Participation in News Conversations",
+  "scoreLabel": "Community Persona",
+  "relatedURL0": "https://guides.coralproject.net/start-here",
+  "relatedURLLabel0": "We offer collection of guides -- gratis -- to help newsrooms engage and get the most out of the community.",
+  "relatedURL1": "https://guides.coralproject.net/start-here",
+  "relatedURLLabel1": "",
+  "relatedURL2": "https://tinyletter.com/coralproject",
+  "relatedURLLabel2": "Sign up to get updates and to be entered to win swag",
+  "relatedURL3": "",
+  "relatedURLLabel3": "",
+  "question": "What's your main motivation to partipate in news discussions online?",
+  "answers": [
+    "{content: \"I like collecting Karma and Upvotes\", im…}",
+    "{content: \"Sharing my ideas in topics of interest\",…}",
+    "{content: \"Letting authors know I'm listening is a …}",
+    "{content: \"My monthly stipend from the Kremlin depe…}"
+  ]
+}
+
+App (root) node: 
+{
+  "counter": 2,
+  "questionId": 3,
+  "question": "What else could your preferred news & information communities do to encourage you to participate more actively and regularly?",
+  "optionalIntroText": "",
+  "imageSrc": null,
+  "soundSrc": null,
+  "multiAnswerSoundSrc": null,
+  "answerOptions": [
+    "{content: \"Highlight my comment in the discussion s…}",
+    "{content: \"Feature my comment next to the main arti…}",
+    "{content: \"Allow me to moderate others' comments\", …}",
+    "{content: \"Offer me a freelance position\", imageSrc…}"
+  ],
+  "answer": "Edie",
+  "multi": false,
+  "format": "answerDefault",
+  "answersCount": {
+    "ego": 1,
+    "Courtney": 1,
+    "Adeline": 0,
+    "Larry": 0,
+    "adjacency": 0,
+    "revenue": 0,
+    "Edie": 2
+  },
+  "result": "Edie",
+  "personality": ""
+}
+
+
+
+
+    shepherd-quizQuestions.js
+        - works 
+        - layout expects to be vertical;
+        - border around questions & q images 
+        screenshot of FF React Component Inspector 
+        - [images are mostly 404 {to be expected while we update to share media lib}]
+
+Question.h4.span 
+{
+  "id": "questionh4",
+  "className": "question",
+  "children": [
+    "<span />",
+    null,
+    null,
+    null,
+    null
+  ]
+}
+
+What are the props for Success w Calendar? 
+    - MyCalendar
+    - source - Result.js:21
+{
+  "event": {
+    "title": "",
+    "description": "CBD products are organic, natural, and legal to buy in every state. CBD has therapeutic effects -- calming, pain management, anti-anxiety -- and also helps protect against bone loss and osteoporosis.\nHemp Capsules, Edible Butter , , undefined",
+    "location": "Everywhere",
+    "startTime": 1583233200000,
+    "endTime": 1583234100000
+  },
+  "label": "Add my Results reminder"
+}
+
+App root props of note:
+
+{
+  "counter": 0,
+  "questionId": 1,
+  "optionalIntroText": "",
+  "imageSrc": null,
+  "soundSrc": null,
+  "multiAnswerSoundSrc": null,
+  "format": "answerDefault",
+  "answersCount": {
+    "Indica": 0,
+    "Sativa": 0,
+    "Hybrid": 0
+  },
+  "result": "",
+  "personality": ""
+}
+
+question image props 
+
+        {
+  "multiAnswerSoundSrc": null,
+  "questionId": 1,
+  "questionImg": null,
+  "multi": false,
+  "format": "answerDefault",
+  "questionTotal": 3,
+    -   NB - "questionTotal" is good to use for clever item size % 
+
+  "onQuestionAnswered": "bound handleQuestionAnswered"
+}
+
+ReactSwipe (deep node under Quiz)
+{
+  "onSwipeStart": "onSwipeStart",
+  "onSwipeMove": "bound onSwipeMove",
+  "onSwipeEnd": "bound onSwipeEnd",
+  "children": "<div />",
+  "tagName": "div",
+  "allowMouseEvents": false,
+  "onSwipeUp": "onSwipeUp",
+  "onSwipeDown": "onSwipeDown",
+  "onSwipeLeft": "onSwipeLeft",
+  "onSwipeRight": "onSwipeRight",
+  "tolerance": 0
+}
+
+App root of Result (Success Screen)
+    - SMc - handy info to be exploited 
+    - good code!
+{
+  "counter": 2,
+  "questionId": 3,
+  "optionalIntroText": "",
+  "imageSrc": null,
+  "soundSrc": null,
+  "answer": "Hybrid",
+  "format": "answerDefault",
+  "answersCount": {
+    "Indica": 0,
+    "Sativa": 1,
+    "Hybrid": 2
+  },
+  "result": "Hybrid",
+  "personality": ""
+}
+
+
+    Accessibility-quizQuestions.js
+        - Works fine 
+        - The images are way too big. obscure the answers. 
+        - Add to Calendar function is present
+            - Opens a new gCal item 
+            - No title 
+            - Location == "Everywhere" 
+            - Sets a reminder for March 3 @ 3PM (surrently 6:20PM Mar 02)
+            - Plenty of info in the Notes field -- Good. 
+        [ASIDES - "Get Started" / Intro slide is good to have]
+        - The white text on green is not friendly ... esp for Accessbility 
+        - ran thru FF' accessibility checks - 
+            - alt tags 
+            - focusable answer elements; "interactive semantics"
+            - text / contrast 
+            - "Headings must be labeled." 
+
+
+
+
+    - Test different IQ configs against master branch 
+        - copied a bunch from MBP17
+        - put them in a subdir on FtB in src/api/GP-IQ_Configs/
+
+        - [NB - There are NO Swipe configs in GP-IQ/src/api/. Good.]
+
+
+    - Get favicon.ico included in builds 
+        - done -- updated reference in 
+            public/index.html 
+    
+    - THEN - compare any unmerged branches with RT's code 
+
+GP-IQ quizQuestion.js configs start with "var quizQuestions = ["
+GP-Swipe quizQuestion.js start with "var quizQuestions = {"
+
+$ grep -El 'quizQuestions \= \[' *.js | xargs cp -t GP-IQ_Configs/
+$ grep -El 'quizQuestions \= \{' *.js | xargs cp -t GP-Swipe_Configs/
+
+200229 - 
+
+2AM 
+    - To Do Sat and Sun 
+
+        - gp.io 
+            - allow directory listings only to me
+            - media library needs to serve everything over https  
+
+        GP-Swiper (GP-Swipe)
+            - Safari iOS screen cap looks good. 
+                - update to the more-recent GP config builds (copy tweaks)
+                - get gp.io secure (above) 
+                - take a few more captures 
+            - Compare branches - Briefly
+            - Run recent GamePath configs through different builds. 
+            - Run older configs through master 
+            - Create a new branch on FtB   
+            - Update styles, constraints, layout logic 
+                - (\ if {property} is empty, don't render the markup around it \ e.g.) 
+                - grab details from below and the New Amsterdam GamePath
+                - will be applicable to GP-IQ, too 
+
+        GP-Chatbot (GP-Chat)
+            - Desktop screen cap looks good. GP-Chatbot-Take2.mp4 
+            - Add conversational-forms
+            - change the dir name on FtB from GP_chatbot 
+
+        GP-IQ (GP-IQ [as it is])
+            - Desktop screen cap looks good. GP-IQ-Take2.mp4 
+            - Where is that Add to Calendar addition? (or is it in Swiper?)
+            - Sound: Find the smallest "click"-type audio files and add them to the Lucent Botanicals GamePath 
+                file:///home/smcnally/Documents/GP-IQ/LucentBotanicals-GP-IQ/index.html
+
+                - Freesound.org (smcnally / p t t s?) - good start 
+
+                InspectorJ ( https://freesound.org/people/InspectorJ/ )
+ 
+        
+        - twtr and other tools to grow @Extrovertings and extroverting.com 
+            - build more audiences within more specialties  
+            - curate them well 
+            - get them into twtr and contact lists
+            - go in deep in cannabis. be prepared to have small, good conversations.   
+
+        - NB - Many additional writing and publishing work is in To Dos on 27iMac  
+
+        - gA, GTM optimizations 
+            https://marketingplatform.google.com/home/integrations?authuser=0
+
+            this is smart - an gOptimize rule directing to extroverting states based on geography. 
+            https://optimize.google.com/optimize/home/#/accounts/3156732214/containers/9020706/experiments/6
+
+                - Create regional sites on extroverting.com 
+                - Curate them well. 
+                - Update those gOptimize rules to redirect accordingly 
+                    - test it on twtr 
+                    - small list of State-specific folks 
+                    - include a link in twtr post that paths through the gOptimize rule 
+                    - feature that article on the lander 
+                    (tag or categories for regions?)
+
+
+12:30AM
+    - GP-IQ - 
+        - I've eyeballed a few branches compared with master 
+        - There are a couple of branches from Roger that should be merged 
+            - It will have to be manually done. 
+            - Conflicts in config files are fine - think through how to save them both 
+            - RT's got updates in .js files all of which can likely be accepted 
+            https://github.com/smcnally/GP-IQ/compare/master...smc-mozilla?expand=1
+            src/App.js
+            src/components/Question.js
+            src/index.css
+        
+        - I've got tweaks in a branches that look straightforward to rectify
+        https://github.com/smcnally/GP-IQ/compare/master...ff-switch?expand=1
+        Layout options; including / excluding property values in the app and result screens
+            src/App.js
+            src/components/Result.js
+        
+        https://github.com/smcnally/GP-IQ/compare/master...ASKandOFFER?expand=1
+        .gitignore and .plan 
+
+        https://github.com/smcnally/GP-IQ/compare/master...tylt?expand=1
+        src/index.css and a config file 
+
+        https://github.com/smcnally/GP-IQ/compare/master...gpupdates1?expand=1
+        changes to app code and quizQuestions / personalityResults configs 
+
+        - Many of the conflicts for all branches are config / execution files 
+            - have to eyeball to see which we keep, which changes we accept, and which successfully run on which branch  
+
+
+
 200228 - 
 
+7PM 
     - GP-IQ for gp.io 
         - Update Q1 to 3 possibilities 
 
