@@ -44,7 +44,10 @@
   
   }
   .result-sponsor img {
-    max-width: 300px;
+    /* max-width: 300px; 200303 - commented out */
+    max-width: 82% !important;
+		max-height: 75% !important;
+		object-fit: contain !important;
   }
 
   .react-add-to-calendar__wrapper a:hover{
