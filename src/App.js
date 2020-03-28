@@ -272,17 +272,23 @@ class App extends Component {
     // if iframe, use constrained class
     let constrainClass = "unconstrained";
     let optionalIntroText = quizQuestions[0].intro;
+    // 200327 - dont render blank logo
+    let headerLogo = quizQuestions[0].appHeaderLogo;
     if (window !== top) {
       constrainClass = "constrain-300x600";
     }
     if (optionalIntroText) {
       optionalIntroText = <h4 dangerouslySetInnerHTML={{__html: quizQuestions[0].intro}} />;
         }
+    // 200327 - dont render blank logo
+    if (headerLogo) {
+      headerLogo = <div className='logo-td'><img className='app-logo' src={quizQuestions[0].appHeaderLogo} alt={this.props.content}></img></div>;      
+    }
     return (
       <div className={"App " + constrainClass}>
         <div className="App-header">
           {optionalIntroText}
-          <div className='logo-td'><img className='app-logo' src={quizQuestions[0].appHeaderLogo} alt={this.props.content}></img></div>
+          {headerLogo}
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
