@@ -2,8 +2,8 @@ var quizQuestions = [
   {
    // Game-wide values
   intro: "Participation in News Conversations" , 
-  scoreLabel: "Preference" , 
-  relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html" , 
+  scoreLabel: "" , 
+  relatedURL0: "https://meanbusiness.com/gamepath/qp/DOZO-chatback.html" , 
   relatedURLLabel0: "Claim your Gift!" ,
   relatedURL1: "" , 
   relatedURLLabel1: "" ,  
