@@ -1,3 +1,107 @@
+200318 - 
+
+from src/api/findYourBrand-personalityResults.json
+
+	"cultured": {	
+    "bio": "For those who want to live the cannabis lifestyle through and through. It’s about streetwear, a youthful attitude and a strong understanding of cannabis roots." ,
+    "strains": "<strong><a href='https://stiiizy.com/' target='_blank'>Stiiizy</a></br> <a href='https://www.sherbinskis.com/' target='_blank'>Sherbinskis</a></br> <a href='https://www.flowkana.com/home' target='_blank'>Flow Kana</a></strong>" , 
+    "successImg": "https://meanbusiness.com/wp-content/uploads/TinaFey-Self-HighFive.gif?resize=150,150" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/Stiizy-1-241x300.png" , 
+     "sponsorURL": "https://stiiizy.com/" , 
+     "sponsorTagline": "Stiiizy has built its brand on being the 'culture of cannabis' and staying true to that",
+     "successCalendar": 1,
+     "calendarLabel": "Save my Discount Code & Reminder"
+    } ,
+
+https://meanbusiness.com/wp-content/uploads/sites/3/2017/06/Woman-Glasses-Pumped-YEAH.gif?resize=200
+
+https://meanbusiness.com/wp-content/uploads/Woman-Glasses-Pumped-YEAH.gif
+
+https://i0.wp.com/meanbusiness.com/wp-content/uploads/Woman-Mouth-Smoke-300.gif?resize=300,200 
+
+    /* 200303 - added max-width, height, object-fit */
+    max-width: 95% !important;
+	max-height: 95% !important;
+	object-fit: contain !important;
+
+    - RT's file layout is much cleaner 
+        src/css/results.css
+        src/css/q-and-a.css
+
+
+200303 - 
+
+    Added these rules and tested 
+    findYourBrand-quizQuestions.js
+    Mostly OK, but not perfect. 
+
+    tested CoralProject-Personas-quizQuestions.js
+    and it's not good. 
+    Backed out my changes to src/css/q-and-a.css
+    Will explore and try again. 
+
+        - really like the idea of Containing all and subdividing per children present  
+            - class="container" / component "Quiz" is 300x600 
+            - that 600px gets alloted to answerOptions count 
+            - and images per 
+
+
+
+    /* 200303 - added max-width, height, object-fit */
+    /* max-width: 95% !important; */
+	/* max-height: 95% !important; */
+	/* object-fit: contain !important; */
+
+    - RT's file layout is much cleaner 
+        src/css/results.css
+        src/css/q-and-a.css
+
+    - Added these rules. 
+
+        - Images are better, but 
+        - left-justified, 
+            max-width: 100% !important;
+            max-height: 100% !important;
+            looks better. explore consequences
+        - need to examine more 
+        - need to try other example GP configs 
+
+        .question img  and .result-sponsor img
+
+    - padding and margins tbd 
+
+add this to imgQuestion img 
+
+		max-width: 95% !important;
+		max-height: 95% !important;
+		object-fit: contain !important;
+
+css path:
+to html body div#root div.App.unconstrained div.container div div h4#questionh4.question.imgQuestion img
+
+css selector:
+#questionh4 > img:nth-child(2)
+
+css path: 
+html body div#root div.App.unconstrained div div.container.result div.constrain-300x600.result-container p.result-sponsor a img
+
+selector:
+p.result-sponsor:nth-child(7) > a:nth-child(1) > img:nth-child(1)
+
+
+6PM 
+
+    - More focus on [GameDev]; Less on [Dev] and [CSS]
+    - BUT -- Need to address the image size issuesq 
+    - Be good to add notes to git branches; re diffs from master  
+
+
+12AM 
+
+    - More focus on [GameDev]; Less on [Dev] and [CSS]
+    - Be good to add notes to git branches; re diffs from master  
+
+
 200302 - 
 
 11PM 

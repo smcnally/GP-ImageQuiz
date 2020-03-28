@@ -2,7 +2,7 @@ var quizQuestions = [
   {
    // Game-wide values
   intro: "Getting Well more than High" , 
-  scoreLabel: "suggested retail partner" , 
+  scoreLabel: "You Win All the Things!" , 
   relatedURL0: "" , 
   relatedURLLabel0: "" ,
   relatedURL1: "" , 

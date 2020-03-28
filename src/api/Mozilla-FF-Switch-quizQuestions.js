@@ -2,7 +2,7 @@ var quizQuestions = [
     {
         // Game-wide values
         intro: "What is this in my browser?",
-        scoreLabel: "Score",
+        scoreLabel: "",
         relatedURL0: "https://blog.mozilla.org/firefox/switch-chrome-firefox-just-minutes/",
         relatedURLLabel0: "The latest technology, speed and security all ready to roll by default",
         relatedURL1: "https://www.mozilla.org/en-US/firefox/switch/",

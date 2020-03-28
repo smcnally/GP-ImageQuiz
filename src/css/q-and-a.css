@@ -48,7 +48,7 @@ ul {
     display: grid;
     align-items: center;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     background: #fffbf5;
     color: #5e6472;
   }
@@ -66,10 +66,10 @@ ul {
     color: rgba(0, 0, 0, 0.6);
   }
   .question img {
-    width: 100%;
-    max-height: 80em;
-    grid-column: 1;
-    transition: width 1s ease;
+    margin-left: 25px;
+    max-width: 100% !important;
+    max-height: 90% !important;
+    object-fit: contain !important;
   }
   .question.multiQuestion img {
     grid-column: 1 / span 2;

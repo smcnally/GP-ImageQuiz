@@ -3,6 +3,9 @@ var quizQuestions = [
         // Game-wide values
         intro: "Which Brand is Yours?",
         scoreLabel: "<em>Your Brands</em>",
+        appHeaderLogo: "",
+        appHeaderBgColor: "#009900",
+        appHeaderTypeColor: "#FFF",
         // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
         // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",
         relatedURL1: "",
@@ -32,7 +35,7 @@ var quizQuestions = [
     {
         // Group 1
         question: "Are you Experienced?",
-        imageSrc: "https://meanbusiness.com/wp-content/uploads/Woman-Mouth-Smoke-300.gif?resize=200,200",
+        imageSrc: "https://meanbusiness.com/wp-content/uploads/Woman-Glasses-Pumped-YEAH.gif",
         //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
         //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
         answers: [
