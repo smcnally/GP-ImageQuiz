@@ -102,6 +102,14 @@ class Quiz extends Component {
   }
 
   render() {
+    const boxStyle = {
+      width: '100%',
+      height: '300px',
+      border: '1px solid black',
+      background: '#ccc',
+      padding: '20px',
+      fontSize: '3em'
+    };
     return (
       <ReactCSSTransitionGroup
         className="container"
@@ -116,7 +124,7 @@ class Quiz extends Component {
           onSwipeStart={this.onSwipeStart}
           onSwipeMove={this.onSwipeMove}
           onSwipeEnd={this.onSwipeEnd}>
-            <div key={this.props.questionId}>
+            <div class="container" style={boxStyle} key={this.props.questionId}>
               <QuestionCount
                 counter={this.props.questionId}
                 total={this.props.questionTotal}
