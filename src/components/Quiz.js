@@ -124,7 +124,7 @@ class Quiz extends Component {
           onSwipeStart={this.onSwipeStart}
           onSwipeMove={this.onSwipeMove}
           onSwipeEnd={this.onSwipeEnd}>
-            <div class="container" style={boxStyle} key={this.props.questionId}>
+            <div className="container" style={boxStyle} key={this.props.questionId}>
               <QuestionCount
                 counter={this.props.questionId}
                 total={this.props.questionTotal}

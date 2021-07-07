@@ -1,3 +1,25 @@
+210707 - 
+
+12:25PM
+
+    a stray comma in qQuestions.js also impacted the image loads 
+        - these configs are tweaky / PITAs 
+
+    /home/smcnally/Documents/GP-IQ/src/api/CannabIQ-quizQuestions.js
+
+11:29AM
+    Image src url updates 
+    replacing WP CDN with base domain 
+    i.e. 
+
+        i0.wp.com/
+        w 
+        meanbusiness.com or extroverting.com 
+
+    and removing the Photon directives / resize 
+
+        ?resize=300,200
+
 200318 - 
 
 from src/api/findYourBrand-personalityResults.json
