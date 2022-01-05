@@ -8,3 +8,4 @@ src/svg/
 *-build/
 src/api/*-quizQuestions.js
 src/api/*-personalityResults.json
+src/api/GP-IQ_Configs/*
