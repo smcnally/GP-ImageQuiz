@@ -21,7 +21,7 @@ function Result(props) {
     scoreLabel = '';
   }
   if (successImg) {
-    successImg = <img className="constrain-300x600" src={props.successImg} alt="Success" />;
+    successImg = <img className="" src={props.successImg} alt="Success" />;
   } else {
     successImg = '';
   }
@@ -82,7 +82,7 @@ function Result(props) {
 
   return (
     <ReactCSSTransitionGroup
-      className="container result"
+      className="container result constrain-300x600"
       component="div"
       transitionName="fade"
       transitionEnterTimeout={800}
@@ -90,7 +90,7 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <div className="constrain-300x600 result-container">
+      <div className="result-container">
         {scoreLabel}
         <p>
         {successImg}
