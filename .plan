@@ -1,3 +1,66 @@
+# 220105 - 
+
+## 2:24PM
+
+* moved individual executions to builds/
+* moved and ignored all configs  
+* /home/smcnally/Documents/GP-IQ/.gitignore
+
+## 12:22PM
+
+* working through To Do items in the GH project 
+* getting GP-IQ cleaned for publishing on GH 
+https://github.com/smcnally/GP-IQ/issues/10
+
+210707 - 
+
+2:05PM
+/home/smcnally/Documents/GP-IQ/public/index.html
+
+    - removed iFrameResizer
+    (had already been commented out)
+
+        <!--
+        <script>
+        // any embedding origin can communicate with the iframe resizer
+        window.iFrameResizer = {
+            targetOrigin: '*'
+        }
+        </script>
+
+    <script type="text/javascript" gwd-events="handlers">
+        window.gwd = window.gwd || {};
+        gwd.szmk_clickthrough = function(event) {
+            EB.clickthrough();
+            };
+        </script>
+    -->
+    ...
+
+        <!-- loading iframeresizer for the iframe
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.contentWindow.min.js"></script>
+    -->
+
+12:25PM
+
+    a stray comma in qQuestions.js also impacted the image loads 
+        - these configs are tweaky / PITAs 
+
+    /home/smcnally/Documents/GP-IQ/src/api/CannabIQ-quizQuestions.js
+
+11:29AM
+    Image src url updates 
+    replacing WP CDN with base domain 
+    i.e. 
+
+        i0.wp.com/
+        w 
+        meanbusiness.com or extroverting.com 
+
+    and removing the Photon directives / resize 
+
+        ?resize=300,200
+
 200318 - 
 
 from src/api/findYourBrand-personalityResults.json

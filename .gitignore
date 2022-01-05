@@ -3,6 +3,8 @@ node_modules
 */static/*
 builds
 package-lock.json
+*.workspace
+*200*/*
 *.DS_Store*
 src/svg/
 *-build/

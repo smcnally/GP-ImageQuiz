@@ -1,51 +1,56 @@
-{  "Millennial": {
-    "bio": "For the ‘81-‘96’rs who have a job, mortgage and just enough discretionary income to treat themselves to a joint/vape/dab or five, these could be your speed:" , 
-     "strains": "<strong><a href='https://www.Canndescent.com' target='_blank'>Canndescent</a></br> <a href='https://www.sundaygoods.com' target='_blank'>Sunday Goods</a></br> <a href='https://www.dompen.com' target='_blank'>dompen</a></strong>" , 
-     "successImg": "https://meanbusiness.com/wp-content/uploads/TinaFey-Self-HighFive.gif?resize=150,150" , 
-     "sponsorImg": "https://media.licdn.com/dms/image/C5612AQFFYzJCdQMgdQ/article-inline_image-shrink_1000_1488/0?e=1574899200&v=beta&t=rBtpcA1FhdyAajd-2bxGI9MKRMask7auUtnmVIaXvWA" , 
-     "sponsorURL": "http://www.canndescent.com/" , 
-     "sponsorTagline": "Consistently stylish. High end, yet attainable.",
-     "successCalendar": 1,
-     "calendarLabel": "Save my Discount Code & Reminder"
+{   "Improving": {
+ 	 "bio": "Improving Score! You know plenty already. Match yourself to more  Cannabis Industry opportunities by answering these questions:" , 
+     "strains": "" , 
+     "successImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Money-FlippingThrough50s.gif" , 
+     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/sites/4/2017/11/gamepath_logo_dark_final-300x150.png" , 
+     "sponsorURL": "http://2040.qualityproduceusa.com/" , 
+     "sponsorTagline": "BRANDING & MARKETING FOR THE FUTURE OF CANNABIS"
     } ,
-   "Parent": {
-     "bio": "You may or may not have consumed in your early years, but it doesn’t matter now because they just wanna get high." , 
-     "strains": "<strong><a href='https://www.omura.com/' target='_blank'>Omura</a></br> <a href='https://l.instagram.com/?u=http%3A%2F%2Flinkin.bio%2Fkikoko_hq&e=ATNWjXuBBfyQxwiNoy-bOvZaH0qyrSYXA9t6F4pvwthkRJVABOalD-TymV_hqNsvzkbs3tOq0Ls0Xb2hunbt1GVQZ2CgUMQl' target='_blank'>Kikoko</a></br> <a href='https://www.highlandpantry.com/' target='_blank'>Highland Pantry</a></strong>" ,
-	   "successImg": "https://meanbusiness.com/wp-content/uploads/Woman-Glasses-Pumped-YEAH.gif?resize=200,200" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
+	"High": {
+    "bio": "High Score! You know the industry well. Match yourself to more  opportunities in the cannabis industry by answering these questions:" , 
+     "strains": "" , 
+     "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/QualityProduce-300x250.png" , 
+     "sponsorURL": "http://2040.qualityproduceusa.com/" , 
+     "sponsorTagline": "BRANDING & MARKETING FOR THE FUTURE OF CANNABIS"
+    } ,
+   "Palmetto": {
+     "bio": "CBD products can be vaped, mixed with food, swallowed, and even applied topically. A great way to relax is with a tea containing CBD at night time." , 
+     "strains": "" , 
+      "successImg": "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/SalmaHayak-YES-sm.gif" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Palmetto-Harmony-half-product-shoot-e1494724317825.jpg" , 
      "sponsorURL": "https://palmettoharmony.com/" , 
-     "sponsorTagline": "Green Mountain Delivers",
-     "successCalendar": 1,
-     "calendarLabel": "Remind me of these Results"
+     "sponsorTagline": "Palemetto Drugs r Good"
+     } ,
+   "Deteriorated": {
+     "bio": "Nope. Patients performed better"
+     } ,
+   "Improved": {
+     "bio": "Yes - Patients got faster and more accurate. Read what Harvard found out about other improvements to brain function, sleep, and overall health."
+     } ,
+   "Same": {
+     "bio": "Read what Harvard found out about other improvements to brain function, sleep, and overall health."
+   } , 
+	"Sativa": {	
+    "bio": "Sativa strains produce more of a euphoric high, uplifting mood and therapeutically relieving stress." ,
+    "strains": "" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Levo-Oil.jpg?resize=300,250" , 
+     "sponsorURL": "https://www.levooil.com/" , 
+     "sponsorTagline": "Levo: Oil Infusion. Reimagined."
     } ,
-   "Medicine-seeker": {
-     "bio": "A step away from the curious baby boomers, these people regard cannabis as a medicine and not necessarily a recreational plaything." , 
-     "strains": "<strong><a href='https://dosist.com/' target='_blank'>dosist</a></br> <a href='https://papaandbarkley.com/' target='_blank'>Papa & Barkley</a></strong>" ,
-      "successImg": "https://meanbusiness.com/wp-content/uploads/SalmaHayak-YES-sm.gif" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/dosist-1.png?resize=300,250" , 
-     "sponsorURL": "https://dosist.com/" , 
-     "sponsorTagline": "dosist brings design, experiential and education to another level, allowing new users to feel trust and comfort with their first cannabis experience",
-     "successCalendar": 1,
-     "calendarLabel": "Remind me of these Results"
-    } ,
-	"cultured": {	
-    "bio": "<strong><a href='https://stiiizy.com/' target='_blank'>Order now</a></strong>, and we'll <strong>deliver them to you today</strong>. <p />Try one of these -- They'll fit you fine:" ,
-    "strains": "<strong><a href='https://stiiizy.com/' target='_blank'>Stiiizy</a></br> <a href='https://www.sherbinskis.com/' target='_blank'>Sherbinskis</a></br> <a href='https://www.flowkana.com/home' target='_blank'>Flow Kana</a></strong>" , 
-    "successImg": "https://meanbusiness.com/wp-content/uploads/TinaFey-Self-HighFive.gif?resize=150,150" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/Stiizy-1-241x300.png" , 
-     "sponsorURL": "https://stiiizy.com/" , 
-     "sponsorTagline": "Stiiizy has built its brand on being the 'culture of cannabis' and staying true to that",
-     "successCalendar": 1,
-     "calendarLabel": "Save my Discount Code & Reminder"
-    } ,
-    "Ultra-Fem": {
-    "bio": "You know plenty about THC microdosing. Learn more about your options from our sponsors, partners, and the community. The Founders of Mondo and MedicineBox will be at our next Bake Sale -- details are below." ,
-    "strains": "<strong><a href='https://www.Canndescent.com' target='_blank'>Canndescent</a></br> <a href='https://www.sundaygoods.com' target='_blank'>Sunday Goods</a></br> <a href='https://www.dompen.com' target='_blank'>dompen</a></strong>" ,
-    "successImg": "https://meanbusiness.com/wp-content/uploads/SalmaHayak-YES-sm.gif" , 
-     "sponsorImg": "https://meanbusiness.com/wp-content/uploads/hmbldt-sleep-Large.jpeg?resize=300,250" , 
+    "Indica": {
+    "bio": "Indica strains relax muscles and work as general analgesics. They also help with sleep." ,
+    "strains": "Northern Lights, Kush, Critical Mass" , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/hmbldt-sleep-Large.jpeg?resize=300,250" , 
      "sponsorURL": "http://hmbldt.com/pen-sleep/" , 
-     "sponsorTagline": "Precise dosage guaranteed.",
-     "successCalendar": 1,
-     "calendarLabel": "Add my Results reminder"
+     "sponsorTagline": "The Science of Sleep"
+    } ,
+    "Hybrid": {
+    "bio": "Hybrid strains are cultivated for various properties. Some Hybrids skew toward Sativa's euphoric, uplifting qualities; others skew more toward Indica's relaxing, pain-relieving qualities." ,
+    "strains": "" 
+     , 
+     "sponsorImg": "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/hmbldt-4pack-1-sm.jpg" , 
+     "sponsorURL": "http://hmbldt.com/formulas/" , 
+     "sponsorTagline": "hmbldt formulas to suit your occasion"
     }
 }
