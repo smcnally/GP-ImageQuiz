@@ -1,4 +1,11 @@
 # 220105 - 
+
+## 2:24PM
+
+* moved individual executions to builds/
+* moved and ignored all configs  
+* /home/smcnally/Documents/GP-IQ/.gitignore
+
 ## 12:22PM
 
 * working through To Do items in the GH project 
