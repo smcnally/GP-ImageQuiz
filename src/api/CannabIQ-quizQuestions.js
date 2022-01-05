@@ -42,8 +42,8 @@ var quizQuestions = [
           {
               type: "Improving",
               content: "Cannabis can be consumed in any public place",
-              imageSrc: "https://i0.wp.com/extroverting.com/wp-content/uploads/sites/3/2017/06/Woman-BlowsSmoke-BandW.gif?resize=300,200"
-          },
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/05/Woman-Mouth-Smoke-300.gif"
+          }
       ]
   },
   {
@@ -53,17 +53,17 @@ var quizQuestions = [
           {
               type: "Improving",
               content: "$8.2 Billion",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Money-OneBillionDollarNote.jpg?resize=300,200"
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/Money-OneBillionDollarNote-768x511-768x511.jpg?resize=300,200"
           },
           {
               type: "Improving",
               content: "$15.5 Billion",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Money-PileOfBills-1sAnd5s.jpg?resize=300,200"
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/Money-PileOfBills-1sAnd5s-300x200.jpg"
           },
           {
               type: "High",
               content: "$21.6 Billion",
-              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/MattressOfMoney-BreakingBad-sm.gif?resize=300,200"
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/MattressOfMoney-BreakingBad-sm.gif"
           },
       ]
   }

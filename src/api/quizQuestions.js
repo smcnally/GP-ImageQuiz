@@ -1,107 +1,72 @@
 var quizQuestions = [
-    {
-        // Game-wide values
-        intro: "Which Brand is Yours?",
-        scoreLabel: "<em>Your Brands</em>",
-        appHeaderLogo: "",
-        appHeaderBgColor: "#009900",
-        appHeaderTypeColor: "#FFF",
-        // relatedURL0: "https://games.gamepath.io/gamepath/qp/DOZO-chatback.html",
-        // relatedURLLabel0: "Learn more benefits & Take Control of your Experience",
-        relatedURL1: "",
-        relatedURLLabel1: "",
-        relatedURL2: "",
-        relatedURLLabel2: "",
-        relatedURL3: "",
-        relatedURLLabel3: "",
-        // Group 1
-        question: "Do you ever treat yourself to a joint/vape/dab or five?",
-        // soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
-        multiAnswerSoundSrc: "",
-        // imageSrc: "https://meanbusiness.com/wp-content/uploads/2018/01/Roller_Broad_City.gif??resize=220,125",
-        imageSrc: "https://meanbusiness.com/wp-content/uploads/Roller_Broad_City.gif",
-        answers: [
-            {
-                type: { "Medicine-seeker": 1,  "Parent": 1 },
-                content: " I would like to more often",    
-            },
-            {
-                type: { "Millenial": 1,  "cultured": 1 },
-                content: "I do!",
-                imageSrc: ""
-              },
-        ]
-    },
-    {
-        // Group 1
-        question: "Are you Experienced?",
-        imageSrc: "https://meanbusiness.com/wp-content/uploads/Woman-Glasses-Pumped-YEAH.gif",
-        //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
-        //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/Imptomb06-Tabla_Dolak.m4a",
-        answers: [
-            {
-                type: { "Millennial": 1,  "Cultured": 1 },
-                content: "I consume regularly",
-                imageSrc: ""
-            },
-            {
-                type: { "Medicine-seeker": 1,  "Parent": 1 },
-                content:  "I've consumed in the past, but not in awhile",
-    
-            },
-            {
-                type: { "Parent": 1, "Medicine-seeker": 1 },
-                content: "I'm looking to try",
-                imageSrc: ""
-            },
-    ]
-    },
-    {
-        // Group 1
-          question: "What's your take on cannabis culture?",
-          imageSrc: "",
-          //soundSrc: "https://meanbusiness.com/gamepath/AmbientHits/fromCMMag/AMBPC_026.m4a",
-          answers: [
-              {
-                type: { "Millennial": 1,  "Sensitive": 0 },
-                content: "Cannabis is part of the culture, sure.",
-                imageSrc: ""
-              },
-              {
-                type: { "Medicine-seeker": 1,  "Parent": 1 },
-                content: "It's like Medicine is part of the culture.",
-                imageSrc: ""
-              },
-              {
-                type: { "Millennial": 1, "cultured": 1 },
-                content: "Like the Cocktail Culture?",
-                imageSrc: ""
-              },
-          ]
-      },
-    {
-        // Group 1
-        question: "How strong an effect are you looking to achieve?",
-        imageSrc: "",
-        soundSrc: "https://meanbusiness.com/wp-content/uploads/sounds/SynthChordsCm11-PercTVOn.m4a",
-        answers: [
-            {
-                type: { "Parent": 1,  "Medicine-seeker": 1 },
-                content: "A small boost",
-                imageSrc: ""
-            },
-            {
-                type: { "Medicine-seeker": 1, "Millennial": 1 },
-                content: "A moderate but significant effect",
-
-            },
-            {
-                type: { "Millennial": 0, "cultured": 1 },
-                content: "A strong effect",
-                imageSrc: ""
-            },
-]
-},
-];
+ 	{
+    // Group 1
+   	  intro: "The Cannabis Industry is Hiring. Match Your Skills & Fit." , 
+   	  scoreLabel: "Cannabis Industry IQ" , 
+   	  relatedURL0: "https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" , 
+   	  // related[x]0 opens within the same frame and is intended for embed-to-embed nav without page reload
+   	  relatedURLLabel0: "" ,
+   	  relatedURL1: "https://extroverting.com/2017/06/04/marketing-business-and-retail-opportunities/" , 
+   	  relatedURLLabel1: "Marketing, Retail, & Business" ,  
+   	  relatedURL2: "https://extroverting.com/2017/06/04/computer-data-science-opportunities-in-california/" , 
+	  relatedURLLabel2: "Computer & Data Science" ,
+	  relatedURL3: "" , 
+	  relatedURLLabel3: "" ,  
+      question: "2016's legal cannabis market size in North America was $6.9BN. California's portion of that was:",
+      answers: [
+          {
+              type: "Improving",
+              content: "15%",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Money-FlippingThrough50s.gif?resize=300,200"
+          },
+          {
+              type: "Improving",
+              content: "25%",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/Money-CashWad-HairBand.jpg?resize=300,200"
+          },
+          {
+              type: "High",
+              content: "31%",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/MakingMoneyAngel-sm.gif?resize=300,200"
+          },
+      ]
+  },
+  {
+      question: "Know why it's growing? As of January 2018:",
+      answers: [
+          {
+              type: "High",
+              content: "Retail sale of Recreational-use cannabis becomes legal  along with current Medical-use sales",
+              imageSrc: "https://i0.wp.com/meanbusiness.com/wp-content/uploads/2017/07/p124.jpg?resize=300,200"
+          },
+          {
+              type: "Improving",
+              content: "Cannabis can be consumed in any public place",
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/05/Woman-Mouth-Smoke-300.gif"
+          }
+      ]
+  },
+  {
+    // Group 1
+      question: "By 2021, North America's legal cannabis market is projected to be $21.6BN. CA's estimated portion of that will be:",
+      answers: [
+          {
+              type: "Improving",
+              content: "$8.2 Billion",
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/Money-OneBillionDollarNote-768x511-768x511.jpg?resize=300,200"
+          },
+          {
+              type: "Improving",
+              content: "$15.5 Billion",
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/Money-PileOfBills-1sAnd5s-300x200.jpg"
+          },
+          {
+              type: "High",
+              content: "$21.6 Billion",
+              imageSrc: "https://meanbusiness.com/wp-content/uploads/2017/07/MattressOfMoney-BreakingBad-sm.gif"
+          },
+      ]
+  }
+ ];
 
 export default quizQuestions;
