@@ -1,3 +1,5 @@
+# [Office Quiz](https://github.com/tcasey/office_quiz) fork
+This started as a fork of [Office Quiz](https://github.com/tcasey/office_quiz) which taught me a lot as I bastardized it in so many ways. One too many inadvertant upstream push attempts made me detatch it. Too much mess kept it that way. 
 
 # Weighted Personality quiz 
 Define personality types, create Q&A to weight them accordingly, show results per players' answers<br>
